@@ -156,6 +156,136 @@
 <h4>Papers</h4>
 
 
+<div class="media">
+  <a class="pull-left thumbnail" href="http://proceedings.mlr.press/v70/rana17a/rana17a.pdf">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+    S. Rana, C. Li, S. Gupta, <strong>V. Nguyen</strong>, S. Venkatesh <br>
+	    <strong>High Dimensional Bayesian Optimization with Elastic Gaussian Process</strong><br>
+
+        In           <i>Proceedings of the 34th International Conference on Machine Learning</i>, (<strong>ICML</strong>), pp 2883-2891,   2017.<br>
+				  
+      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractICML17" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractICML17" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">High Dimensional Bayesian Optimization with Elastic Gaussian Process</h4>
+            </div>
+            <div class="modal-body">
+			Bayesian optimization is an efficient way to optimize expensive black-box functions such as designing a new product with highest quality or hyperparameter tuning of a machine learning algorithm. However, it has a serious limitation when the parameter space is high-dimensional as Bayesian optimization crucially depends on solving a global optimization of a surrogate utility function in the same sized dimensions. The surrogate utility function, known commonly as acquisition function is a continuous function but can be extremely sharp at high dimension - having only a few peaks marooned in a large terrain of almost flat surface. Global optimization algorithms such as DIRECT are infeasible at higher dimensions and gradient-dependent methods cannot move if initialized in the flat terrain. We propose an algorithm that enables local gradient-dependent algorithms to move through the flat terrain by using a sequence of gross-to-finer Gaussian process priors on the objective function as we leverage two underlying facts - a) there exists a large enough length-scales for which the acquisition function can be made to have a significant gradient at any location in the parameter space, and b) the extrema of the consecutive acquisition functions are close although they are different only due to a small difference in the length-scales. Theoretical guarantees are provided and experiments clearly demonstrate the utility of the proposed method at high dimension using both benchmark test functions and real-world case studies.
+</div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  	  	  	  	  	          <a href="http://proceedings.mlr.press/v70/rana17a/rana17a.pdf" class="label label-info">PDF</a>
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="media">
+  <a class="pull-left thumbnail" href="http://static.ijcai.org/proceedings-2017/0355.pdf">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+     <strong>V. Nguyen</strong>, D. Phung, T. Le, S. Venkatesh, H. Bui <br>
+	    <strong>Discriminative Bayesian Nonparametric Clustering</strong><br>
+
+        In           <i>Proceedings of International Joint Conference on Artificial Intelligence  </i>, (<strong>IJCAI</strong>), pp 2550-2556,    2017.<br>
+				  
+      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractIJCAI_Vu" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractIJCAI_Vu" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Discriminative Bayesian Nonparametric Clustering</h4>
+            </div>
+            <div class="modal-body">
+			We propose a general framework for discriminative
+Bayesian nonparametric clustering to promote
+the inter-discrimination among the learned clusters
+in a fully Bayesian nonparametric (BNP) manner.
+Our method combines existing BNP clustering and
+discriminative models by enforcing latent cluster
+indices to be consistent with the predicted labels
+resulted from probabilistic discriminative model.
+This formulation results in a well-defined generative
+process wherein we can use either logistic regression
+or SVM for discrimination. Using the proposed
+framework, we develop two novel discriminative
+BNP variants: the discriminative Dirichlet
+process mixtures, and the discriminative-state in-
+finite HMMs for sequential data. We develop ef-
+ficient data-augmentation Gibbs samplers for posterior
+inference. Extensive experiments in image
+clustering and dynamic location clustering demonstrate
+that by encouraging discrimination between
+induced clusters, our model enhances the quality of
+clustering in comparison with the traditional generative
+BNP models.
+</div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  	  	  	  	  	          <a href="http://static.ijcai.org/proceedings-2017/0355.pdf" class="label label-info">PDF</a>
+
+  </div>
+</div>
+
+
+
+<div class="media">
+  <a class="pull-left thumbnail" href="http://static.ijcai.org/proceedings-2017/0291.pdf">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+    C. Li, S. Gupta, S. Rana, <strong>V. Nguyen</strong>, S. Venkatesh, A. Shilton <br>
+	    <strong>High Dimensional Bayesian Optimization Using Dropout</strong><br>
+
+        In           <i>Proceedings of International Joint Conference on Artificial Intelligence  </i>, (<strong>IJCAI</strong>), pp 2096-2102,   2017.<br>
+				  
+      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractIJCAI_Cheng" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractIJCAI_Cheng" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">High Dimensional Bayesian Optimization Using Dropout</h4>
+            </div>
+            <div class="modal-body">
+			Scaling Bayesian optimization to high dimensions
+is challenging task as the global optimization of
+high-dimensional acquisition function can be expensive
+and often infeasible. Existing methods depend
+either on limited “active” variables or the additive
+form of the objective function. We propose
+a new method for high-dimensional Bayesian optimization,
+that uses a dropout strategy to optimize
+only a subset of variables at each iteration. We derive
+theoretical bounds for the regret and show how
+it can inform the derivation of our algorithm. We
+demonstrate the efficacy of our algorithms for optimization
+on two benchmark functions and two realworld
+applications - training cascade classifiers and
+optimizing alloy composition
+</div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  	  	  	  	  	          <a href="http://static.ijcai.org/proceedings-2017/0291.pdf" class="label label-info">PDF</a>
+
+  </div>
+</div>
+
+
 
 <div class="media">
   <a class="pull-left thumbnail" href="https://bayesopt.github.io/papers/2016/Nguyen.pdf">
@@ -1443,7 +1573,7 @@ segmentation comparing with other methods.           </div>
       </div>
       <footer class="text-center text-muted">
         <hr>
-        Last updated Jan 15, 2017.<br>
+        Last updated August 05, 2017.<br>
 	Based on the code of 
         <a href="https://github.com/alopez/alopez.github.com">Adam Lopez</a>.<br>
         Created with 
