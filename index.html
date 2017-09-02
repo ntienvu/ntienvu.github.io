@@ -194,8 +194,8 @@
 </div>
 
 <p>
- I am currently working as a Postdoc at <a href="http://www.deakin.edu.au/research/prada">PRADA</a>, <a href="http://www.deakin.edu.au/">Deakin University</a>. 
- I am working with <a href="http://prada-research.net/~svetha/">Prof Svetha Venkatesh</a> and <a href="http://prada-research.net/~dinh/">Prof Dinh Phung</a>.
+ I am currently working as an Associate Research Fellow at <a href="http://www.deakin.edu.au/research/prada">PRADA</a>, <a href="http://www.deakin.edu.au/">Deakin University</a> with <a href="http://prada-research.net/~svetha/">ARC Laureate Prof Svetha Venkatesh</a>, Dr Sunil Gupta and Dr Santu Rana.
+ I finished my PhD in the same department where I am very fortunate to be advised by <a href="http://prada-research.net/~svetha/">Prof Svetha Venkatesh</a> and <a href="http://prada-research.net/~dinh/">Prof Dinh Phung</a> in 2015.
 </p>
 
 <h4>Research Interests</h4>
@@ -208,16 +208,14 @@
 		Multilevel Modelling: Multilevel Clustering, Multilevel Regression
       </li>
 	    <li>
-			  Bayesian Optimization: Batch Bayesian Optimization
+			  Bayesian Optimization
       </li>
 	  
       <li>
-	  Label-drift Classification
+	  Label-drift Classification, 		Abnormality Detection
+
       </li>
-	  	  
-      <li>
-		Abnormality Detection
-      </li>
+
 	  
 </ul>
 
@@ -245,32 +243,144 @@
 
 
 <div class="media">
-  <a class="pull-left thumbnail" href="https://bayesopt.github.io/papers/2016/Nguyen.pdf">
+  <a class="pull-left thumbnail" href="http://proceedings.mlr.press/v70/rana17a/rana17a.pdf">
     <img src="./img/paper/rsz_global_optimization.png" alt="">
   </a>
   <div class="media-body">
-    <strong>V. Nguyen</strong>, S. K. Gupta, S. Rana, C. Li, S. Venkatesh <br>
-	    <strong>Think Globally, Act Locally: a Local Strategy for Bayesian Optimization</strong><br>
+    <strong>V. Nguyen</strong>, S. Gupta, S. Rana, C. Li, S. Venkatesh <br>
+	    <strong>Bayesian Optimization in Weakly Specified Search Space</strong><br>
 
-        In           <i>NIPS Workshop on Bayesian Optimization </i>, (<strong>NIPS</strong>),    2016.<br>
+        In           <i>Proceedings of the IEEE International Conference on Data Mining</i>, (<strong>ICDM</strong>),  accepted,    2017.<br>
 				  
-      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractNIPS16_ELI" class="label label-default">Abstract</a>
+      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractICDM17_FBO" class="label label-default">Abstract</a>
       <!-- Modal -->
-      <div class="modal fade" id="abstractNIPS16_ELI" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+      <div class="modal fade" id="abstractICDM17_FBO" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h4 class="modal-title">Think Globally, Act Locally: a Local Strategy for Bayesian Optimization</h4>
+              <h4 class="modal-title">Bayesian Optimization in Weakly Specified Search Space</h4>
             </div>
             <div class="modal-body">
-			Bayesian optimization (BO) is a sample-efficient method for improving the performance of machine learning algorithms and laboratory experiments. We exploit the local property in BO to develop a new acquisition function, the expected local
-improvement (ELI) as an alternative to Expected Improvement (EI), aiming to address two underlying issues. First, we reduce the flatland issue in high dimension and second we allow greater explorative choices for batch BO unlike the existing strategies. We derive the convergence analysis using simple regret bound. We further demonstrate that the proposed strategy gains substantial performance improvement over the state-of-the-art baselines using the benchmark functions and
-real experiments on sequential and batch BO.
+Bayesian optimization (BO) has recently emerged
+as a powerful and flexible tool for hyper-parameter tuning and
+more generally for the efficient global optimization of expensive
+black-box functions. Systems implementing BO has successfully
+solved difficult problems in automatic design choices and machine
+learning hyper-parameters tunings. Many recent advances in
+the methodologies and theories underlying Bayesian optimization
+have extended the framework to new applications and provided
+greater insights into the behavior of these algorithms. Still, these
+established techniques always require a user-defined space to
+perform optimization. This pre-defined space specifies the ranges
+of hyper-parameter values. In many situations, however, it can
+be difficult to prescribe such spaces, as a prior knowledge is
+often unavailable. Setting these regions arbitrarily can lead to
+inefficient optimization - if a space is too large, we can miss the
+optimum with a limited budget, on the other hand, if a space is
+too small, it may not contain the optimum point that we want to
+get. The unknown search space problem is intractable to solve in
+practice. Therefore, in this paper, we narrow down to consider
+specifically the setting of “weakly specified” search space for
+Bayesian optimization. By weakly specified space, we mean that
+the pre-defined space is placed at a sufficiently good region so that
+the optimization can expand and reach to the optimum. However,
+this pre-defined space need not include the global optimum.
+We tackle this problem by proposing the filtering expansion
+strategy for Bayesian optimization. Our approach starts from
+the initial region and gradually expands the search space. We
+develop an efficient algorithm for this strategy and derive its
+regret bound. These theoretical results are complemented by an
+extensive set of experiments on benchmark functions and two
+real-world applications which demonstrate the benefits of our
+proposed approach.</div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+
+  </div>
+</div>
+
+
+<div class="media">
+  <a class="pull-left thumbnail" href="http://proceedings.mlr.press/v70/rana17a/rana17a.pdf">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+    S. Rana, C. Li, S. Gupta, <strong>V. Nguyen</strong>, S. Venkatesh <br>
+	    <strong>High Dimensional Bayesian Optimization with Elastic Gaussian Process</strong><br>
+
+        In           <i>Proceedings of the 34th International Conference on Machine Learning</i>, (<strong>ICML</strong>), pp 2883-2891,   2017.<br>
+				  
+      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractICML17" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractICML17" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">High Dimensional Bayesian Optimization with Elastic Gaussian Process</h4>
+            </div>
+            <div class="modal-body">
+			Bayesian optimization is an efficient way to optimize expensive black-box functions such as designing a new product with highest quality or hyperparameter tuning of a machine learning algorithm. However, it has a serious limitation when the parameter space is high-dimensional as Bayesian optimization crucially depends on solving a global optimization of a surrogate utility function in the same sized dimensions. The surrogate utility function, known commonly as acquisition function is a continuous function but can be extremely sharp at high dimension - having only a few peaks marooned in a large terrain of almost flat surface. Global optimization algorithms such as DIRECT are infeasible at higher dimensions and gradient-dependent methods cannot move if initialized in the flat terrain. We propose an algorithm that enables local gradient-dependent algorithms to move through the flat terrain by using a sequence of gross-to-finer Gaussian process priors on the objective function as we leverage two underlying facts - a) there exists a large enough length-scales for which the acquisition function can be made to have a significant gradient at any location in the parameter space, and b) the extrema of the consecutive acquisition functions are close although they are different only due to a small difference in the length-scales. Theoretical guarantees are provided and experiments clearly demonstrate the utility of the proposed method at high dimension using both benchmark test functions and real-world case studies.
 </div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal --> 
-	  	  	  	  	  	          <a href="https://bayesopt.github.io/papers/2016/Nguyen.pdf" class="label label-info">PDF</a>
+	  	  	  	  	  	          <a href="http://proceedings.mlr.press/v70/rana17a/rana17a.pdf" class="label label-info">PDF</a>
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="media">
+  <a class="pull-left thumbnail" href="http://static.ijcai.org/proceedings-2017/0355.pdf">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+     <strong>V. Nguyen</strong>, D. Phung, T. Le, S. Venkatesh, H. Bui <br>
+	    <strong>Discriminative Bayesian Nonparametric Clustering</strong><br>
+
+        In           <i>Proceedings of International Joint Conference on Artificial Intelligence  </i>, (<strong>IJCAI</strong>), pp 2550-2556,    2017.<br>
+				  
+      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractIJCAI_Vu" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractIJCAI_Vu" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Discriminative Bayesian Nonparametric Clustering</h4>
+            </div>
+            <div class="modal-body">
+			We propose a general framework for discriminative
+Bayesian nonparametric clustering to promote
+the inter-discrimination among the learned clusters
+in a fully Bayesian nonparametric (BNP) manner.
+Our method combines existing BNP clustering and
+discriminative models by enforcing latent cluster
+indices to be consistent with the predicted labels
+resulted from probabilistic discriminative model.
+This formulation results in a well-defined generative
+process wherein we can use either logistic regression
+or SVM for discrimination. Using the proposed
+framework, we develop two novel discriminative
+BNP variants: the discriminative Dirichlet
+process mixtures, and the discriminative-state in-
+finite HMMs for sequential data. We develop ef-
+ficient data-augmentation Gibbs samplers for posterior
+inference. Extensive experiments in image
+clustering and dynamic location clustering demonstrate
+that by encouraging discrimination between
+induced clusters, our model enhances the quality of
+clustering in comparison with the traditional generative
+BNP models.
+</div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  	  	  	  	  	          <a href="http://static.ijcai.org/proceedings-2017/0355.pdf" class="label label-info">PDF</a>
 
   </div>
 </div>
@@ -439,59 +549,6 @@ of big data cross-validation to select optimal hyperparameters.
   </div>
 </div>
 
-
-
-
-
-<div class="media">
-  <a class="pull-left thumbnail" href="https://papers.nips.cc/paper/6560-dual-space-gradient-descent-for-online-learning.pdf">
-    <img src="./img/paper/NIPS2016.png" alt="">
-  </a>
-  <div class="media-body">
-    T. Le, T.D. Nguyen,<strong>V. Nguyen</strong>, D. Phung.  <br>
-	    <strong>Dual Space Gradient Descent for Online Learning</strong><br>
-
-        In           <i>Advances in Neural Information Processing Systems</i>, (<strong>NIPS</strong>),  pp 4583-4591,    2016.<br>
-				  
-      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractNIPS" class="label label-default">Abstract</a>
-      <!-- Modal -->
-      <div class="modal fade" id="abstractNIPS" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h4 class="modal-title">Dual Space Gradient Descent for Online Learning</h4>
-            </div>
-            <div class="modal-body">
-			One crucial goal in kernel online learning is to bound the model size. Common
-approaches employ budget maintenance procedures to restrict the model sizes using
-removal, projection, or merging strategies. Although projection and merging, in the
-literature, are known to be the most effective strategies, they demand extensive com
-putation whilst removal strategy fails to retain information of the removed vectors.
-An alternative way to address the model size problem is to apply random features
-to approximate the kernel function. This allows the model to be maintained directly
-in the random feature space, hence effectively resolve the curse of kernelization.
-However, this approach still suffers from a serious shortcoming as it needs to use a
-high dimensional random feature space to achieve a sufficiently accurate kernel
- approximation. Consequently, it leads to a significant increase in the computational
- cost. To address all of these aforementioned challenges, we present in this paper
- the Dual Space Gradient Descent (DualSGD), a novel framework that utilizes
- random features as an auxiliary space to maintain information from data points
- removed during budget maintenance. Consequently, our approach permits the
-budget to be maintained in a simple, direct and elegant way while simultaneously
- mitigating the impact of the dimensionality issue on learning performance. We
- further provide convergence analysis and extensively conduct experiments on five
- real-world datasets to demonstrate the predictive performance and scalability of
- our proposed method in comparison with the state-of-the-art baselines.
-</div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal --> 
-	  
-	          <a href="https://papers.nips.cc/paper/6560-dual-space-gradient-descent-for-online-learning.pdf" class="label label-info">PDF</a>
-
-			  
-	    </div>
-</div>
 
 
 
