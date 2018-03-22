@@ -178,6 +178,19 @@
               <h4 class="modal-title">Predictive Variance Reduction Search</h4>
             </div>
             <div class="modal-body">
+			Predictive Entropy Search (PES) is popular and successful Bayesian optimization
+(BO) strategy. It finds a point to maximize the information gained about the
+optima of an unknown function. However, PES is computationally expensive and
+thus is not scalable to large-scale experiment when the number of observations
+and dimensions are large. We propose a new scheme - the Predictive Variance
+Reduction Search (PVRS) - to find the best “informative” point which reduces the
+predictive variance of the Gaussian process model at the optimum locations. We
+draw a connection between our PVRS to the existing PES. Our novel modification
+will be beneficial in three ways. First, PVRS directly reduces the uncertainty at
+the optimum representative points, like the PES. Second, PVRS can be computed
+cheaply in closed-form, unlike the approximations made in PES. Third, the PVRS
+is simple and easy to implement. As a result, the proposed PVRS gains huge speed
+up for scalable BO whilst showing comparable optimization efficiency.
 </div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -207,6 +220,20 @@
               <h4 class="modal-title">Distance Exploration for Scalable Batch Bayesian Optimization</h4>
             </div>
             <div class="modal-body">
+			Bayesian optimization (BO) is posed as a sequential problem where each experiment
+is completed before selecting a next one. However, it is often desirable
+to simultaneously explore using batches of parameters, especially when parallel
+processing facilities are available. Existing works have addressed batch BO in
+different ways. Still, the existing approaches are not scalable to large batch size
+or when the function evaluations are cheap. In this paper, we propose a computationally
+efficient batch Bayesian optimization based on a new exploration strategy
+using geometric distance. Our relaxation reduces the complexity in computing
+batch BO and also provides an alternative way for exploration, selecting a point
+far from the already observed locations. We theoretically formulate that our new
+strategy is a special case of the standard GP variance. We derive convergence
+analysis for the proposed batch BO approach. We present extensive experiments to
+show that our distance-based approach outperforms the state-of-the-art methods in
+both computational efficiency and performance.
 </div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -236,6 +263,18 @@
               <h4 class="modal-title">Bayesian Optimization with Monotonicity Information</h4>
             </div>
             <div class="modal-body">
+			Bayesian optimization (BO) has been demonstrated to be an efficient tool to
+globally optimize an expensive black-box function. Currently, however only a few
+works have explored the use of domain knowledge in BO to gain further efficiency.
+In this paper we discuss a particular form of prior information - the monotonicity
+of the underlying function with respect to one or more certain variables. Given the
+monotonicity information, we first detect the monotonic direction such as increasing
+or decreasing at each iteration. We then incorporate the detected monotonic
+direction into our proposed BO algorithm. We show the utility of our algorithm
+in target value optimization problems. Through the simulation we demonstrate
+the correctness of the proposed algorithm in discovering the monotonic direction.
+We also demonstrate the superiority of our algorithm in a real-world experimental
+optimization for short polymer fiber with the target geometric properties.
 </div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -375,7 +414,15 @@ proposed approach.</div>
               <h4 class="modal-title">GoGP: Fast Online Regression with Gaussian Processes </h4>
             </div>
             <div class="modal-body">
-Abstract
+One of the most current challenging problems in Gaussian process regression (GPR) is to handle large-scale datasets and to accommodate an online learning setting where data arrive 
+irregularly on the fly. In this paper, we introduce a novel online Gaussian process model that could scale with massive datasets. Our approach is formulated based on alternative 
+representation of the Gaussian process under geometric and optimization views, hence termed geometric-based online GP (GoGP). We developed theory to guarantee that with a good convergence 
+rate our proposed algorithm always produces a (sparse) solution which is close to the true optima to any arbitrary level of approximation accuracy specified a priori. 
+Furthermore, our method is proven to scale seamlessly not only with large-scale datasets, but also to adapt accurately with streaming data. 
+We extensively evaluated our proposed model against state-of-the-art baselines using several large-scale datasets for online regression task. 
+The experimental results show that our GoGP delivered comparable, or slightly better, predictive performance while achieving a magnitude of computational speedup compared 
+with its rivals under online setting. 
+More importantly, its convergence behavior is guaranteed through our theoretical analysis, which is rapid and stable while achieving lower errors.
 			</div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -406,6 +453,27 @@ Abstract
               <h4 class="modal-title">Approximation Vector Machines for Large-scale Online Learning</h4>
             </div>
             <div class="modal-body">
+			One of the most challenging problems in kernel online learning is to bound the model size
+and to promote model sparsity. Sparse models not only improve computation and memory
+usage, but also enhance the generalization capacity – a principle that concurs with the law
+of parsimony. However, inappropriate sparsity modeling may also significantly degrade the
+performance. In this paper, we propose Approximation Vector Machine (AVM), a model
+that can simultaneously encourage sparsity and safeguard its risk in compromising the performance.
+In an online setting context, when an incoming instance arrives, we approximate
+this instance by one of its neighbors whose distance to it is less than a predefined threshold.
+Our key intuition is that since the newly seen instance is expressed by its nearby neighbor
+the optimal performance can be analytically formulated and maintained. We develop
+theoretical foundations to support this intuition and further establish an analysis for the
+common loss functions including Hinge, smooth Hinge, and Logistic (i.e., for the classifi-
+cation task) and `1, `2, and ε-insensitive (i.e., for the regression task) to characterize the
+gap between the approximation and optimal solutions. This gap crucially depends on two
+key factors including the frequency of approximation (i.e., how frequent the approximation
+operation takes place) and the predefined threshold. We conducted extensive experiments
+for classification and regression tasks in batch and online modes using several benchmark
+datasets. The quantitative results show that our proposed AVM obtained comparable predictive
+performances with current state-of-the-art methods while simultaneously achieving
+significant computational speed-up due to the ability of the proposed AVM in maintaining
+the model size.
 </div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
