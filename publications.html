@@ -160,6 +160,80 @@
   <h3>2020</h3>
 
 
+  <div class="media">
+  <a class="pull-left thumbnail" href="">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+  	<strong>V. Nguyen</strong>, M. A. Osborne <br>
+	    <strong>Knowing The What But Not The Where in Bayesian Optimization
+</strong><br>
+
+		   <i>International Conference on Machine Learning</i> (<strong>ICML</strong>), accepted, 2020.<br>
+				   
+      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractERM2019" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractERM2019" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Knowing The What But Not The Where in Bayesian Optimization</h4>
+            </div>
+            <div class="modal-body">
+			Bayesian optimization has demonstrated impressive success in finding the optimum location x* and value f*=f(x*)=max f(x) of the black-box function f. 
+			In some applications, however, the optimum value is known in advance and the goal is to find the corresponding optimum location. 
+			Existing work in Bayesian optimization (BO) has not effectively exploited the knowledge of f* for optimization. 
+			In this paper, we consider a new setting in BO in which the knowledge of the optimum value is available. Our goal is to exploit the knowledge about f* to search for the location x* efficiently. 
+			To achieve this goal, we first transform the Gaussian process surrogate using the information about the optimum value. 
+			Then, we propose two acquisition functions, called confidence bound minimization and expected regret minimization, which exploit the knowledge about the optimum value to identify the optimum location efficiently. 
+			We show that our approaches work both intuitively and quantitatively achieve better performance against standard BO methods. 
+			We demonstrate real applications in tuning a deep reinforcement learning algorithm on the CartPole problem and XGBoost on Skin Segmentation dataset in which the optimum values are publicly available.
+</div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  <a href="https://arxiv.org/pdf/1905.02685.pdf" class="label label-info">PDF</a>
+
+	  
+  </div>
+</div>
+
+
+
+  
+  <div class="media">
+  <a class="pull-left thumbnail" href="">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+  B. Ru, AS. Alvi,	<strong>V. Nguyen</strong>, M. A. Osborne, SJ. Roberts  <br>
+	    <strong>Bayesian Optimisation over Multiple Continuous and Categorical Inputs
+</strong><br>
+
+		   <i>International Conference on Machine Learning</i> (<strong>ICML</strong>), accepted, 2020.<br>
+
+         <i>Meta Learning workshop, </i>NeurIPS 2019.<br>
+				  
+      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractNeurIPS19" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractNeurIPS19" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Bayesian Optimisation over Multiple Continuous and Categorical Inputs</h4>
+            </div>
+            <div class="modal-body">
+			Efficient optimisation of black-box problems that comprise both continuous and categorical inputs is important, yet poses significant challenges. We propose a new approach, Continuous and Categorical Bayesian Optimisation (CoCaBO), which combines the strengths of multi-armed bandits and Bayesian optimisation to select values for both categorical and continuous inputs. We model this mixed-type space using a Gaussian Process kernel, designed to allow sharing of information across multiple categorical variables, each with multiple possible values; this allows CoCaBO to leverage all available data efficiently. We extend our method to the batch setting and propose an efficient selection procedure that dynamically balances exploration and exploitation whilst encouraging batch diversity. We demonstrate empirically that our method outperforms existing approaches on both synthetic and real-world optimisation tasks with continuous and categorical inputs.
+</div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  <a href="https://arxiv.org/abs/1906.08878" class="label label-info">PDF</a>
+
+	  
+  </div>
+</div>
+
   
   <div class="media">
   <a class="pull-left thumbnail" href="">
@@ -392,78 +466,8 @@ The success of deep (reinforcement) learning systems crucially depends on the co
 
 
 
-  
-  <div class="media">
-  <a class="pull-left thumbnail" href="">
-    <img src="./img/paper/rsz_global_optimization.png" alt="">
-  </a>
-  <div class="media-body">
-  B. Ru, AS. Alvi,	<strong>V. Nguyen</strong>, M. A. Osborne, SJ. Roberts  <br>
-	    <strong>Bayesian Optimisation over Multiple Continuous and Categorical Inputs
-</strong><br>
-
-         <i>Meta Learning workshop, </i>NeurIPS 2019.<br>
-				  
-      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractNeurIPS19" class="label label-default">Abstract</a>
-      <!-- Modal -->
-      <div class="modal fade" id="abstractNeurIPS19" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h4 class="modal-title">Bayesian Optimisation over Multiple Continuous and Categorical Inputs</h4>
-            </div>
-            <div class="modal-body">
-			Efficient optimisation of black-box problems that comprise both continuous and categorical inputs is important, yet poses significant challenges. We propose a new approach, Continuous and Categorical Bayesian Optimisation (CoCaBO), which combines the strengths of multi-armed bandits and Bayesian optimisation to select values for both categorical and continuous inputs. We model this mixed-type space using a Gaussian Process kernel, designed to allow sharing of information across multiple categorical variables, each with multiple possible values; this allows CoCaBO to leverage all available data efficiently. We extend our method to the batch setting and propose an efficient selection procedure that dynamically balances exploration and exploitation whilst encouraging batch diversity. We demonstrate empirically that our method outperforms existing approaches on both synthetic and real-world optimisation tasks with continuous and categorical inputs.
-</div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal --> 
-	  <a href="https://arxiv.org/abs/1906.08878" class="label label-info">PDF</a>
-
-	  
-  </div>
-</div>
 
 
-
-
-  <div class="media">
-  <a class="pull-left thumbnail" href="">
-    <img src="./img/paper/rsz_global_optimization.png" alt="">
-  </a>
-  <div class="media-body">
-  	<strong>V. Nguyen</strong>, M. A. Osborne <br>
-	    <strong>Knowing The What But Not The Where in Bayesian Optimization
-</strong><br>
-
-         <i>Preprint</i> 2019.<br>
-				  
-      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractERM2019" class="label label-default">Abstract</a>
-      <!-- Modal -->
-      <div class="modal fade" id="abstractERM2019" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h4 class="modal-title">Knowing The What But Not The Where in Bayesian Optimization</h4>
-            </div>
-            <div class="modal-body">
-			Bayesian optimization has demonstrated impressive success in finding the optimum location x* and value f*=f(x*)=max f(x) of the black-box function f. 
-			In some applications, however, the optimum value is known in advance and the goal is to find the corresponding optimum location. 
-			Existing work in Bayesian optimization (BO) has not effectively exploited the knowledge of f* for optimization. 
-			In this paper, we consider a new setting in BO in which the knowledge of the optimum value is available. Our goal is to exploit the knowledge about f* to search for the location x* efficiently. 
-			To achieve this goal, we first transform the Gaussian process surrogate using the information about the optimum value. 
-			Then, we propose two acquisition functions, called confidence bound minimization and expected regret minimization, which exploit the knowledge about the optimum value to identify the optimum location efficiently. 
-			We show that our approaches work both intuitively and quantitatively achieve better performance against standard BO methods. 
-			We demonstrate real applications in tuning a deep reinforcement learning algorithm on the CartPole problem and XGBoost on Skin Segmentation dataset in which the optimum values are publicly available.
-</div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal --> 
-	  <a href="https://arxiv.org/pdf/1905.02685.pdf" class="label label-info">PDF</a>
-
-	  
-  </div>
-</div>
 
 
 
@@ -478,7 +482,7 @@ The success of deep (reinforcement) learning systems crucially depends on the co
 	    <strong>Efficient Bayesian Optimization for Uncertainty Reduction over Perceived Optima Locations
 </strong><br>
 
-         <i>Proceedings of the IEEE International Conference on Data Mining</i>, (<strong>ICDM</strong>), accepted, 2019.<br>
+         <i>Proceedings of the IEEE International Conference on Data Mining</i>, (<strong>ICDM</strong>), pp. 1270-1275, 2019.<br>
 				  
       <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractPVRS" class="label label-default">Abstract</a>
       <!-- Modal -->
