@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0049)https://mslab.csie.ntu.edu.tw/www15tut/#reference -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Advances in Bayesian Optimization</title>
+
+<link rel="stylesheet" type="text/css" href="./BO_Tutorial_ACML2020_files/style.css">
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+<body>
+<div id="doc">
+
+<div id="right-column">
+
+<div class="call-out-green">
+<div class="subpic"><a href="http://www.acml-conf.org/2020/calls/tutorials" style="color:#005599">ACML 2020 Tutorial</a></div>
+<div class="pic">Recent Advances in Bayesian Optimization</div>
+</div>
+
+<div id="navigation">
+<ul>
+<li><a href="#description" target="_self">Description</a></li>
+<li><a href="#outline" target="_self">Outline</a></li>
+<li><a href="#slides" target="_self">Slides</a></li>
+<li><a href="#require" target="_self">Prerequists</a></li>
+<li><a href="#presenter" target="_self">Presenters</a></li>
+<li><a href="#reference" target="_self">References</a></li>
+</ul>
+</div>
+
+<h1><a name="description"></a>Description</h1>
+<p>Bayesian optimization has emerged as an exciting sub-field of machine learning and artificial intelligence that is concerned with optimization using probabilistic methods. 
+Systems implementing Bayesian optimization techniques have been successfully used to solve difficult problems in a diverse set of applications, including automatic tuning of machine learning algorithms, experimental designs, and many other systems. 
+Several recent advances in the methodologies and theory underlying Bayesian optimization have extended the framework to new applications and provided greater insights into the behavior of 
+these algorithms. Bayesian optimization is now increasingly being used in industrial settings, providing new and interesting challenges that require new algorithms and theoretical insights.
+
+Therefore, I think having a tutorial on Bayesian optimization for ACML audience is timely, useful, and practical for both academia and industries to know the recent advances on Bayesian optimization in a systematic manner. 
+The topics of this tutorial consists of two main parts. In the first part, I will go into detail the Bayesian optimization in the standard and simple setting. In the second part, I will present the current advances in Bayesian optimization including
+(1) batch Bayesian optimization, (2) high dimensional Bayesian optimization and (3) mixed categorical-continuous optimization.
+In the end of the talk, I also outline the possible future research directions in Bayesian optimization.</p>
+
+<p><b>Part I: Bayesian Optimization.</b><br>
+Bayesian optimization is a sequential model-based approach to solving global optimization problem of black-box functions. By black-box function, we will assume
+the function f has no simple closed form, but can be evaluated at any arbitrary query point x in the domain. In particular,
+the Bayesian optimization framework has two key ingredients. The first ingredient is a probabilistic surrogate model, which consists of a prior distribution that
+captures our beliefs about the behavior of the unknown objective function and an observation model that describes the data generation mechanism. The second ingredient is a
+loss function that describes how optimal a sequence of queries are; in practice, these loss functions often take the form of regret, either simple or cumulative. Ideally, the
+expected loss is then minimized to select an optimal sequence of queries. After observing the output of each query of the objective, the prior is updated to produce a
+more informative posterior distribution over the space of objective functions.
+
+</p>
+
+<p><b>Part II.1: Recent Advances in Bayesian Optimization - Batch Bayesian Optimization.</b><br>
+Standard Bayesian optimization approaches only allow the exploration
+of the parameter space to occur sequentially. Often, it is desirable to simultaneously
+propose batches of parameter values
+to explore. This is particularly the case when
+large parallel processing facilities are available.
+These could either be computational
+or physical facets of the process being optimized.
+Batch methods, however, require the
+modeling of the interaction between the different
+evaluations in the batch, which can be
+expensive in complex scenarios. In this section, I will summarize the recent batch Bayesian optimization models. I will provide the strengths and weaknesses of each approach.</p>
+
+
+<p><b>Part II.2: Recent Advances in Bayesian Optimization - High Dimensional Bayesian Optimization</b><br>
+Standard Bayesian optimization is limited to about 10 dimensions. Scaling BO methods to handle functions in high dimension presents two main challenges. Firstly, the number
+of observations required by the GP grows exponentially as input dimensions increase. This implies more experimental
+evaluations are required, often expensive and infeasible in real applications. Secondly, global optimization for high dimensional
+acquisition functions is intrinsically a hard problem and can be prohibitively expensive to be feasible. I will discuss recent advances in Bayesian optimization techniques for high dimensional settings.</p>
+
+
+
+<p><b>Part II.3: Recent Advances in Bayesian Optimization - Mixed Categorical-Continuous Bayesian optimization </b><br>
+Real-world optimization problems are typically of mixed-variable nature, involving both continuous and
+categorical input variables. For example, tuning the hyperparameters of a deep neural network involves both continuous variables,
+e.g., learning rate and momentum, and categorical ones, e.g., optimizer types, activation type.  Having a mixture of categorical and continuous variables presents unique challenges. If some inputs
+are categorical variables, as opposed to continuous, then the common assumption
+ that the BO acquisition function is differentiable and continuous over the input space, which allows the acquisition function to be efficiently optimized, is no longer valid.
+I will discuss recent advances in Bayesian optimization techniques for mixed categorical-continuous settings.</p>
+
+
+
+<h1><a name="outline"></a>Tutorial Outline</h1>
+<p><b>Tutorial Outline and Motivation to Bayesian Optimization (5 min)</b></p>
+<ul>
+<li>Machine Learning Hyper-parameter Tuning and Experimental Design as Black-box Function <span style="color:#006699;">[3,14,19]</span></li>
+<li>Bayesian Optimization for Optimizing a Black-box Function  <span style="color:#006699;">[24]</span></li>
+</ul>
+
+<p><b>Part I. Bayesian Optimization (55 mins)</b></p>
+<ul>
+<li>Bayesian Optimization [10 mins] <span style="color:#006699;">[1,4,19,32,33]</span></li>
+<li>Gaussian Processes [5 mins] <span style="color:#006699;">[14,20]</span></li>
+<li>Acquisition Function [10 mins] <span style="color:#006699;">[6,8,16,21,22,23,28]</span></li>
+<li>Illustration of Bayesian Optimization using iPython notebook [5 mins] <span style="color:#006699;"></span></li>
+<li>Convergence Analysis in Bayesian Optimization [5 mins] <span style="color:#006699;">[20,10]</span></li>
+<li>Applications of Bayesian Optimization [10 mins]<span style="color:#006699;">[5,9,11,17, 31]</span></li>
+<li>Question and Answer [10 mins]</li>
+</ul>
+
+<p><b>Part II.1. Recent Advances in Bayesian Optimization - Parallel Bayesian Optimization (15 min)</b></p>
+<ul>
+<li>Introduction and Problem Statements [3 mins]</li>
+<li>Existing Approaches in Batch Bayesian Optimization.<span style="color:#006699;"></span></li>
+<li>Peak Suppression Approaches: Constant Liar, GP-BUCB, Local Penalization [3mins]<span style="color:#006699;">[24,25,26, 27]</span></li>
+<li>Budgeted Batch Bayesian Optimization for Unknown Batch Size [3 mins]<span style="color:#006699;">[13]</span></li>
+<li>Thompson Sampling for Batch Bayesian Optimization [3 mins]<span style="color:#006699;">[30,34]</span></li>
+<li>Asynchronous Batch Bayesian Optimization [3 mins]<span style="color:#006699;">[3,35,36]</span></li>
+</ul>
+
+
+</ul>
+<p><b>Part II.2. Recent Advances in Bayesian Optimization - High Dimensional Bayesian Optimization (15 min)</b></p>
+<ul>
+<li>Introduction and Problem Statements. [3 mins]</li>
+<li>Existing Approaches in High Dimensional Bayesian Optimization.[3 mins]<span style="color:#006699;">[15, 12]</span></li>
+<li>High Dimensional Bayesian Optimization using Low Dimensional Embedding. [3 mins]<span style="color:#006699;">[39]</span></li>
+<li>High Dimensional Bayesian Optimization using Additive Structure. [3 mins] <span style="color:#006699;">[38]</span></li>
+<li>High Dimensional Bayesian Optimization using Local Optimization. [3 mins]<span style="color:#006699;">[37]</span></li>
+</ul>
+
+</ul>
+<p><b>Part II.3. Recent Advances in Bayesian Optimization - Mixed Categorical-Continuous Optimization (20 min)</b></p>
+<ul>
+<li>Introduction and Problem Statements</li>
+<li>Existing Approaches in Mixed Categorical-Continuous Optimization.[5 mins]<span style="color:#006699;"></span></li>
+<li>Multi-armed Bandits [5 mins] </li>
+<li>Categorical-specific Continuous Optimization. [5 mins]<span style="color:#006699;">[19]</span></li>
+<li>Categorical Continuous Optimization. [5 mins]<span style="color:#006699;">[2]</span></li>
+</ul>
+
+<p><b>Future Research Directions and Q&A (20 mins)</b></p>
+<ul>
+<li>Future Research Directions [10 mins]</li>
+<li>Question and Answer [10 mins]</li>
+
+</ul>
+
+<h1><a name="slides"></a>Tutorial Slides</h1>
+<p>Tutorial slides can be downloaded here: <a href="https://www.dropbox.com/">To Be Provided</a></p>
+
+<h1><a name="require"></a>Prerequisites</h1>
+<p>We do not require the audiences to have strong background knowledge on Bayesian modelling. However, we expect the audience already understand some basic concepts and terminologies on artificial intelligence, data mining, and machine learning.</p>
+
+<h1><a name="require"></a>Description of the previous versions of tutorial</h1>
+<p>A shorter version of this tutorial has been delivered at University of Twente (The Netherland), University of Liverpool (UK), University of Glasgow (UK) in June 2020 and Amazon Research in July 2020.</p>
+
+<p>The Gaussian process part and the demo for Bayesian optimization have been taught in class lectures by Dr Vu Nguyen at University of Oxford in Oct 2019.</p>
+
+<p>Different parts of the tutorial are presented by the speaker and his colleagues at ICDM 2016, NIPSW 2016, IJCAI 2017, ICML 2017, ACML 2017, ICDM 2017, ICDM 2018, NeurIPS 2018, ICDM 2019, ICML 2020 respectively.</p>
+<p>
+
+
+<h1><a name="presenter"></a>Presenters</h1>
+<p><a href="https://ntienvu.github.io/index.html">Dr Vu Nguyen</a> is currently a Senior Research Associate at a <a href=www.robots.ox.ac.uk/~parg">Machine Learning Research Group</a> at University of Oxford. 
+He is working with Professor Michael Osborne and Professor Andrew Briggs on a machine learning project for tuning quantum devices using Bayesian optimization and deep reinforcement learning. Previously he was working as a Research Scientist at a Credit AI in Melbourne and was a postdoctoral researcher at Deakin University where he obtained his PhD in 2015. He published regularly at top venues in machine learning. He was the recipient of ACML 2016 best paper award, IEEE ICDM 2017 best papers and one of the 200 young researchers world-wide for attending Heidelberg Laureate Forum 2015.
+He gains expertise on Bayesian Machine Learning and Bayesian Optimization with 20 papers published in premier venues, including ICML, NeurIPS, ICDM, IJCAI, AISTATS and ACML.</p>
+
+<h1><a name="reference"></a>References</h1>
+<ol>
+
+<li><b>V. Nguyen</b>, M. A. Osborne.
+Knowing The What But Not The Where in Bayesian Optimization.
+International Conference on Machine Learning (<i>ICML</i>), 2020.</li>
+
+
+
+<li>B. Ru, AS. Alvi,	<strong>V. Nguyen</strong>, M. A. Osborne, SJ. Roberts.
+Bayesian Optimisation over Multiple Continuous and Categorical Inputs.
+International Conference on Machine Learning (<i>ICML</i>), 2020.</li>
+
+
+
+<li>J. Parker-Holder,  <strong>V. Nguyen</strong>,  SJ. Roberts.
+Provably Efficient Online Hyperparameter Optimization with Population-Based Bandits.
+AutoML workshop at International Conference on Machine Learning (<i>ICML</i>), 2020.</li>
+
+
+<li>J. Berk, S. Gupta, S. Rana, <strong>V. Nguyen</strong>,  S. Venkatesh.
+Bayesian optimisation in unknown bounded search domains.
+<i>Knowledge-Based Systems</i>,  pp. 621-637, Elsevier, 105645, 2020.</li>
+
+
+
+<li><strong>V. Nguyen*</strong>, S. Schulze*, M. A. Osborne.
+Bayesian Optimization for Iterative Learning.
+ <i>Preprint https://arxiv.org/abs/1909.09593</i> 2019.<br>
+
+
+
+<li><b>V. Nguyen</b>, S. Gupta, S. Rana, M. Thai, C. Li, S. Venkatesh. 
+Efficient Bayesian Optimization for Uncertainty Reduction over Perceived Optima Locations.
+Proceedings of the IEEE International Conference on Data Mining (<i>ICDM</i>), pp. 1270-1275, 2019.<br> 
+
+
+
+<li>S. Gopakumar, S. Gupta, S. Rana, <strong>V. Nguyen</strong>, S. Venkatesh.
+Algorithmic Assurance: An Active Approach to Algorithmic Testing using Bayesian Optimisation.
+Advances in Neural Information Processing Systems (<i>NeurIPS</i>), pp. 5470-5478, 2018<br> 
+
+
+
+<li>J. Berk, <strong>V. Nguyen</strong>, S. Gupta, S. Rana, S. Venkatesh.
+Exploration Enhanced Expected Improvement for Bayesian Optimization.
+European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (<i>ECML</i>), pp. 621-637, 2018.<br> 
+
+
+<li><b>V. Nguyen</b>, S. Gupta, S. Rana, C. Li, S. Venkatesh. 
+Filtering Bayesian Optimization Approach in Weakly Specified Search Space.
+Knowledge and Information Systems (<i>KAIS</i>), accepted, 2018.</li>
+
+<li><b>V. Nguyen</b>, S. Gupta, S. Rana, C. Li, S. Venkatesh. 
+Regret for Expected Improvement over the Best-Observed Value and Stopping Condition.
+Asian Conference on Machine Learning (<i>ACML</i>), 2017.</li>
+<li><b>V. Nguyen</b>, S. Gupta, S. Rana, C. Li, S. Venkatesh. 
+Bayesian Optimization in Weakly Specified Search Space.
+IEEE International Conference on Data Mining (<i>ICDM</i>), 2017.</li>
+<li>S. Rana, C. Li, S. Gupta, <b>V. Nguyen</b>, S. Venkatesh.
+High Dimensional Bayesian Optimization with Elastic Gaussian Process.
+International Conference on Machine Learning (<i>ICML</i>), pp 2883-2891, 2017.</li>
+
+<li><b>V. Nguyen</b>, S. Rana, S. K. Gupta, C. Li, S. Venkatesh. 
+Budgeted Batch Bayesian Optimization.
+IEEE International Conference on Data Mining (<i>ICDM</i>), pp 1107-1112, 2016.</li>
+
+<li>T. Le, K. Nguyen, <b>V. Nguyen</b>, T. D. Nguyen, D. Phung. 
+GoGP: Fast Online Regression with Gaussian Processes. 
+IEEE International Conference on Data Mining (<i>ICDM</i>), 2017.</li>
+
+<li>C. Li, S. Gupta, S. Rana, <b>V. Nguyen</b>, S. Venkatesh, A. Shilton. 
+High Dimensional Bayesian Optimization Using Dropout.
+International Joint Conference on Artificial Intelligence (<i>IJCAI</i>), pp 2096-2102, 2017.</li>
+
+
+<li><b>V. Nguyen</b>, S. Gupta, S. Rana, C. Li, & S. Venkatesh. A Bayesian Nonparametric Approach for Multi-label Classification. In Asian Conference on Machine Learning (<i>ACML</i>), pp. 254-269, 2016.</li>
+
+
+<li>S. Gopakumar, S. Gupta, S. Rana, <b>V. Nguyen</b>, & S. Venkatesh. (2018). Algorithmic assurance: 
+An active approach to algorithmic testing using bayesian optimisation. In Advances in Neural Information Processing Systems (<i>NeurIPS</i>) 2018.</li>
+
+
+<li>Srinivas, N., Krause, A., Kakade, S., & Seeger, M. Gaussian process optimization in the
+bandit setting: No regret and experimental design. 
+International Conference on Machine Learning (<i>ICML</i>), pp. 1015–1022, 2010.</li>
+
+<li>Shahriari, B., Swersky, K., Wang, Z., Adams, R. P., & de Freitas, N. Taking the human out
+of the loop: A review of bayesian optimization. Proceedings of the IEEE, 104(1), 148–175, 2016.</li>
+
+<li>Rasmussen, C. E. Gaussian processes for machine learning, 2006.</li>
+
+<li>Mockus, J., Tiesis, V., & Zilinskas, A. The application of bayesian methods for seeking the
+extremum. Towards global optimization, 2(117-129), 2, 1978.</li>
+
+<li>Hernandez-Lobato, J. M., Hoffman, M. W., & Ghahramani, Z. Predictive entropy search
+for efficient global optimization of black-box functions. Advances in Neural Information
+Processing Systems (<i>NIPS</i>), pp. 918–926, 2014.</li>
+
+<li>Hennig, P., & Schuler, C. J. Entropy search for information-efficient global optimization.
+Journal of Machine Learning Research (<i>JMLR</i>), 13, 1809–1837, 2012.
+</li>
+
+<li>Gonzalez, J., Dai, Z., Hennig, P., & Lawrence, N. D. Batch bayesian optimization via local
+penalization. 
+International Conference on Artificial Intelligence
+and Statistics (<i>AISTATS</i>), pp. 648–657, 2016.
+</li>
+
+<li>Ginsbourger, D., Le Riche, R., & Carraro, L. A multi-points criterion for deterministic
+parallel global optimization based on gaussian processes, 2008. </li>
+
+<li>Desautels, T., Krause, A., & Burdick, J. W. Parallelizing exploration-exploitation tradeoffs
+in gaussian process bandit optimization. The Journal of Machine Learning Research (<i>JMLR</i>), 15(1),
+3873–3923, 2014.</li>
+
+<li>Contal, E., Buffoni, D., Robicquet, A., & Vayatis, N. Parallel gaussian process optimization
+with upper confidence bound and pure exploration. In Machine Learning and Knowledge
+Discovery in Databases, pp. 225–240. Springer, 2013.</li>
+
+
+<li>Jones, D. R., Perttunen, C. D., & Stuckman, B. E. Lipschitzian optimization without the
+lipschitz constant. Journal of Optimization Theory and Applications, 79(1), 157–181, 1993.</li>
+
+<li>Shahriari, B., Bouchard-Côté, A., & Freitas, N. Unbounded Bayesian optimization via regularization. International Conference on Artificial Intelligence and Statistics (<i>AISTATS</i>), pp. 1168-1176, 2016.</li>
+
+<li>Rahimi, A. and Recht, B., Random features for large-scale kernel machines. In Advances in neural information processing systems (<i>NIPS</i>), pp. 1177-1184, 2008.</li>
+
+<li>Li, C., de Celis Leal, D.R., Rana, S., Gupta, S., Sutti, A., Greenhill, S., Slezak, T., Height, M. and Venkatesh, S.. Rapid Bayesian optimisation for synthesis of short polymer fiber materials. Scientific reports, 7(1), p.5683, 2017.</li>
+
+<li>Snoek, J., Larochelle, H., & Adams, R. P. Practical bayesian optimization of machine learning algorithms. Advances in neural information processing systems (<i>NIPS</i>), pp. 2951-2959, 2012.
+</li>
+
+<li>Brochu, E., Cora, V. M., & De Freitas, N. A tutorial on Bayesian optimization of expensive cost functions, with application to active user modeling and hierarchical reinforcement learning. arXiv:1012.2599, 2010.
+
+<li> Hernández-Lobato, J. M., Requeima, J., Pyzer-Knapp, E. O., & Aspuru-Guzik, A. Parallel and Distributed Thompson Sampling for Large-scale Accelerated Exploration of Chemical Space. 
+International Conference on Machine Learning (<i>ICML</i>) 2017. </li>
+
+<li> Kandasamy, K., Krishnamurthy, A., Schneider, J., & Póczos, B,.  Parallelised Bayesian Optimisation via Thompson Sampling. 
+International Conference on Artificial Intelligence and Statistics (<i>AISTATS</i>) 2018. </li>
+
+<li>Alvi, A., Ru, B., Calliess, J. P., Roberts, S., & Osborne, M. A. Asynchronous Batch Bayesian Optimisation with Improved Local Penalisation. 
+In International Conference on Machine Learning (<i>ICML</i>) 2019. </li>
+
+<li>Eriksson, D., Pearce, M., Gardner, J., Turner, R. D., & Poloczek, M. (2019). Scalable global optimization via local bayesian optimization. 
+In Advances in Neural Information Processing Systems (<i>NeurIPS</i>) 2019. </li>
+
+<li>Kandasamy, K., Schneider, J., & Póczos, B. High dimensional Bayesian optimisation and bandits via additive models. 
+In International conference on machine learning (<i>ICML</i>) 2015.</li>
+
+<li>Wang, Z., Zoghi, M., Hutter, F., Matheson, D. and De Freitas, N. Bayesian optimization in high dimensions via random embeddings. 
+In Twenty-Third international joint conference on artificial intelligence (<i>IJCAI</i>) 2013. </li>
+
+
+</ol>
+<p>&nbsp;</p>
+
+<!-- Site Meter -->
+<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51pakdd13sss">
+</script>
+<noscript>
+&lt;a href="http://s51.sitemeter.com/stats.asp?site=s51pakdd13sss" target="_top"&gt;
+&lt;img src="http://s51.sitemeter.com/meter.asp?site=s51pakdd13sss" alt="Site Meter" border="0"/&gt;&lt;/a&gt;
+</noscript>
+<!-- Copyright (c)2009 Site Meter -->
+
+
+
+</div>
+
+</div>
+
+
+</body></html>
