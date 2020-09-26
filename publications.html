@@ -160,6 +160,112 @@
   <h3>2020</h3>
 
 
+
+  <div class="media">
+  <a class="pull-left thumbnail" href="">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+<strong>V. Nguyen</strong>, V. Masrani, R. Brekelmans, M. A. Osborne, F. Wood  <br>
+	    <strong>Gaussian Process Bandit Optimization of the Thermodynamic Variational Objective
+</strong><br>
+         <i>Neural Information Processing Systems</i> (<strong>NeurIPS</strong>), accepted, 2020.<br>
+       
+	  
+      <a data-toggle="modal" href="#abstractTVO" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractP2BT" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Gaussian Process Bandit Optimization of the Thermodynamic Variational Objective
+</h4>
+            </div>
+            <div class="modal-body">
+			Achieving the full promise of the Thermodynamic Variational Objective (TVO), a recently proposed variational inference objective that lower-bounds the log evidence via one-dimensional Riemann integration, requires choosing a ``schedule'' of sorted discretization points. This paper introduces a bespoke Gaussian process bandit optimization method for automatically choosing these points. Our approach not only automates their one-time selection, but also dynamically adapts their positions over the course of optimization, leading to improved model learning and inference. We provide theoretical guarantees that our bandit optimization converges to the regret-minimizing choice of integration points. Empirical validation of our algorithm is provided in terms of improved learning and inference in Variational Autoencoders and sigmoid belief networks.
+          </div><!-- /.modal-content -->
+
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+
+  </div>
+</div>
+
+
+
+				  <br>
+
+
+  <div class="media">
+  <a class="pull-left thumbnail" href="">
+    <img src="./img/paper/boil.PNG" alt="" width="140" height="100">
+  </a>
+  <div class="media-body">
+ <strong>V. Nguyen*</strong>, S. Schulze*, M. A. Osborne  <br>
+	    <strong>Bayesian Optimisation for Iterative Learning
+</strong><br>
+         <i>Neural Information Processing Systems</i> (<strong>NeurIPS</strong>), accepted, 2020.<br>
+         <i>7th AutoML Workshop at International Conference on Machine Learning</i> (<strong>ICML</strong>), 2020.<br>
+				  
+      <a data-toggle="modal" href="#abstractBOIL" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractBOIL" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Bayesian Optimization for Iterative Learning
+</h4>
+            </div>
+            <div class="modal-body">
+The success of deep (reinforcement) learning systems crucially depends on the correct choice of hyperparameters which are notoriously sensitive and expensive to evaluate. Training these systems typically requires running iterative processes over multiple epochs or episodes. Traditional approaches only consider final performances of a hyperparameter although intermediate information from the learning curve is readily available. In this paper, we present a Bayesian optimization approach which exploits the iterative structure of learning algorithms for efficient hyperparameter tuning. First, we transform each training curve into a numeric score. Second, we selectively augment the data using the auxiliary information from the curve. This augmentation step enables modeling efficiency while preventing the ill-conditioned issue of Gaussian process covariance matrix happened when adding the whole curve. We demonstrate the efficiency of our algorithm by tuning hyperparameters for the training of deep reinforcement learning agents and convolutional neural networks. Our algorithm outperforms all existing baselines in identifying optimal hyperparameters in minimal time.
+</div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  <a href="https://arxiv.org/abs/1909.09593" class="label label-info">PDF</a>
+		<a href="https://slideslive.com/38930629/bayesian-optimization-for-iterative-learning" class="label label-danger">Talk</a>
+
+  </div>
+</div>
+
+
+
+  <div class="media">
+  <a class="pull-left thumbnail" href="">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+ J. Parker-Holder, <strong>V. Nguyen</strong>, S. Roberts  <br>
+	    <strong>Provably Efficient Online Hyperparameter Optimization with Population-Based Bandits
+</strong><br>
+         <i>Neural Information Processing Systems</i> (<strong>NeurIPS</strong>), accepted, 2020.<br>
+         <i>7th AutoML Workshop at International Conference on Machine Learning</i> (<strong>ICML</strong>), 2020.<br>
+				  
+      <a data-toggle="modal" href="#abstractP2BT" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractP2BT" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Provably Efficient Online Hyperparameter Optimization with Population-Based Bandits
+</h4>
+            </div>
+            <div class="modal-body">
+Selecting optimal hyperparameters is a key challenge in machine learning. A recent approach to this problem (PBT) showed it is possible to achieve impressive performance by updating both weights and hyperparameters in a single training run of a population of agents. Despite it's success, PBT relies on heuristics to explore the hyperparameter space, thus lacks theoretical guarantees, requires vast computational resources and often suffers from mode collapse when this is not available. In this work we introduce Population-Based Bandits (PB2), the first provably efficient PBT-style algorithm. PB2 uses a probabilistic model to balance exploration and exploitation, thus it is able to discover high performing hyperparameter configurations with far fewer agents than typically required by PBT.</div>
+          </div><!-- /.modal-content -->
+
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  <a href="https://arxiv.org/pdf/2002.02518.pdf" class="label label-info">PDF</a>
+	  		  <a href="https://github.com/jparkerholder/PB2" class="label label-success">Code</a>
+		<a href="https://slideslive.com/38930622/provably-efficient-online-hyperparameter-optimization-via-populationbased-bandits" class="label label-danger">Contributed Talk [3% selected]</a>
+
+	  
+  </div>
+</div>
+
+
+
   <div class="media">
   <a class="pull-left thumbnail" href="">
     <img src="./img/paper/icml20_kov.PNG" alt="" width="140" height="100">
@@ -237,75 +343,6 @@
 </div>
 
   
-  <div class="media">
-  <a class="pull-left thumbnail" href="">
-    <img src="./img/paper/rsz_global_optimization.png" alt="">
-  </a>
-  <div class="media-body">
- J. Parker-Holder, <strong>V. Nguyen</strong>, S. Roberts  <br>
-	    <strong>Provably Efficient Online Hyperparameter Optimization with Population-Based Bandits
-</strong><br>
-
-         <i>7th AutoML Workshop at International Conference on Machine Learning</i> (<strong>ICML</strong>), 2020.<br>
-				  
-      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractP2BT" class="label label-default">Abstract</a>
-      <!-- Modal -->
-      <div class="modal fade" id="abstractP2BT" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h4 class="modal-title">Provably Efficient Online Hyperparameter Optimization with Population-Based Bandits
-</h4>
-            </div>
-            <div class="modal-body">
-Selecting optimal hyperparameters is a key challenge in machine learning. A recent approach to this problem (PBT) showed it is possible to achieve impressive performance by updating both weights and hyperparameters in a single training run of a population of agents. Despite it's success, PBT relies on heuristics to explore the hyperparameter space, thus lacks theoretical guarantees, requires vast computational resources and often suffers from mode collapse when this is not available. In this work we introduce Population-Based Bandits (PB2), the first provably efficient PBT-style algorithm. PB2 uses a probabilistic model to balance exploration and exploitation, thus it is able to discover high performing hyperparameter configurations with far fewer agents than typically required by PBT.</div>
-          </div><!-- /.modal-content -->
-
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal --> 
-	  <a href="https://arxiv.org/pdf/2002.02518.pdf" class="label label-info">PDF</a>
-	  		  <a href="https://github.com/jparkerholder/PB2" class="label label-success">Code</a>
-		<a href="https://slideslive.com/38930622/provably-efficient-online-hyperparameter-optimization-via-populationbased-bandits" class="label label-danger">Contributed Talk [3% selected]</a>
-
-	  
-  </div>
-</div>
-
-
-
-  <div class="media">
-  <a class="pull-left thumbnail" href="">
-    <img src="./img/paper/boil.PNG" alt="" width="140" height="100">
-  </a>
-  <div class="media-body">
- <strong>V. Nguyen*</strong>, S. Schulze*, M. A. Osborne  <br>
-	    <strong>Bayesian Optimisation for Iterative Learning
-</strong><br>
-
-         <i>7th AutoML Workshop at International Conference on Machine Learning</i> (<strong>ICML</strong>), 2020.<br>
-				  
-      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractBOIL" class="label label-default">Abstract</a>
-      <!-- Modal -->
-      <div class="modal fade" id="abstractBOIL" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h4 class="modal-title">Bayesian Optimization for Iterative Learning
-</h4>
-            </div>
-            <div class="modal-body">
-The success of deep (reinforcement) learning systems crucially depends on the correct choice of hyperparameters which are notoriously sensitive and expensive to evaluate. Training these systems typically requires running iterative processes over multiple epochs or episodes. Traditional approaches only consider final performances of a hyperparameter although intermediate information from the learning curve is readily available. In this paper, we present a Bayesian optimization approach which exploits the iterative structure of learning algorithms for efficient hyperparameter tuning. First, we transform each training curve into a numeric score. Second, we selectively augment the data using the auxiliary information from the curve. This augmentation step enables modeling efficiency while preventing the ill-conditioned issue of Gaussian process covariance matrix happened when adding the whole curve. We demonstrate the efficiency of our algorithm by tuning hyperparameters for the training of deep reinforcement learning agents and convolutional neural networks. Our algorithm outperforms all existing baselines in identifying optimal hyperparameters in minimal time.
-</div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal --> 
-	  <a href="https://arxiv.org/abs/1909.09593" class="label label-info">PDF</a>
-		<a href="https://slideslive.com/38930629/bayesian-optimization-for-iterative-learning" class="label label-danger">Talk</a>
-
-
-	  
-  </div>
-</div>
 
 
 
@@ -318,7 +355,7 @@ The success of deep (reinforcement) learning systems crucially depends on the co
 	    <strong>Quantum device fine-tuning using unsupervised embedding learning
 </strong><br>
 
-         The New Journal of Physics 2020.<br>
+         New Journal of Physics 2020.<br>
 				  
       <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractQuantumVAE" class="label label-default">Abstract</a>
       <!-- Modal -->
