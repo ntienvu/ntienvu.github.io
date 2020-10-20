@@ -1,7 +1,6 @@
-# KnowingOptimumValue_BO
-Release code for ICML2020 Knowing The What But Not The Where in Bayesian Optimization
-
-Copyright by the authors.
+# MiniBayesOpt
+Mini Bayesian Optimization package at ACML2020 Tutorial on Bayesian Optimization
+Copyright by Dr Vu Nguyen.
 
 
 # Visualization
@@ -45,5 +44,5 @@ Visit https://proceedings.icml.cc/static/paper_files/icml/2020/2351-Paper.pdf
 
 # Reference
 ```
-Vu Nguyen and Michael A. Osborne.  "Knowing the what but not the where in Bayesian optimization." International Conference on Machine Learning (ICML), 2020.
+Vu Nguyen.  "Tutorial on Recent Advances in Bayesian Optimization" Asian Conference on Machine Learning (ACML), 2020.
 ```
