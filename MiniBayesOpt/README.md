@@ -2,15 +2,17 @@
 Mini Bayesian Optimization package at ACML2020 Tutorial on Bayesian Optimization
 Copyright by Dr Vu Nguyen.
 
+# Website: http://vu-nguyen.org/BOTutorial_ACML20.html
 
-# Visualization
+# Demo and Visualization in 1d and 2d
 ```
-demo_visualization_knowing_the_what.....ipynb
+demo_1dimension_BO.ipynb
+demo_2dimension_BO.ipynb
 ```
 
-# Running the algorithms in benchmark functions
+# Demo and Visualization for batch BO
 ```
-demo_on_benchmark_functions.ipynb
+demo_batch_BO.ipynb
 ```
 
 # Customize your own black-box function
@@ -18,19 +20,11 @@ demo_on_benchmark_functions.ipynb
 demo_customize_your_own_function.ipynb
 ```
 
-# Running the comparison using the baselines in benchmark functions
-```
-run_all_benchmark_functions.py
-```
-
-After running these scripts to reproduce experiments, the results will be stored as pickles files in "pickle_storage" folder.
-Then, we can plot all the results using scripts in the "plot" folder.
-
 # Dependencies
-* numpy
-* scipy
-* matplotlib
-
+* numpy=1.9.0
+* scipy=0.14.0
+* scikit-learn=0.16.1
+* tabulate=0.8.7
 
 # Error with scipy=1.15
 ```
@@ -38,8 +32,8 @@ ValueError: `f0` passed has more than 1 dimension.
 ```
 If this is the case, please downgrade to scipy=1.14.1
 
-# Paper and Presentation
-Visit https://proceedings.icml.cc/static/paper_files/icml/2020/2351-Paper.pdf
+# Slides and Presentation
+Visit http://vu-nguyen.org/BOTutorial_ACML20.html
 
 
 # Reference
