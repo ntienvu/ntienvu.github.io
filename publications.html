@@ -725,6 +725,89 @@ baselines with a significant margin.
   <h3>2017</h3>
 
 
+<div class="media">
+  <a class="pull-left thumbnail" href="http://proceedings.mlr.press/v70/rana17a/rana17a.pdf">
+    <img src="./img/paper/elastic_gp.PNG" alt="" width="140" height="100">
+  </a>
+  <div class="media-body">
+    S. Rana, C. Li, S. Gupta, <strong>V. Nguyen</strong>, S. Venkatesh <br>
+	    <strong>High Dimensional Bayesian Optimization with Elastic Gaussian Process</strong><br>
+
+         <i>Proceedings of the 34th International Conference on Machine Learning</i>, (<strong>ICML</strong>), pp 2883-2891,   2017.<br>
+
+      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractICML17" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractICML17" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">High Dimensional Bayesian Optimization with Elastic Gaussian Process</h4>
+            </div>
+            <div class="modal-body">
+			Bayesian optimization is an efficient way to optimize expensive black-box functions such as designing a new product with highest quality or hyperparameter tuning of a machine learning algorithm. However, it has a serious limitation when the parameter space is high-dimensional as Bayesian optimization crucially depends on solving a global optimization of a surrogate utility function in the same sized dimensions. The surrogate utility function, known commonly as acquisition function is a continuous function but can be extremely sharp at high dimension - having only a few peaks marooned in a large terrain of almost flat surface. Global optimization algorithms such as DIRECT are infeasible at higher dimensions and gradient-dependent methods cannot move if initialized in the flat terrain. We propose an algorithm that enables local gradient-dependent algorithms to move through the flat terrain by using a sequence of gross-to-finer Gaussian process priors on the objective function as we leverage two underlying facts - a) there exists a large enough length-scales for which the acquisition function can be made to have a significant gradient at any location in the parameter space, and b) the extrema of the consecutive acquisition functions are close although they are different only due to a small difference in the length-scales. Theoretical guarantees are provided and experiments clearly demonstrate the utility of the proposed method at high dimension using both benchmark test functions and real-world case studies.
+</div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  	  	  	  	  	          <a href="http://proceedings.mlr.press/v70/rana17a/rana17a.pdf" class="label label-info">PDF</a>
+
+  </div>
+</div>
+
+
+
+<div class="media">
+  <a class="pull-left thumbnail" href="http://www.jmlr.org/papers/v18/16-191.html">
+    <img src="./img/paper/avm.PNG" alt="" width="140" height="100">
+  </a>
+  <div class="media-body">
+    T. Le, T. D Nguyen, <strong>V. Nguyen</strong>, D. Phung, <br>
+	    <strong>Approximation Vector Machines for Large-scale Online Learning</strong><br>
+
+                   <i>Journal of Machine Learning Research</i>, (<strong>JMLR</strong>), 2017.<br>
+				  
+      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractJMLR17" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractJMLR17" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Approximation Vector Machines for Large-scale Online Learning</h4>
+            </div>
+            <div class="modal-body">
+			One of the most challenging problems in kernel online learning is to bound the model size
+and to promote model sparsity. Sparse models not only improve computation and memory
+usage, but also enhance the generalization capacity – a principle that concurs with the law
+of parsimony. However, inappropriate sparsity modeling may also significantly degrade the
+performance. In this paper, we propose Approximation Vector Machine (AVM), a model
+that can simultaneously encourage sparsity and safeguard its risk in compromising the performance.
+In an online setting context, when an incoming instance arrives, we approximate
+this instance by one of its neighbors whose distance to it is less than a predefined threshold.
+Our key intuition is that since the newly seen instance is expressed by its nearby neighbor
+the optimal performance can be analytically formulated and maintained. We develop
+theoretical foundations to support this intuition and further establish an analysis for the
+common loss functions including Hinge, smooth Hinge, and Logistic (i.e., for the classifi-
+cation task) and `1, `2, and ε-insensitive (i.e., for the regression task) to characterize the
+gap between the approximation and optimal solutions. This gap crucially depends on two
+key factors including the frequency of approximation (i.e., how frequent the approximation
+operation takes place) and the predefined threshold. We conducted extensive experiments
+for classification and regression tasks in batch and online modes using several benchmark
+datasets. The quantitative results show that our proposed AVM obtained comparable predictive
+performances with current state-of-the-art methods while simultaneously achieving
+significant computational speed-up due to the ability of the proposed AVM in maintaining
+the model size.
+</div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+		  <a href="http://www.jmlr.org/papers/volume18/16-191/16-191.pdf" class="label label-info">PDF</a>
+			  <a href="https://github.com/ntienvu/avm" class="label label-success">Code</a>
+
+
+  </div>
+</div>
+
+
 
 <div class="media">
   <a class="pull-left thumbnail" href="http://proceedings.mlr.press/v77/nguyen17a/nguyen17a.pdf">
@@ -875,87 +958,7 @@ More importantly, its convergence behavior is guaranteed through our theoretical
   </div>
 </div>
 
-<div class="media">
-  <a class="pull-left thumbnail" href="http://www.jmlr.org/papers/v18/16-191.html">
-    <img src="./img/paper/avm.PNG" alt="" width="140" height="100">
-  </a>
-  <div class="media-body">
-    T. Le, T. D Nguyen, <strong>V. Nguyen</strong>, D. Phung, <br>
-	    <strong>Approximation Vector Machines for Large-scale Online Learning</strong><br>
 
-                   <i>Journal of Machine Learning Research</i>, (<strong>JMLR</strong>), 2017.<br>
-				  
-      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractJMLR17" class="label label-default">Abstract</a>
-      <!-- Modal -->
-      <div class="modal fade" id="abstractJMLR17" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h4 class="modal-title">Approximation Vector Machines for Large-scale Online Learning</h4>
-            </div>
-            <div class="modal-body">
-			One of the most challenging problems in kernel online learning is to bound the model size
-and to promote model sparsity. Sparse models not only improve computation and memory
-usage, but also enhance the generalization capacity – a principle that concurs with the law
-of parsimony. However, inappropriate sparsity modeling may also significantly degrade the
-performance. In this paper, we propose Approximation Vector Machine (AVM), a model
-that can simultaneously encourage sparsity and safeguard its risk in compromising the performance.
-In an online setting context, when an incoming instance arrives, we approximate
-this instance by one of its neighbors whose distance to it is less than a predefined threshold.
-Our key intuition is that since the newly seen instance is expressed by its nearby neighbor
-the optimal performance can be analytically formulated and maintained. We develop
-theoretical foundations to support this intuition and further establish an analysis for the
-common loss functions including Hinge, smooth Hinge, and Logistic (i.e., for the classifi-
-cation task) and `1, `2, and ε-insensitive (i.e., for the regression task) to characterize the
-gap between the approximation and optimal solutions. This gap crucially depends on two
-key factors including the frequency of approximation (i.e., how frequent the approximation
-operation takes place) and the predefined threshold. We conducted extensive experiments
-for classification and regression tasks in batch and online modes using several benchmark
-datasets. The quantitative results show that our proposed AVM obtained comparable predictive
-performances with current state-of-the-art methods while simultaneously achieving
-significant computational speed-up due to the ability of the proposed AVM in maintaining
-the model size.
-</div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal --> 
-		  <a href="http://www.jmlr.org/papers/volume18/16-191/16-191.pdf" class="label label-info">PDF</a>
-			  <a href="https://github.com/ntienvu/avm" class="label label-success">Code</a>
-
-
-  </div>
-</div>
-
-
-
-<div class="media">
-  <a class="pull-left thumbnail" href="http://proceedings.mlr.press/v70/rana17a/rana17a.pdf">
-    <img src="./img/paper/elastic_gp.PNG" alt="" width="140" height="100">
-  </a>
-  <div class="media-body">
-    S. Rana, C. Li, S. Gupta, <strong>V. Nguyen</strong>, S. Venkatesh <br>
-	    <strong>High Dimensional Bayesian Optimization with Elastic Gaussian Process</strong><br>
-
-         <i>Proceedings of the 34th International Conference on Machine Learning</i>, (<strong>ICML</strong>), pp 2883-2891,   2017.<br>
-
-      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractICML17" class="label label-default">Abstract</a>
-      <!-- Modal -->
-      <div class="modal fade" id="abstractICML17" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h4 class="modal-title">High Dimensional Bayesian Optimization with Elastic Gaussian Process</h4>
-            </div>
-            <div class="modal-body">
-			Bayesian optimization is an efficient way to optimize expensive black-box functions such as designing a new product with highest quality or hyperparameter tuning of a machine learning algorithm. However, it has a serious limitation when the parameter space is high-dimensional as Bayesian optimization crucially depends on solving a global optimization of a surrogate utility function in the same sized dimensions. The surrogate utility function, known commonly as acquisition function is a continuous function but can be extremely sharp at high dimension - having only a few peaks marooned in a large terrain of almost flat surface. Global optimization algorithms such as DIRECT are infeasible at higher dimensions and gradient-dependent methods cannot move if initialized in the flat terrain. We propose an algorithm that enables local gradient-dependent algorithms to move through the flat terrain by using a sequence of gross-to-finer Gaussian process priors on the objective function as we leverage two underlying facts - a) there exists a large enough length-scales for which the acquisition function can be made to have a significant gradient at any location in the parameter space, and b) the extrema of the consecutive acquisition functions are close although they are different only due to a small difference in the length-scales. Theoretical guarantees are provided and experiments clearly demonstrate the utility of the proposed method at high dimension using both benchmark test functions and real-world case studies.
-</div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal --> 
-	  	  	  	  	  	          <a href="http://proceedings.mlr.press/v70/rana17a/rana17a.pdf" class="label label-info">PDF</a>
-
-  </div>
-</div>
 
 
 
@@ -1059,6 +1062,57 @@ optimizing alloy composition
   <h3>2016 and before</h3>
 
 
+
+<div class="media">
+  <a class="pull-left thumbnail" href="https://papers.nips.cc/paper/6560-dual-space-gradient-descent-for-online-learning.pdf">
+    <img src="./img/paper/NIPS2016.png" alt="">
+  </a>
+  <div class="media-body">
+    T. Le, T.D. Nguyen,<strong>V. Nguyen</strong>, D. Phung  <br>
+	    <strong>Dual Space Gradient Descent for Online Learning</strong><br>
+
+         <i>Advances in Neural Information Processing Systems</i>, (<strong>NIPS</strong>),  pp 4583-4591,    2016.<br>
+				  
+      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractNIPS" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractNIPS" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Dual Space Gradient Descent for Online Learning</h4>
+            </div>
+            <div class="modal-body">
+			One crucial goal in kernel online learning is to bound the model size. Common
+approaches employ budget maintenance procedures to restrict the model sizes using
+removal, projection, or merging strategies. Although projection and merging, in the
+literature, are known to be the most effective strategies, they demand extensive com
+putation whilst removal strategy fails to retain information of the removed vectors.
+An alternative way to address the model size problem is to apply random features
+to approximate the kernel function. This allows the model to be maintained directly
+in the random feature space, hence effectively resolve the curse of kernelization.
+However, this approach still suffers from a serious shortcoming as it needs to use a
+high dimensional random feature space to achieve a sufficiently accurate kernel
+ approximation. Consequently, it leads to a significant increase in the computational
+ cost. To address all of these aforementioned challenges, we present in this paper
+ the Dual Space Gradient Descent (DualSGD), a novel framework that utilizes
+ random features as an auxiliary space to maintain information from data points
+ removed during budget maintenance. Consequently, our approach permits the
+budget to be maintained in a simple, direct and elegant way while simultaneously
+ mitigating the impact of the dimensionality issue on learning performance. We
+ further provide convergence analysis and extensively conduct experiments on five
+ real-world datasets to demonstrate the predictive performance and scalability of
+ our proposed method in comparison with the state-of-the-art baselines.
+</div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  
+	          <a href="https://papers.nips.cc/paper/6560-dual-space-gradient-descent-for-online-learning.pdf" class="label label-info">PDF</a>
+		  <a href="https://github.com/tund/dsgd" class="label label-success">Code</a>
+
+			  
+	    </div>
+</div>
 
 
 
@@ -1225,57 +1279,6 @@ of big data cross-validation to select optimal hyperparameters.
 
 
 
-
-<div class="media">
-  <a class="pull-left thumbnail" href="https://papers.nips.cc/paper/6560-dual-space-gradient-descent-for-online-learning.pdf">
-    <img src="./img/paper/NIPS2016.png" alt="">
-  </a>
-  <div class="media-body">
-    T. Le, T.D. Nguyen,<strong>V. Nguyen</strong>, D. Phung  <br>
-	    <strong>Dual Space Gradient Descent for Online Learning</strong><br>
-
-         <i>Advances in Neural Information Processing Systems</i>, (<strong>NIPS</strong>),  pp 4583-4591,    2016.<br>
-				  
-      <a data-toggle="modal" href="http://prada-research.net/~tienvu/#abstractNIPS" class="label label-default">Abstract</a>
-      <!-- Modal -->
-      <div class="modal fade" id="abstractNIPS" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h4 class="modal-title">Dual Space Gradient Descent for Online Learning</h4>
-            </div>
-            <div class="modal-body">
-			One crucial goal in kernel online learning is to bound the model size. Common
-approaches employ budget maintenance procedures to restrict the model sizes using
-removal, projection, or merging strategies. Although projection and merging, in the
-literature, are known to be the most effective strategies, they demand extensive com
-putation whilst removal strategy fails to retain information of the removed vectors.
-An alternative way to address the model size problem is to apply random features
-to approximate the kernel function. This allows the model to be maintained directly
-in the random feature space, hence effectively resolve the curse of kernelization.
-However, this approach still suffers from a serious shortcoming as it needs to use a
-high dimensional random feature space to achieve a sufficiently accurate kernel
- approximation. Consequently, it leads to a significant increase in the computational
- cost. To address all of these aforementioned challenges, we present in this paper
- the Dual Space Gradient Descent (DualSGD), a novel framework that utilizes
- random features as an auxiliary space to maintain information from data points
- removed during budget maintenance. Consequently, our approach permits the
-budget to be maintained in a simple, direct and elegant way while simultaneously
- mitigating the impact of the dimensionality issue on learning performance. We
- further provide convergence analysis and extensively conduct experiments on five
- real-world datasets to demonstrate the predictive performance and scalability of
- our proposed method in comparison with the state-of-the-art baselines.
-</div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal --> 
-	  
-	          <a href="https://papers.nips.cc/paper/6560-dual-space-gradient-descent-for-online-learning.pdf" class="label label-info">PDF</a>
-		  <a href="https://github.com/tund/dsgd" class="label label-success">Code</a>
-
-			  
-	    </div>
-</div>
 
 
 
@@ -1584,7 +1587,7 @@ A rarity score for each factor is computed, and ordered in decreasing order of r
       </div>
       <footer class="text-center text-muted">
         <hr>
-        Last updated Oct 17, 2020.<br>
+        Last updated Nov 17, 2020.<br>
 	Based on the code of 
         <a href="https://github.com/alopez/alopez.github.com">Adam Lopez</a>.<br>
         Created with 
