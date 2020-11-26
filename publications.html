@@ -213,8 +213,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h4 class="modal-title">Bayesian Optimization for Iterative Learning
-</h4>
+              <h4 class="modal-title">Bayesian Optimization for Iterative Learning</h4>
             </div>
             <div class="modal-body">
 The success of deep (reinforcement) learning systems crucially depends on the correct choice of hyperparameters which are notoriously sensitive and expensive to evaluate. Training these systems typically requires running iterative processes over multiple epochs or episodes. Traditional approaches only consider final performances of a hyperparameter although intermediate information from the learning curve is readily available. In this paper, we present a Bayesian optimization approach which exploits the iterative structure of learning algorithms for efficient hyperparameter tuning. First, we transform each training curve into a numeric score. Second, we selectively augment the data using the auxiliary information from the curve. This augmentation step enables modeling efficiency while preventing the ill-conditioned issue of Gaussian process covariance matrix happened when adding the whole curve. We demonstrate the efficiency of our algorithm by tuning hyperparameters for the training of deep reinforcement learning agents and convolutional neural networks. Our algorithm outperforms all existing baselines in identifying optimal hyperparameters in minimal time.
@@ -223,6 +222,7 @@ The success of deep (reinforcement) learning systems crucially depends on the co
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal --> 
 	  <a href="https://arxiv.org/abs/1909.09593" class="label label-info">PDF</a>
+	  		  <a href="https://github.com/ntienvu/BOIL" class="label label-success">Code</a>
 		<a href="https://slideslive.com/38930629/bayesian-optimization-for-iterative-learning" class="label label-danger">Talk</a>
 
   </div>
@@ -1587,7 +1587,7 @@ A rarity score for each factor is computed, and ordered in decreasing order of r
       </div>
       <footer class="text-center text-muted">
         <hr>
-        Last updated Nov 17, 2020.<br>
+        Last updated Nov 27, 2020.<br>
 	Based on the code of 
         <a href="https://github.com/alopez/alopez.github.com">Adam Lopez</a>.<br>
         Created with 
