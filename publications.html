@@ -326,7 +326,47 @@ Our method uses these proposals to make selections on both the categorical and c
 </div>
 </div>
 
-  
+
+
+
+<div class="media">
+  <a class="pull-left thumbnail" href="https://openreview.net/forum?id=xWrtiJwJj5">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+
+ T. Bach, A. Tong, S. Hy, <strong>V. Nguyen</strong>, T. Nguyen  <br>
+	    <strong> Global Contrastive Learning for Long-Tailed Classification</strong><br>
+		
+		<i>Transactions on Machine Learning Research (<strong>TMLR</strong>), 2023.<br></i> 
+				  
+      <a data-toggle="modal" href="#abstractCSA" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractCSA" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+	    
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Global Contrastive Learning for Long-Tailed Classification</h4>
+            </div>
+            <div class="modal-body">
+We consider the long-tailed classification problem in which a few classes in the training data dominate the majority of the other classes. For concreteness, we focus on the visual domain in this paper. Most current methods employ contrastive learning to learn a representation for long-tailed data. In this paper, first, we investigate 
+-positive sampling, a popular baseline method widely used to build contrastive learning models for imbalanced data. Previous works show that 
+-positive learning, which only chooses 
+ positive samples (instead of all positive images) for each query image, suffers from inferior performance in long-tailed data. In this work, we further point out that k-positive learning limits the learning capability of both head and tail classes.  Based on this perspective, we propose a novel contrastive learning framework that improves the limitation in k-positive learning by enlarging its positive selection space, so it can help the model learn more semantic discrimination features. Second, we analyze how the temperature (the hyperparameter used for tuning a concentration of samples on feature space) affects the gradients of each class in long-tailed learning, and propose a new method that can mitigate inadequate gradients between classes, which can help model learning easier. We name this framework as CoGloAT. Finally, we go on to introduce a new prototype learning framework namely ProCo based on coreset selection, which creates a global prototype for each cluster while keeping the computation cost within a reasonable time and show that combining CoGloAT with ProCo can further enhance the model learning ability on long-tailed data.
+				</div>
+			</div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  <a href="https://openreview.net/pdf?id=xWrtiJwJj5" class="label label-info">PDF</a>
+
+
+	  
+</div>
+</div>
+
+
+
   
   <h3>2022</h3>
   
