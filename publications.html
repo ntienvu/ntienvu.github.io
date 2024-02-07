@@ -193,18 +193,50 @@
 
 
 
-  <h2>Patent</h2>
+  <h2>Patents</h2>
   
+    
+
+  <div class="media">
+  <a class="pull-left thumbnail" href=" ">
+    <img src="./img/paper/patent.jpg" alt="">
+  </a>
+  <div class="media-body">
+ 	H. Phan, B. Kim, A. Bydlon, Q. Tang, C. Kao, C. Wang, <strong>V. Nguyen</strong> <br>
+	    <strong>Acoustic Event Detection.</strong><br>
+	   <i>P84022-US01</i> <br>
+				  
+      <!-- Modal -->
+      <div class="modal fade" id="abstractLungBO" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Acoustic Event Detection</h4>
+            </div>
+            <div class="modal-body">
+	
+</div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  	  <a href=" " class="label label-info">Page</a>
+
+  </div>
+</div>
+
+
+
+
+
   
   <div class="media">
   <a class="pull-left thumbnail" href="https://www.psy.ox.ac.uk/research/cohen-kadosh-laboratory/news/roi-cohen-kadosh-and-hannah-maslen-discuss-cognitive-enhancement-devices">
-    <img src="./img/paper/rsz_global_optimization.png" alt="">
+    <img src="./img/paper/patent.jpg" alt="">
   </a>
   <div class="media-body">
  	Roi Cohen Kadosh, Tom Reed, <strong>V. Nguyen</strong>, and Nienke van Bueren<br>
 	    <strong>Method for obtaining personalized parameters for transcranial stimulation, transcranial system, method of applying transcranial stimulation.</strong><br>
 	   <i>UK Patent Application Number 2000874.4</i> <br>
-
 				  
       <!-- Modal -->
       <div class="modal fade" id="abstractLungBO" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
@@ -222,15 +254,92 @@
       </div><!-- /.modal --> 
 	  	  <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2021148787" class="label label-info">Page</a>
 
-
 	  
   </div>
 </div>
+
+
 
   
     <h2>Publications</h2>
 	
 	
+  <h3>2024</h3>
+  
+  
+  
+  <div class="media">
+  <a class="pull-left thumbnail" href=" ">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+
+M. Adachi, S. Hayakawa, M. Jørgensen, X. Wan,  <strong>V. Nguyen</strong>, H. Oberhauser, M.A. Osborne  <br>
+	    <strong>Adaptive Batch Sizes in Active Learning: A Probabilistic Numerics Approach</strong><br>
+		
+		<i>International Conference on Artificial Intelligence and Statistics</i> (<strong>AISTATS</strong>), 2024.<br></i> 
+				  
+      <a data-toggle="modal" href="#abstractCSA" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractCSA" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+	    
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Adaptive Batch Sizes in Active Learning: A Probabilistic Numerics Approach</h4>
+            </div>
+            <div class="modal-body">
+Active learning parallelization is widely used, but typically relies on fixing the batch size throughout experimentation. This fixed approach is inefficient because of a dynamic trade-off between cost and speed---larger batches are more costly, smaller batches lead to slower wall-clock run-times---and the trade-off may change over the run (larger batches are often preferable earlier). To address this trade-off, we propose a novel Probabilistic Numerics framework that adaptively changes batch sizes.
+We define batch construction as a \emph{quantization} task---a task of approximating a continuous target distribution (e.g. acquisition function), with a discrete distribution (batch samples). We measure the batch quality through the divergence between these two distributions. Instead of a set batch size, we fix the \emph{precision} of approximation, allowing dynamic adjustment of batch size and query locations. We also extend this to scenarios with probabilistic constraints, interpreting constraint violations as reductions in the precision requirement, to subsequently adapt batch construction.
+Through extensive experiments, we demonstrate that our approach significantly enhances learning efficiency and flexibility in diverse Bayesian batch active learning and optimization applications.
+				</div>
+			</div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  <a href=" " class="label label-info">PDF</a>
+
+</div>
+</div>
+
+
+
+
+
+  
+  <div class="media">
+  <a class="pull-left thumbnail" href="https://www.amazon.science/publications/high-dimensional-bayesian-optimization-via-covariance-matrix-adaptation-strategy">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+
+L. Ngo, H. Ha, J. Chan, <strong>V. Nguyen</strong>, H. Zhang  <br>
+	    <strong>High-dimensional bayesian optimization via covariance matrix adaptation strategy</strong><br>
+		
+		<i>Transactions on Machine Learning Research</i> (<strong>TMLR</strong>), 2024.<br>
+				  
+      <a data-toggle="modal" href="#abstractCSA" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractCSA" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+	    
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">High-dimensional bayesian optimization via covariance matrix adaptation strategy</h4>
+            </div>
+            <div class="modal-body">
+Bayesian Optimization (BO) is an effective method for finding the global optimum of expensive black-box functions. However, it is well known that applying BO to high-dimensional optimization problems is challenging. To address this issue, a promising solution is to use a local search strategy that partitions the search domain into local regions with high likelihood of containing the global optimum, and then use BO to optimize the objective function within these regions. In this paper, we propose a novel technique for defining the local regions using the Covariance Matrix Adaptation (CMA) strategy. Specifically, we use CMA to learn a search distribution that can estimate the probabilities of data points being the global optimum of the objective function. Based on this search distribution, we then define the local regions consisting of data points with high probabilities of being the global optimum. Our approach serves as a meta-algorithm as it can incorporate existing black-box BO optimizers, such as BO, TuRBO (Eriksson et al., 2019), and BAxUS (Papenmeier et al., 2022), to find the global optimum of the objective function within our derived local regions. We evaluate our proposed method on various benchmark synthetic and real-world problems. The results demonstrate that our method outperforms existing state-of-the-art techniques.
+				</div>
+			</div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  <a href="https://arxiv.org/pdf/2402.03104.pdf" class="label label-info">PDF</a>
+	  <a href="	  https://github.com/lamngo1/cma-meta-algorithm" class="label label-success">Code</a>
+
+</div>
+</div>
+
+
+
 	
   <h3>2023</h3>
   
@@ -281,7 +390,6 @@ existing methods, attesting to the theoretical results.
       </div><!-- /.modal --> 
 	  <a href="https://arxiv.org/pdf/2203.02128.pdf" class="label label-info">PDF</a>
 
-
 	  
 </div>
 </div>
@@ -297,7 +405,7 @@ existing methods, attesting to the theoretical results.
  Y. Zuo, <strong>V. Nguyen</strong>, A. Dezfouli, D. Alexander, B. Muir, I. Chades  <br>
 	    <strong>Mixed-Variable Black-Box Optimisation Using Value Proposal Trees</strong><br>
 		
-		<i>Annual AAAI Conference on Artificial Intelligence (<strong>AAAI</strong>), 2023.<br></i> 
+		<i>Annual AAAI Conference on Artificial Intelligence</i>  (<strong>AAAI</strong>), 2023.<br>
 				  
       <a data-toggle="modal" href="#abstractCSA" class="label label-default">Abstract</a>
       <!-- Modal -->
@@ -338,7 +446,7 @@ Our method uses these proposals to make selections on both the categorical and c
  T. Bach, A. Tong, S. Hy, <strong>V. Nguyen</strong>, T. Nguyen  <br>
 	    <strong> Global Contrastive Learning for Long-Tailed Classification</strong><br>
 		
-		<i>Transactions on Machine Learning Research (<strong>TMLR</strong>), 2023.<br></i> 
+		<i>Transactions on Machine Learning Research</i>  (<strong>TMLR</strong>), 2023.<br>
 				  
       <a data-toggle="modal" href="#abstractCSA" class="label label-default">Abstract</a>
       <!-- Modal -->
@@ -2282,7 +2390,7 @@ A rarity score for each factor is computed, and ordered in decreasing order of r
       </div>
       <footer class="text-center text-muted">
         <hr>
-        Last updated Sep 20, 2023.<br>
+        Last updated Feb 07, 2024.<br>
 	Based on the code of 
         <a href="https://github.com/alopez/alopez.github.com">Adam Lopez</a>.<br>
         Created with 
