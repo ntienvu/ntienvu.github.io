@@ -1,0 +1,15 @@
+
+@InProceedings{pmlr-v260-lastname24,
+  title = 	 {Please add your title here},
+  author =       {Lastname, Firstname and Lastname, Firstname and Lastname, Firstname...},
+  booktitle = 	 {Proceedings of the 16th Asian Conference on Machine Learning},
+  year = 	 {2024},
+  editor = 	 {Nguyen, Vu and Lin, Hsuan-Tien},
+  volume = 	 {222},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {04--08 Dec},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v260/lastname24/anjani24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v260/lastname24.html},
+  abstract = 	 {Please add your abstract here}
+}
