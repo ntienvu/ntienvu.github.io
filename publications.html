@@ -269,6 +269,110 @@
   
   
   <div class="media">
+  <a class="pull-left thumbnail" href="https://arxiv.org/abs/2405.18686">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+
+A. Soen, H. Husain, P. Schulz, <strong>V. Nguyen</strong> <br>
+	    <strong>Rejection via Learning Density Ratios</strong><br>
+		
+			<i>Advances in Neural Information Processing Systems</i> (<strong>NeurIPS</strong>), 2024.<br></i> 
+
+				  
+      <a data-toggle="modal" href="#abstractCIKM" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractCIKM" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+	    
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Rejection via Learning Density Ratios</h4>
+            </div>
+            <div class="modal-body">
+Classification with rejection emerges as a learning paradigm which allows models to
+abstain from making predictions. The predominant approach is to alter the supervised
+learning pipeline by augmenting typical loss functions, letting model rejection incur a lower
+loss than an incorrect prediction. Instead, we propose a different distributional perspective,
+where we seek to find an idealized data distribution which maximizes a pretrained model’s
+performance. This can be formalized via the optimization of a loss’s risk with a φ-divergence
+regularization term. Through this idealized distribution, a rejection decision can be made
+by utilizing the density ratio between this distribution and the data distribution. We focus
+on the setting where our φ-divergences are specified by the family of α-divergence. Our
+framework is tested empirically over clean and noisy datasets
+				</div>
+			</div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  <a href="https://arxiv.org/pdf/2405.18686" class="label label-info">PDF</a>
+	  <a href="" class="label label-success">Code</a>
+
+
+</div>
+</div>
+
+
+
+
+  
+  
+  <div class="media">
+  <a class="pull-left thumbnail" href="https://arxiv.org/pdf/2407.18013">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+
+Y. Liu, T. Ajanthan, H. Husain,  <strong>V. Nguyen</strong> <br>
+	    <strong>Self-Supervision Improves Diffusion Models For Tabular Data Imputation</strong><br>
+		
+		<i>ACM International Conference on Information and Knowledge Management</i> (<strong>CIKM</strong>), 2024.<br></i> 
+		  Preliminary version appears at <i>Workshop on AI4DifferentialEquations in Science,</i> (<strong>ICLR</strong>), 2024. <br>
+
+				  
+      <a data-toggle="modal" href="#abstractCIKM" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractCIKM" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+	    
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Self-Supervision Improves Diffusion Models For Tabular Data Imputation</h4>
+            </div>
+            <div class="modal-body">
+Incomplete tabular datasets are ubiquitous in many applications
+for a number of reasons such as human error in data collection or
+privacy considerations. One would expect a natural solution for this
+is to utilize powerful generative models such as diffusion models,
+which have demonstrated great potential across image and continuous domains. However, vanilla diffusion models often exhibit
+sensitivity to initialized noises. This, along with the natural sparsity inherent in the tabular domain, poses challenges for diffusion
+models, thereby impacting the robustness of these models for data
+imputation. In this work, we propose an advanced diffusion model
+named Self-supervised imputation Diffusion Model (SimpDM for
+brevity), specifically tailored for tabular data imputation tasks. To
+mitigate sensitivity to noise, we introduce a self-supervised alignment mechanism that aims to regularize the model, ensuring consistent and stable imputation predictions. Furthermore, we introduce
+a carefully devised state-dependent data augmentation strategy
+within SimpDM, enhancing the robustness of the diffusion model
+when dealing with limited data. Extensive experiments demonstrate
+that SimpDM matches or outperforms state-of-the-art imputation
+methods across various scenarios
+				</div>
+			</div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  <a href="https://assets.amazon.science/5f/a2/8c67dc564e12a7a9e2f7357c9996/self-supervision-improves-diffusion-models-for-tabular-data-imputation.pdf" class="label label-info">PDF</a>
+	  <a href="https://github.com/yixinliu233/SimpDM" class="label label-success">Code</a>
+	  		<a href="https://www.youtube.com/watch?v=21m6ppUDp-U" class="label label-danger">Youtube Review</a>
+
+
+</div>
+</div>
+
+
+
+
+
+  
+  <div class="media">
   <a class="pull-left thumbnail" href="https://proceedings.mlr.press/v238/adachi24b/adachi24b.pdf">
     <img src="./img/paper/rsz_global_optimization.png" alt="">
   </a>
@@ -2422,7 +2526,7 @@ A rarity score for each factor is computed, and ordered in decreasing order of r
       </div>
       <footer class="text-center text-muted">
         <hr>
-        Last updated Jul 02, 2024.<br>
+        Last updated Oct 20, 2024.<br>
 	Based on the code of 
         <a href="https://github.com/alopez/alopez.github.com">Adam Lopez</a>.<br>
         Created with 
