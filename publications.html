@@ -264,6 +264,96 @@
     <h2>Publications</h2>
 	
 	
+	
+  <h3>2025</h3>
+  
+	
+  
+  <div class="media">
+  <a class="pull-left thumbnail" href="https://arxiv.org/pdf/2406.01130">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+
+S. Kessler, T. Le, <strong>V. Nguyen</strong> <br>
+	    <strong>SAVA: Scalable Learning-Agnostic Data Valuation</strong><br>
+		
+			<i>International Conference on Learning Representations</i> (<strong>ICLR</strong>), 2025.<br></i> 
+
+				  
+      <a data-toggle="modal" href="#abstractICLR25" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractICLR25" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+	    
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">SAVA: Scalable Learning-Agnostic Data Valuatio</h4>
+            </div>
+            <div class="modal-body">
+Selecting suitable data for training machine learning models is crucial since large, web-scraped, real datasets contain noisy artifacts that affect the quality and relevance of individual data points. 
+These artifacts will impact the performance and generalization of the model. We formulate this problem as a data valuation task, assigning a value to data points in the training set according to how similar or 
+dissimilar they are to a clean and curated validation set. Recently, LAVA (Just et al. 2023) successfully demonstrated the use of optimal transport (OT) between a large noisy training dataset and a clean validation set,
+ to value training data efficiently, without the dependency on model performance. However, the LAVA algorithm requires the whole dataset as an input, this limits its application to large datasets.
+ Inspired by the scalability of stochastic (gradient) approaches which carry out computations on batches of data points instead of the entire dataset, we analogously propose SAVA,
+ a scalable variant of LAVA with its computation on batches of data points. Intuitively, SAVA follows the same scheme as LAVA which leverages the hierarchically defined OT for data valuation. 
+ However, while LAVA processes the whole dataset, SAVA divides the dataset into batches of data points, and carries out the OT problem computation on those batches. We perform extensive experiments, 
+ to demonstrate that SAVA can scale to large datasets with millions of data points and doesn't trade off data valuation performance.
+				</div>
+			</div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  <a href="https://arxiv.org/pdf/2406.01130" class="label label-info">PDF</a>
+	  <a href="https://github.com/skezle/sava" class="label label-success">Code</a>
+
+
+</div>
+</div>
+
+
+
+
+  
+  <div class="media">
+  <a class="pull-left thumbnail" href="">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+
+V. Hoang, H. Tran, S. Gupta, Vu Nguyen, <strong>V. Nguyen</strong> <br>
+	    <strong>High Dimensional Bayesian Optimization using Lasso Variable Selection</strong><br>
+		
+			<i>International Conference on Artificial Intelligence and Statistics</i> (<strong>AISTATS</strong>), 2025.<br></i> 
+
+				  
+      <a data-toggle="modal" href="#abstractAISTATS25" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractAISTATS25" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+	    
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">High Dimensional Bayesian Optimization using Lasso Variable Selection</h4>
+            </div>
+            <div class="modal-body">
+Bayesian optimization (BO) is a leading method for optimizing expensive black-box optimization and has been successfully applied across various scenarios.
+ However, BO suffers from the curse of dimensionality, making it challenging to scale to high-dimensional problems. 
+ Existing work has adopted a variable selection strategy to select and optimize only a subset of variables iteratively.
+ Although this approach can mitigate the high-dimensional challenge in BO, it still leads to sample inefficiency. To address this issue, we propose a novel variable selection method based on estimating length scales of Gaussian process kernels. Next, we construct an effective search region where the optimization of the acquisition function on only the important variables is performed. We demonstrate that our proposed method achieves cumulative regret with a sublinear growth rate in the worst case while maintaining computational efficiency. Experiments on high-dimensional synthetic functions and real-world problems show that our method achieves state-of-the-art performance.
+				</div>
+			</div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  <a href="" class="label label-info">PDF</a>
+
+
+</div>
+</div>
+
+
+
+
+
   <h3>2024</h3>
   
   
@@ -305,7 +395,7 @@ framework is tested empirically over clean and noisy datasets
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal --> 
 	  <a href="https://arxiv.org/pdf/2405.18686" class="label label-info">PDF</a>
-	  <a href="" class="label label-success">Code</a>
+	  <a href="https://github.com/alexandersoen/density-ratio-rejection" class="label label-success">Code</a>
 
 
 </div>
@@ -362,7 +452,6 @@ methods across various scenarios
 	  <a href="https://assets.amazon.science/5f/a2/8c67dc564e12a7a9e2f7357c9996/self-supervision-improves-diffusion-models-for-tabular-data-imputation.pdf" class="label label-info">PDF</a>
 	  <a href="https://github.com/yixinliu233/SimpDM" class="label label-success">Code</a>
 	  		<a href="https://www.youtube.com/watch?v=21m6ppUDp-U" class="label label-danger">Youtube Review</a>
-
 
 </div>
 </div>
@@ -2492,7 +2581,7 @@ A rarity score for each factor is computed, and ordered in decreasing order of r
       </div>
       <footer class="text-center text-muted">
         <hr>
-        Last updated Oct 20, 2024.<br>
+        Last updated Feb 10, 2025.<br>
 	Based on the code of 
         <a href="https://github.com/alopez/alopez.github.com">Adam Lopez</a>.<br>
         Created with 
