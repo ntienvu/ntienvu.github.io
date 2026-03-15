@@ -265,6 +265,69 @@
 	
 	
 	
+  <h3>2026</h3>
+	
+  
+  <div class="media">
+  <a class="pull-left thumbnail" href="https://arxiv.org/pdf/2511.06781">
+    <img src="./img/paper/rsz_global_optimization.png" alt="">
+  </a>
+  <div class="media-body">
+
+T. Vuong, J. Monteil, H. Dang, V. Vaskovych, T. Le, <strong>V. Nguyen</strong> <br>
+	    <strong>On The Mechanisms of Collaborative Learning in VAE Recommenders
+</strong><br>
+		
+			<i>International Conference on Learning Representations</i> (<strong>ICLR</strong>), 2026.<br></i> 
+
+				  
+      <a data-toggle="modal" href="#abstractICLR26" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractICLR26" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+	    
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">On The Mechanisms of Collaborative Learning in VAE Recommenders</h4>
+            </div>
+            <div class="modal-body">
+Variational Autoencoders (VAEs) are a powerful alternative to matrix factorization
+for recommendation. A common technique in VAE-based collaborative filtering
+(CF) consists in applying binary input masking to user interaction vectors, which
+improves performance but remains underexplored theoretically. In this work, we
+analyze how collaboration arises in VAE-based CF and show it is governed by
+latent proximity: we derive a latent sharing radius that informs when an SGD update
+on one user strictly reduces the loss on another user, with influence decaying as
+the latent Wasserstein distance increases. We further study the induced geometry:
+with clean inputs, VAE-based CF primarily exploits local collaboration between
+input-similar users and under-utilizes global collaboration between far-but-related
+users. We compare two mechanisms that encourage global mixing and characterize
+their trade-offs: ① β-KL regularization directly tightens the information bottleneck,
+promoting posterior overlap but risking representational collapse if too large; ②
+input masking induces stochastic geometric contractions and expansions, which
+can bring distant users onto the same latent neighborhood but also introduce
+neighborhood drift. To preserve user identity while enabling global consistency,
+we propose an anchor regularizer that aligns user posteriors with item embeddings,
+stabilizing users under masking and facilitating signal sharing across related items.
+Our analyses are validated on the Netflix, MovieLens-20M, and Million Song
+datasets. We also successfully deployed our proposed algorithm on an Amazon
+streaming platform following a successful online experiment.
+				</div>
+			</div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+	  <a href="https://arxiv.org/pdf/2511.06781" class="label label-info">PDF</a>
+	  <a href="https://github.com/amazon-science/PIAVAE" class="label label-success">Code</a>
+
+
+</div>
+</div>
+
+
+
+
+
+
   <h3>2025</h3>
   
 	
@@ -2652,8 +2715,6 @@ A rarity score for each factor is computed, and ordered in decreasing order of r
 
 
 
-
-
 		</div>
       </div>
 		</div>
@@ -2662,7 +2723,7 @@ A rarity score for each factor is computed, and ordered in decreasing order of r
       </div>
       <footer class="text-center text-muted">
         <hr>
-        Last updated August 01, 2025.<br>
+        Last updated March 15, 2026.<br>
 	Based on the code of 
         <a href="https://github.com/alopez/alopez.github.com">Adam Lopez</a>.<br>
         Created with 
