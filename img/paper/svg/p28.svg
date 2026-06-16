@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- axes -->
+  <line x1="18" y1="20" x2="18" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="82" x2="88" y2="82" stroke="#555" stroke-width="1"/>
+
+  <!-- x ticks -->
+  <line x1="30" y1="82" x2="30" y2="84.5" stroke="#555" stroke-width="1"/>
+  <line x1="44" y1="82" x2="44" y2="84.5" stroke="#555" stroke-width="1"/>
+  <line x1="58" y1="82" x2="58" y2="84.5" stroke="#555" stroke-width="1"/>
+  <line x1="72" y1="82" x2="72" y2="84.5" stroke="#555" stroke-width="1"/>
+  <!-- y ticks -->
+  <line x1="15.5" y1="68" x2="18" y2="68" stroke="#555" stroke-width="1"/>
+  <line x1="15.5" y1="50" x2="18" y2="50" stroke="#555" stroke-width="1"/>
+  <line x1="15.5" y1="32" x2="18" y2="32" stroke="#555" stroke-width="1"/>
+
+  <!-- faint shaded confidence band around reward curve -->
+  <path d="M18,74 C28,62 36,46 46,40 C56,34 66,31 86,29 L86,37 C66,39 56,42 46,48 C36,54 28,70 18,80 Z"
+        fill="#1f77b4" fill-opacity="0.18"/>
+
+  <!-- smooth black sigmoid fit beneath -->
+  <path d="M18,76 C30,75 38,72 46,62 C54,52 60,46 86,44"
+        fill="none" stroke="#222" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- noisy rising-then-plateau blue reward curve -->
+  <path d="M18,77 C22,73 24,76 27,70 C30,64 32,67 35,58 C38,49 41,52 44,44 C47,38 50,41 53,36 C57,30 61,34 65,33 C70,32 74,35 78,33 C82,32 84,34 86,33"
+        fill="none" stroke="#1f77b4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- vertical dotted droplines -->
+  <line x1="30" y1="69" x2="30" y2="82" stroke="#888" stroke-width="0.8" stroke-dasharray="1.5,1.5"/>
+  <line x1="44" y1="44" x2="44" y2="82" stroke="#888" stroke-width="0.8" stroke-dasharray="1.5,1.5"/>
+  <line x1="58" y1="34" x2="58" y2="82" stroke="#888" stroke-width="0.8" stroke-dasharray="1.5,1.5"/>
+  <line x1="72" y1="33.5" x2="72" y2="82" stroke="#888" stroke-width="0.8" stroke-dasharray="1.5,1.5"/>
+
+  <!-- red marker dots on the curve -->
+  <circle cx="30" cy="69" r="2.4" fill="#d62728" stroke="#8c1718" stroke-width="0.6"/>
+  <circle cx="44" cy="44" r="2.4" fill="#d62728" stroke="#8c1718" stroke-width="0.6"/>
+  <circle cx="58" cy="34" r="2.4" fill="#d62728" stroke="#8c1718" stroke-width="0.6"/>
+  <circle cx="72" cy="33.5" r="2.4" fill="#d62728" stroke="#8c1718" stroke-width="0.6"/>
+  <circle cx="84" cy="33" r="2.4" fill="#d62728" stroke="#8c1718" stroke-width="0.6"/>
+</svg>

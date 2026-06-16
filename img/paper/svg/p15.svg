@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- transport edges (drawn first, under nodes) -->
+  <!-- faint / dashed uncertain edges -->
+  <path d="M28 26 C44 30, 56 52, 70 56" fill="none" stroke="#b0b8c0" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+  <path d="M28 40 C44 42, 56 28, 70 30" fill="none" stroke="#b0b8c0" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+  <path d="M28 54 C44 50, 56 30, 70 30" fill="none" stroke="#b0b8c0" stroke-width="0.9" stroke-dasharray="2 2" opacity="0.6"/>
+  <path d="M28 68 C44 64, 56 50, 70 56" fill="none" stroke="#b0b8c0" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+  <path d="M28 26 C44 36, 56 70, 70 70" fill="none" stroke="#c0c8d0" stroke-width="0.9" stroke-dasharray="2 2" opacity="0.6"/>
+
+  <!-- confident bold high-mass edges -->
+  <path d="M28 26 C44 26, 56 30, 70 30" fill="none" stroke="#1f77b4" stroke-width="3.4" stroke-linecap="round" opacity="0.85"/>
+  <path d="M28 40 C44 42, 56 56, 70 56" fill="none" stroke="#2ca02c" stroke-width="3.0" stroke-linecap="round" opacity="0.85"/>
+  <path d="M28 54 C44 56, 56 56, 70 56" fill="none" stroke="#2ca02c" stroke-width="2.4" stroke-linecap="round" opacity="0.8"/>
+  <path d="M28 68 C44 68, 56 70, 70 70" fill="none" stroke="#9467bd" stroke-width="3.2" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- left column: sample dots (blue) -->
+  <circle cx="28" cy="26" r="3.4" fill="#1f77b4" stroke="#14517d" stroke-width="0.8"/>
+  <circle cx="28" cy="40" r="3.4" fill="#1f77b4" stroke="#14517d" stroke-width="0.8"/>
+  <circle cx="28" cy="54" r="3.4" fill="#1f77b4" stroke="#14517d" stroke-width="0.8"/>
+  <circle cx="28" cy="68" r="3.4" fill="#1f77b4" stroke="#14517d" stroke-width="0.8"/>
+
+  <!-- right column: class-label nodes (colored) -->
+  <circle cx="70" cy="30" r="3.8" fill="#d62728" stroke="#8c1a1a" stroke-width="0.8"/>
+  <circle cx="70" cy="56" r="3.8" fill="#2ca02c" stroke="#1d6b1d" stroke-width="0.8"/>
+  <circle cx="70" cy="70" r="3.8" fill="#9467bd" stroke="#634683" stroke-width="0.8"/>
+
+  <!-- cost-matrix grid inset (shaded cells) -->
+  <rect x="50" y="78" width="24" height="12" rx="1.5" fill="#ffffff" stroke="#888" stroke-width="0.8"/>
+  <rect x="50" y="78" width="6" height="6" fill="#1f77b4" opacity="0.85"/>
+  <rect x="56" y="78" width="6" height="6" fill="#1f77b4" opacity="0.30"/>
+  <rect x="62" y="78" width="6" height="6" fill="#1f77b4" opacity="0.55"/>
+  <rect x="68" y="78" width="6" height="6" fill="#1f77b4" opacity="0.20"/>
+  <rect x="50" y="84" width="6" height="6" fill="#1f77b4" opacity="0.25"/>
+  <rect x="56" y="84" width="6" height="6" fill="#1f77b4" opacity="0.75"/>
+  <rect x="62" y="84" width="6" height="6" fill="#1f77b4" opacity="0.40"/>
+  <rect x="68" y="84" width="6" height="6" fill="#1f77b4" opacity="0.90"/>
+  <line x1="56" y1="78" x2="56" y2="90" stroke="#888" stroke-width="0.5"/>
+  <line x1="62" y1="78" x2="62" y2="90" stroke="#888" stroke-width="0.5"/>
+  <line x1="68" y1="78" x2="68" y2="90" stroke="#888" stroke-width="0.5"/>
+  <line x1="50" y1="84" x2="74" y2="84" stroke="#888" stroke-width="0.5"/>
+
+  <!-- transport direction arrow -->
+  <line x1="34" y1="84" x2="44" y2="84" stroke="#555" stroke-width="1.2"/>
+  <polygon points="44,81.5 48,84 44,86.5" fill="#555"/>
+</svg>

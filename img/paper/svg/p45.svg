@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- ===== Top row: variable nodes (dropout over dimensions) ===== -->
+  <!-- connecting edges among ACTIVE nodes -->
+  <path d="M18 20 H32 M46 20 H60" stroke="#1f77b4" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- active nodes (solid blue, connected) -->
+  <circle cx="18" cy="20" r="4" fill="#1f77b4" stroke="#15527e" stroke-width="1"/>
+  <circle cx="32" cy="20" r="4" fill="#1f77b4" stroke="#15527e" stroke-width="1"/>
+  <circle cx="46" cy="20" r="4" fill="#1f77b4" stroke="#15527e" stroke-width="1"/>
+  <circle cx="60" cy="20" r="4" fill="#1f77b4" stroke="#15527e" stroke-width="1"/>
+
+  <!-- dropped nodes (faded gray with x marks) -->
+  <circle cx="74" cy="20" r="4" fill="#e6e8ea" stroke="#b5bbc1" stroke-width="1"/>
+  <path d="M71.8 17.8 L76.2 22.2 M76.2 17.8 L71.8 22.2" stroke="#9aa1a8" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="88" cy="20" r="4" fill="#e6e8ea" stroke="#b5bbc1" stroke-width="1"/>
+  <path d="M85.8 17.8 L90.2 22.2 M90.2 17.8 L85.8 22.2" stroke="#9aa1a8" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- a dropped node sitting in the active-row gap (faded, no edge) -->
+  <circle cx="25" cy="20" r="3.2" fill="#eef0f1" stroke="#c4c9ce" stroke-width="0.9"/>
+  <path d="M23.2 18.2 L26.8 21.8 M26.8 18.2 L23.2 21.8" stroke="#aab0b6" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- ===== BO acquisition panel ===== -->
+  <!-- axes -->
+  <path d="M16 84 H88" stroke="#555" stroke-width="1"/>
+  <path d="M16 36 V84" stroke="#555" stroke-width="1"/>
+  <!-- x ticks -->
+  <path d="M28 84 V86" stroke="#555" stroke-width="1"/>
+  <path d="M40 84 V86" stroke="#555" stroke-width="1"/>
+  <path d="M52 84 V86" stroke="#555" stroke-width="1"/>
+  <path d="M64 84 V86" stroke="#555" stroke-width="1"/>
+  <path d="M76 84 V86" stroke="#555" stroke-width="1"/>
+  <!-- y ticks -->
+  <path d="M14 72 H16" stroke="#555" stroke-width="1"/>
+  <path d="M14 60 H16" stroke="#555" stroke-width="1"/>
+  <path d="M14 48 H16" stroke="#555" stroke-width="1"/>
+
+  <!-- confidence band (shaded) -->
+  <path d="M16 60 C28 50, 40 70, 52 56 C64 44, 76 64, 88 52 L88 70 C76 80, 64 60, 52 74 C40 86, 28 68, 16 76 Z"
+        fill="#1f77b4" fill-opacity="0.22"/>
+
+  <!-- GP mean curve (blue) -->
+  <path d="M16 68 C28 58, 40 70, 52 64 C64 56, 76 64, 88 60"
+        fill="none" stroke="#1f77b4" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- red sample points along the curve -->
+  <circle cx="28" cy="61" r="2.4" fill="#d62728" stroke="#8c1718" stroke-width="0.8"/>
+  <circle cx="52" cy="65" r="2.4" fill="#d62728" stroke="#8c1718" stroke-width="0.8"/>
+  <circle cx="76" cy="63" r="2.4" fill="#d62728" stroke="#8c1718" stroke-width="0.8"/>
+
+  <!-- next-query marker (diamond) at acquisition peak -->
+  <path d="M40 70 l2.4 2.4 -2.4 2.4 -2.4 -2.4 Z" fill="#ff7f0e" stroke="#b35900" stroke-width="0.7"/>
+</svg>

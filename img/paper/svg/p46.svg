@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <radialGradient id="bowlL" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1f77b4" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#1f77b4" stop-opacity="0.05"/>
+    </radialGradient>
+    <radialGradient id="bowlR" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ff7f0e" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#ff7f0e" stop-opacity="0.05"/>
+    </radialGradient>
+  </defs>
+
+  <!-- LEFT bowl: kernel space (blue nested contours) -->
+  <ellipse cx="29" cy="56" rx="19" ry="14" fill="url(#bowlL)" stroke="#1f77b4" stroke-width="1.4" stroke-opacity="0.7"/>
+  <ellipse cx="29" cy="56" rx="13" ry="9.5" fill="none" stroke="#1f77b4" stroke-width="1.2" stroke-opacity="0.7"/>
+  <ellipse cx="29" cy="56" rx="7.5" ry="5.5" fill="none" stroke="#1f77b4" stroke-width="1.2" stroke-opacity="0.7"/>
+  <ellipse cx="29" cy="56" rx="3" ry="2.2" fill="none" stroke="#1f77b4" stroke-width="1.2" stroke-opacity="0.85"/>
+  <circle cx="29" cy="56" r="1.4" fill="#08306b"/>
+  <!-- gradient descent path (blue ball) -->
+  <path d="M16 46 Q21 47 23 51 T29 56" fill="none" stroke="#1f77b4" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="3 2.4"/>
+  <path d="M22.6 52.3 l3.4 -0.4 l-1.7 3" fill="#1f77b4"/>
+  <circle cx="16" cy="46" r="3" fill="#1f77b4" stroke="#08306b" stroke-width="0.8"/>
+
+  <!-- RIGHT bowl: random-feature space (orange nested contours) -->
+  <ellipse cx="71" cy="56" rx="19" ry="14" fill="url(#bowlR)" stroke="#ff7f0e" stroke-width="1.4" stroke-opacity="0.7"/>
+  <ellipse cx="71" cy="56" rx="13" ry="9.5" fill="none" stroke="#ff7f0e" stroke-width="1.2" stroke-opacity="0.7"/>
+  <ellipse cx="71" cy="56" rx="7.5" ry="5.5" fill="none" stroke="#ff7f0e" stroke-width="1.2" stroke-opacity="0.7"/>
+  <ellipse cx="71" cy="56" rx="3" ry="2.2" fill="none" stroke="#ff7f0e" stroke-width="1.2" stroke-opacity="0.85"/>
+  <circle cx="71" cy="56" r="1.4" fill="#b34700"/>
+  <!-- gradient descent path (orange ball) -->
+  <path d="M84 47 Q79 48 77 51 T71 56" fill="none" stroke="#ff7f0e" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="3 2.4"/>
+  <path d="M77.4 52.3 l-3.4 -0.4 l1.7 3" fill="#ff7f0e"/>
+  <circle cx="84" cy="47" r="3" fill="#ff7f0e" stroke="#b34700" stroke-width="0.8"/>
+
+  <!-- bridge arrow between the two spaces -->
+  <path d="M40 32 Q50 25 60 32" fill="none" stroke="#555" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M40 32 l1.2 -3.2 l3 1.4 z" fill="#555"/>
+  <path d="M60 32 l-1.2 -3.2 l-3 1.4 z" fill="#555"/>
+
+  <!-- base axis under both bowls -->
+  <line x1="12" y1="76" x2="90" y2="76" stroke="#555" stroke-width="1"/>
+  <line x1="29" y1="76" x2="29" y2="78" stroke="#555" stroke-width="1"/>
+  <line x1="71" y1="76" x2="71" y2="78" stroke="#555" stroke-width="1"/>
+  <line x1="51" y1="76" x2="51" y2="78" stroke="#555" stroke-width="1"/>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="acq" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f77b4" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#1f77b4" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <!-- shaded area under the acquisition curve -->
+  <path d="M16,74 C26,72 30,64 36,46 C40,34 44,22 50,22 C56,22 60,36 64,52 C68,64 74,72 84,74 Z" fill="url(#acq)"/>
+
+  <!-- axes -->
+  <line x1="16" y1="74" x2="86" y2="74" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="74" x2="16" y2="20" stroke="#555" stroke-width="1"/>
+  <!-- x ticks -->
+  <line x1="26" y1="74" x2="26" y2="77" stroke="#555" stroke-width="1"/>
+  <line x1="40" y1="74" x2="40" y2="77" stroke="#555" stroke-width="1"/>
+  <line x1="50" y1="74" x2="50" y2="77" stroke="#555" stroke-width="1"/>
+  <line x1="60" y1="74" x2="60" y2="77" stroke="#555" stroke-width="1"/>
+  <line x1="74" y1="74" x2="74" y2="77" stroke="#555" stroke-width="1"/>
+  <!-- y ticks -->
+  <line x1="16" y1="60" x2="13" y2="60" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="44" x2="13" y2="44" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="28" x2="13" y2="28" stroke="#555" stroke-width="1"/>
+
+  <!-- target acquisition distribution curve -->
+  <path d="M16,74 C26,72 30,64 36,46 C40,34 44,22 50,22 C56,22 60,36 64,52 C68,64 74,72 84,74" fill="none" stroke="#1f77b4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- batch group 1 (left of peak, red) stems + samples : denser near peak -->
+  <line x1="30" y1="74" x2="30" y2="62" stroke="#d62728" stroke-width="1.1"/>
+  <line x1="38" y1="74" x2="38" y2="43" stroke="#d62728" stroke-width="1.1"/>
+  <line x1="43" y1="74" x2="43" y2="31" stroke="#d62728" stroke-width="1.1"/>
+  <line x1="47" y1="74" x2="47" y2="25" stroke="#d62728" stroke-width="1.1"/>
+  <line x1="50" y1="74" x2="50" y2="22" stroke="#d62728" stroke-width="1.1"/>
+  <circle cx="30" cy="62" r="2" fill="#d62728"/>
+  <circle cx="38" cy="43" r="2" fill="#d62728"/>
+  <circle cx="43" cy="31" r="2" fill="#d62728"/>
+  <circle cx="47" cy="25" r="2" fill="#d62728"/>
+  <circle cx="50" cy="22" r="2" fill="#d62728"/>
+
+  <!-- batch group 2 (right of peak, orange) stems + samples -->
+  <line x1="53" y1="74" x2="53" y2="24" stroke="#ff7f0e" stroke-width="1.1"/>
+  <line x1="57" y1="74" x2="57" y2="31" stroke="#ff7f0e" stroke-width="1.1"/>
+  <line x1="62" y1="74" x2="62" y2="46" stroke="#ff7f0e" stroke-width="1.1"/>
+  <line x1="70" y1="74" x2="70" y2="61" stroke="#ff7f0e" stroke-width="1.1"/>
+  <line x1="80" y1="74" x2="80" y2="71" stroke="#ff7f0e" stroke-width="1.1"/>
+  <circle cx="53" cy="24" r="2" fill="#ff7f0e"/>
+  <circle cx="57" cy="31" r="2" fill="#ff7f0e"/>
+  <circle cx="62" cy="46" r="2" fill="#ff7f0e"/>
+  <circle cx="70" cy="61" r="2" fill="#ff7f0e"/>
+  <circle cx="80" cy="71" r="2" fill="#ff7f0e"/>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="g08" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#888" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#888" stop-opacity="0.12"/>
+    </linearGradient>
+    <pattern id="hatch08" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="3" stroke="#7a7f86" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <!-- central rejection band (gray hatched), flanked by accept regions -->
+  <rect x="42" y="20" width="16" height="58" fill="url(#g08)"/>
+  <rect x="42" y="20" width="16" height="58" fill="url(#hatch08)"/>
+  <rect x="42" y="20" width="16" height="58" fill="none" stroke="#7a7f86" stroke-width="0.7" stroke-dasharray="2 1.5"/>
+
+  <!-- axes -->
+  <line x1="16" y1="78" x2="86" y2="78" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="20" x2="16" y2="78" stroke="#555" stroke-width="1"/>
+  <!-- x ticks -->
+  <line x1="26" y1="78" x2="26" y2="81" stroke="#555" stroke-width="1"/>
+  <line x1="42" y1="78" x2="42" y2="81" stroke="#555" stroke-width="1"/>
+  <line x1="58" y1="78" x2="58" y2="81" stroke="#555" stroke-width="1"/>
+  <line x1="74" y1="78" x2="74" y2="81" stroke="#555" stroke-width="1"/>
+
+  <!-- blue distribution (data) shaded -->
+  <path d="M16 78 C 26 78, 28 30, 38 30 C 48 30, 50 76, 60 77 C 70 77.6, 78 78, 86 78 Z"
+        fill="#1f77b4" fill-opacity="0.20"/>
+  <path d="M16 78 C 26 78, 28 30, 38 30 C 48 30, 50 76, 60 77 C 70 77.6, 78 78, 86 78"
+        fill="none" stroke="#1f77b4" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- red distribution (idealized) shaded -->
+  <path d="M16 78 C 24 77.6, 32 77, 42 76 C 52 75, 54 28, 64 28 C 74 28, 76 78, 86 78 Z"
+        fill="#d62728" fill-opacity="0.18"/>
+  <path d="M16 78 C 24 77.6, 32 77, 42 76 C 52 75, 54 28, 64 28 C 74 28, 76 78, 86 78"
+        fill="none" stroke="#d62728" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- density-ratio overlap region (darker shade in the crossing zone) -->
+  <path d="M42 76 C 48 70, 50 55, 50 50 C 50 55, 52 70, 58 76 L 58 77 L 42 77 Z"
+        fill="#9467bd" fill-opacity="0.22"/>
+
+  <!-- threshold line (vertical, dashed orange) at band center -->
+  <line x1="50" y1="18" x2="50" y2="80" stroke="#ff7f0e" stroke-width="2" stroke-dasharray="4 2.5"/>
+  <!-- threshold marker -->
+  <circle cx="50" cy="50" r="2.3" fill="#ff7f0e" stroke="#ffffff" stroke-width="0.8"/>
+
+  <!-- accept-region markers (left blue dot, right red dot) -->
+  <circle cx="30" cy="62" r="2" fill="#1f77b4"/>
+  <circle cx="70" cy="62" r="2" fill="#d62728"/>
+
+  <!-- crossing/intersection point markers of the two curves -->
+  <circle cx="42" cy="76" r="1.5" fill="#2ca02c" stroke="#ffffff" stroke-width="0.6"/>
+  <circle cx="58" cy="76.5" r="1.5" fill="#2ca02c" stroke="#ffffff" stroke-width="0.6"/>
+</svg>

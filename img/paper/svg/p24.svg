@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- Edges: input layer -> hidden layer -->
+  <g stroke="#c7d3de" stroke-width="0.8" opacity="0.85">
+    <line x1="20" y1="30" x2="42" y2="24"/>
+    <line x1="20" y1="30" x2="42" y2="40"/>
+    <line x1="20" y1="30" x2="42" y2="56"/>
+    <line x1="20" y1="48" x2="42" y2="24"/>
+    <line x1="20" y1="48" x2="42" y2="40"/>
+    <line x1="20" y1="48" x2="42" y2="56"/>
+    <line x1="20" y1="66" x2="42" y2="24"/>
+    <line x1="20" y1="66" x2="42" y2="40"/>
+    <line x1="20" y1="66" x2="42" y2="56"/>
+  </g>
+
+  <!-- Edges: hidden -> output (active) -->
+  <g stroke="#c7d3de" stroke-width="0.8" opacity="0.85">
+    <line x1="42" y1="24" x2="64" y2="36"/>
+    <line x1="42" y1="24" x2="64" y2="52"/>
+    <line x1="42" y1="40" x2="64" y2="36"/>
+    <line x1="42" y1="40" x2="64" y2="52"/>
+    <line x1="42" y1="56" x2="64" y2="36"/>
+    <line x1="42" y1="56" x2="64" y2="52"/>
+  </g>
+
+  <!-- Edges to GROWING new node (highlighted green) -->
+  <g stroke="#2ca02c" stroke-width="1" opacity="0.85">
+    <line x1="20" y1="30" x2="42" y2="70"/>
+    <line x1="20" y1="48" x2="42" y2="70"/>
+    <line x1="20" y1="66" x2="42" y2="70"/>
+    <line x1="42" y1="70" x2="64" y2="36"/>
+    <line x1="42" y1="70" x2="64" y2="52"/>
+  </g>
+
+  <!-- Pruned node edges (faded dashed) -->
+  <g stroke="#bbbbbb" stroke-width="0.8" stroke-dasharray="2 1.5" opacity="0.6">
+    <line x1="20" y1="30" x2="42" y2="12"/>
+    <line x1="20" y1="48" x2="42" y2="12"/>
+    <line x1="42" y1="12" x2="64" y2="36"/>
+  </g>
+
+  <!-- Input layer nodes (blue) -->
+  <g fill="#1f77b4" stroke="#155a8a" stroke-width="0.8">
+    <circle cx="20" cy="30" r="3.6"/>
+    <circle cx="20" cy="48" r="3.6"/>
+    <circle cx="20" cy="66" r="3.6"/>
+  </g>
+
+  <!-- Hidden layer existing nodes (purple) -->
+  <g fill="#9467bd" stroke="#6a4a8a" stroke-width="0.8">
+    <circle cx="42" cy="24" r="3.6"/>
+    <circle cx="42" cy="40" r="3.6"/>
+    <circle cx="42" cy="56" r="3.6"/>
+  </g>
+
+  <!-- Pruned node (faded dashed) -->
+  <circle cx="42" cy="12" r="3.6" fill="#eeeeee" stroke="#bbbbbb" stroke-width="0.9" stroke-dasharray="2 1.5"/>
+
+  <!-- GROWING new node (highlighted green with glow ring) -->
+  <circle cx="42" cy="70" r="5.4" fill="none" stroke="#2ca02c" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="42" cy="70" r="3.8" fill="#2ca02c" stroke="#1d6b1d" stroke-width="0.9"/>
+  <g stroke="#ffffff" stroke-width="0.9" stroke-linecap="round">
+    <line x1="42" y1="68" x2="42" y2="72"/>
+    <line x1="40" y1="70" x2="44" y2="70"/>
+  </g>
+
+  <!-- Output layer nodes (orange) -->
+  <g fill="#ff7f0e" stroke="#c05f00" stroke-width="0.8">
+    <circle cx="64" cy="36" r="3.6"/>
+    <circle cx="64" cy="52" r="3.6"/>
+  </g>
+
+  <!-- IBP binary "buffet" matrix inset (bottom-right corner) -->
+  <rect x="68" y="64" width="22" height="22" rx="2" fill="#fbfcfd" stroke="#999" stroke-width="0.8"/>
+  <g stroke="#cfd6dd" stroke-width="0.4">
+    <line x1="73.5" y1="65" x2="73.5" y2="85"/>
+    <line x1="79" y1="65" x2="79" y2="85"/>
+    <line x1="84.5" y1="65" x2="84.5" y2="85"/>
+    <line x1="69" y1="69.5" x2="89" y2="69.5"/>
+    <line x1="69" y1="75" x2="89" y2="75"/>
+    <line x1="69" y1="80.5" x2="89" y2="80.5"/>
+  </g>
+  <!-- filled cells (active features = 1) -->
+  <g fill="#1f77b4">
+    <rect x="68.4" y="64.4" width="4.7" height="4.7"/>
+    <rect x="79.4" y="64.4" width="4.7" height="4.7"/>
+    <rect x="73.9" y="69.9" width="4.7" height="4.7"/>
+    <rect x="84.9" y="69.9" width="4.7" height="4.7"/>
+    <rect x="68.4" y="75.4" width="4.7" height="4.7"/>
+    <rect x="79.4" y="75.4" width="4.7" height="4.7"/>
+    <rect x="84.9" y="80.9" width="4.7" height="4.7"/>
+    <rect x="73.9" y="80.9" width="4.7" height="4.7"/>
+  </g>
+  <!-- newly grown feature cell highlight (green = IBP added column) -->
+  <rect x="84.9" y="64.4" width="4.7" height="4.7" fill="#2ca02c"/>
+</svg>

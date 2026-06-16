@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- axes -->
+  <line x1="18" y1="20" x2="18" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="82" x2="86" y2="82" stroke="#555" stroke-width="1"/>
+  <!-- x ticks -->
+  <line x1="32" y1="82" x2="32" y2="85" stroke="#555" stroke-width="1"/>
+  <line x1="46" y1="82" x2="46" y2="85" stroke="#555" stroke-width="1"/>
+  <line x1="60" y1="82" x2="60" y2="85" stroke="#555" stroke-width="1"/>
+  <line x1="74" y1="82" x2="74" y2="85" stroke="#555" stroke-width="1"/>
+  <!-- y ticks -->
+  <line x1="15" y1="32" x2="18" y2="32" stroke="#555" stroke-width="1"/>
+  <line x1="15" y1="48" x2="18" y2="48" stroke="#555" stroke-width="1"/>
+  <line x1="15" y1="64" x2="18" y2="64" stroke="#555" stroke-width="1"/>
+
+  <!-- teal uncertainty band -->
+  <path d="M20 50 C28 38, 34 30, 42 36 C50 42, 56 24, 64 30 C72 36, 78 50, 84 58
+           L84 68 C78 60, 72 48, 64 42 C56 36, 50 54, 42 48 C34 42, 28 50, 20 60 Z"
+        fill="#17becf" fill-opacity="0.25" stroke="none"/>
+
+  <!-- dashed black mean -->
+  <path d="M20 55 C28 44, 34 38, 42 42 C50 46, 56 36, 64 40 C72 44, 78 53, 84 60"
+        fill="none" stroke="#333333" stroke-width="1.6" stroke-dasharray="3 2.5" stroke-linecap="round"/>
+
+  <!-- blue wavy f(x) -->
+  <path d="M20 53 C27 40, 33 33, 41 39 C49 45, 55 27, 63 33 C71 39, 77 51, 84 57"
+        fill="none" stroke="#1f77b4" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- known output f* : horizontal red line -->
+  <line x1="18" y1="29" x2="86" y2="29" stroke="#d62728" stroke-width="1.8"/>
+  <!-- unknown input x* : vertical red line -->
+  <line x1="59" y1="20" x2="59" y2="82" stroke="#d62728" stroke-width="1.8"/>
+  <!-- intersection marker near the peak -->
+  <circle cx="59" cy="29" r="2.4" fill="#ffffff" stroke="#d62728" stroke-width="1.6"/>
+
+  <!-- red diamond markers on the curve -->
+  <path d="M33 33 l3 3 l-3 3 l-3 -3 Z" fill="#d62728" stroke="#8a1416" stroke-width="0.6"/>
+  <path d="M59 30 l3 3 l-3 3 l-3 -3 Z" fill="#d62728" stroke="#8a1416" stroke-width="0.6"/>
+  <path d="M77 51 l3 3 l-3 3 l-3 -3 Z" fill="#d62728" stroke="#8a1416" stroke-width="0.6"/>
+  <path d="M20 53 l3 3 l-3 3 l-3 -3 Z" fill="#d62728" stroke="#8a1416" stroke-width="0.6"/>
+</svg>

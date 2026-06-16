@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="specG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fde725"/>
+      <stop offset="0.5" stop-color="#21918c"/>
+      <stop offset="1" stop-color="#440154"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ===== Oscillogram panel (top) ===== -->
+  <line x1="14" y1="30" x2="86" y2="30" stroke="#aab2bd" stroke-width="0.6"/>
+  <g stroke="#1f77b4" stroke-width="1.2" stroke-linecap="round">
+    <line x1="16" y1="27" x2="16" y2="33"/>
+    <line x1="18.5" y1="24" x2="18.5" y2="36"/>
+    <line x1="21" y1="28" x2="21" y2="32"/>
+    <line x1="23.5" y1="22" x2="23.5" y2="38"/>
+    <line x1="26" y1="26" x2="26" y2="34"/>
+    <line x1="28.5" y1="29" x2="28.5" y2="31"/>
+    <line x1="31" y1="25" x2="31" y2="35"/>
+    <line x1="33.5" y1="23" x2="33.5" y2="37"/>
+    <line x1="36" y1="27" x2="36" y2="33"/>
+    <line x1="38.5" y1="29" x2="38.5" y2="31"/>
+  </g>
+  <!-- highlighted burst region (detected event) -->
+  <rect x="40" y="17" width="20" height="26" rx="1.5" fill="#ff7f0e" fill-opacity="0.16"/>
+  <g stroke="#d62728" stroke-width="1.3" stroke-linecap="round">
+    <line x1="41" y1="24" x2="41" y2="36"/>
+    <line x1="43.5" y1="18" x2="43.5" y2="42"/>
+    <line x1="46" y1="20" x2="46" y2="40"/>
+    <line x1="48.5" y1="16" x2="48.5" y2="44"/>
+    <line x1="51" y1="19" x2="51" y2="41"/>
+    <line x1="53.5" y1="17" x2="53.5" y2="43"/>
+    <line x1="56" y1="21" x2="56" y2="39"/>
+    <line x1="58.5" y1="23" x2="58.5" y2="37"/>
+  </g>
+  <g stroke="#1f77b4" stroke-width="1.2" stroke-linecap="round">
+    <line x1="61" y1="28" x2="61" y2="32"/>
+    <line x1="63.5" y1="25" x2="63.5" y2="35"/>
+    <line x1="66" y1="27" x2="66" y2="33"/>
+    <line x1="68.5" y1="23" x2="68.5" y2="37"/>
+    <line x1="71" y1="29" x2="71" y2="31"/>
+    <line x1="73.5" y1="26" x2="73.5" y2="34"/>
+    <line x1="76" y1="24" x2="76" y2="36"/>
+    <line x1="78.5" y1="28" x2="78.5" y2="32"/>
+    <line x1="81" y1="29" x2="81" y2="31"/>
+    <line x1="83.5" y1="27" x2="83.5" y2="33"/>
+  </g>
+
+  <!-- ===== Spectrogram heatmap (bottom) ===== -->
+  <g>
+    <rect x="14" y="54" width="9" height="7" fill="#3b528b"/>
+    <rect x="23" y="54" width="9" height="7" fill="#2c728e"/>
+    <rect x="32" y="54" width="9" height="7" fill="#21918c"/>
+    <rect x="41" y="54" width="9" height="7" fill="#5ec962"/>
+    <rect x="50" y="54" width="9" height="7" fill="#fde725"/>
+    <rect x="59" y="54" width="9" height="7" fill="#ff7f0e"/>
+    <rect x="68" y="54" width="9" height="7" fill="#5ec962"/>
+    <rect x="77" y="54" width="9" height="7" fill="#2c728e"/>
+
+    <rect x="14" y="61" width="9" height="7" fill="#440154"/>
+    <rect x="23" y="61" width="9" height="7" fill="#3b528b"/>
+    <rect x="32" y="61" width="9" height="7" fill="#21918c"/>
+    <rect x="41" y="61" width="9" height="7" fill="#5ec962"/>
+    <rect x="50" y="61" width="9" height="7" fill="#ff7f0e"/>
+    <rect x="59" y="61" width="9" height="7" fill="#fde725"/>
+    <rect x="68" y="61" width="9" height="7" fill="#21918c"/>
+    <rect x="77" y="61" width="9" height="7" fill="#3b528b"/>
+
+    <rect x="14" y="68" width="9" height="7" fill="#3b528b"/>
+    <rect x="23" y="68" width="9" height="7" fill="#2c728e"/>
+    <rect x="32" y="68" width="9" height="7" fill="#5ec962"/>
+    <rect x="41" y="68" width="9" height="7" fill="#21918c"/>
+    <rect x="50" y="68" width="9" height="7" fill="#fde725"/>
+    <rect x="59" y="68" width="9" height="7" fill="#5ec962"/>
+    <rect x="68" y="68" width="9" height="7" fill="#2c728e"/>
+    <rect x="77" y="68" width="9" height="7" fill="#440154"/>
+
+    <rect x="14" y="75" width="9" height="7" fill="#440154"/>
+    <rect x="23" y="75" width="9" height="7" fill="#3b528b"/>
+    <rect x="32" y="75" width="9" height="7" fill="#2c728e"/>
+    <rect x="41" y="75" width="9" height="7" fill="#3b528b"/>
+    <rect x="50" y="75" width="9" height="7" fill="#5ec962"/>
+    <rect x="59" y="75" width="9" height="7" fill="#21918c"/>
+    <rect x="68" y="75" width="9" height="7" fill="#3b528b"/>
+    <rect x="77" y="75" width="9" height="7" fill="#440154"/>
+  </g>
+  <!-- highlighted event burst on spectrogram -->
+  <rect x="50" y="54" width="18" height="28" fill="none" stroke="#ff7f0e" stroke-width="1.4"/>
+
+  <!-- axes -->
+  <line x1="14" y1="82" x2="86" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="14" y1="54" x2="14" y2="82" stroke="#555" stroke-width="1"/>
+  <!-- time axis ticks -->
+  <g stroke="#555" stroke-width="0.8">
+    <line x1="23" y1="82" x2="23" y2="84"/>
+    <line x1="32" y1="82" x2="32" y2="84"/>
+    <line x1="41" y1="82" x2="41" y2="84"/>
+    <line x1="50" y1="82" x2="50" y2="84"/>
+    <line x1="59" y1="82" x2="59" y2="84"/>
+    <line x1="68" y1="82" x2="68" y2="84"/>
+    <line x1="77" y1="82" x2="77" y2="84"/>
+  </g>
+</svg>

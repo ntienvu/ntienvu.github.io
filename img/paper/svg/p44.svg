@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <!-- axes -->
+  <line x1="16" y1="84" x2="86" y2="84" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="84" x2="16" y2="16" stroke="#555" stroke-width="1"/>
+  <line x1="28" y1="84" x2="28" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="44" y1="84" x2="44" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="60" y1="84" x2="60" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="76" y1="84" x2="76" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="68" x2="18" y2="68" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="52" x2="18" y2="52" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="36" x2="18" y2="36" stroke="#555" stroke-width="1"/>
+
+  <!-- discriminative decision boundaries (solid curved) -->
+  <path d="M48 18 C44 34, 50 48, 44 78" fill="none" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M48 50 C58 52, 70 56, 84 50" fill="none" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- BLUE cluster (top-left) -->
+  <ellipse cx="30" cy="36" rx="13" ry="11" fill="none" stroke="#1f77b4" stroke-width="1.4" stroke-dasharray="3 2.5" opacity="0.8"/>
+  <circle cx="26" cy="32" r="2.2" fill="#1f77b4"/>
+  <circle cx="33" cy="30" r="2.2" fill="#1f77b4"/>
+  <circle cx="29" cy="38" r="2.2" fill="#1f77b4"/>
+  <circle cx="36" cy="37" r="2.2" fill="#1f77b4"/>
+  <circle cx="24" cy="40" r="2.2" fill="#1f77b4"/>
+  <circle cx="31" cy="43" r="2.2" fill="#1f77b4"/>
+  <path d="M27 33 l4 4 M31 33 l-4 4" stroke="#0d3a5c" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- RED cluster (bottom-left) -->
+  <ellipse cx="32" cy="68" rx="12" ry="9" fill="none" stroke="#d62728" stroke-width="1.4" stroke-dasharray="3 2.5" opacity="0.8"/>
+  <circle cx="27" cy="65" r="2.2" fill="#d62728"/>
+  <circle cx="34" cy="63" r="2.2" fill="#d62728"/>
+  <circle cx="30" cy="70" r="2.2" fill="#d62728"/>
+  <circle cx="37" cy="69" r="2.2" fill="#d62728"/>
+  <circle cx="25" cy="71" r="2.2" fill="#d62728"/>
+  <circle cx="33" cy="74" r="2.2" fill="#d62728"/>
+  <path d="M28 64 l4 4 M32 64 l-4 4" stroke="#7a1717" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- GREEN cluster (right) -->
+  <ellipse cx="66" cy="42" rx="13" ry="12" fill="none" stroke="#2ca02c" stroke-width="1.4" stroke-dasharray="3 2.5" opacity="0.8"/>
+  <circle cx="61" cy="37" r="2.2" fill="#2ca02c"/>
+  <circle cx="69" cy="35" r="2.2" fill="#2ca02c"/>
+  <circle cx="64" cy="43" r="2.2" fill="#2ca02c"/>
+  <circle cx="72" cy="42" r="2.2" fill="#2ca02c"/>
+  <circle cx="59" cy="46" r="2.2" fill="#2ca02c"/>
+  <circle cx="67" cy="48" r="2.2" fill="#2ca02c"/>
+  <circle cx="74" cy="38" r="2.2" fill="#2ca02c"/>
+  <path d="M63 38 l4 4 M67 38 l-4 4" stroke="#176117" stroke-width="2" stroke-linecap="round"/>
+</svg>

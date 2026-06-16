@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="band21" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f77b4" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#1f77b4" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <!-- BRAIN (rose/pink with fold lines) -->
+  <path d="M30 32 C24 30 18 33 18 40 C13 41 12 48 16 51 C13 56 17 62 23 61 C26 67 36 67 38 60 L38 33 C36 30 33 31 30 32 Z"
+        fill="#f7c6cf" stroke="#c25a73" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M24 38 C28 39 27 43 23 44" fill="none" stroke="#c25a73" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M30 35 C34 38 31 44 35 46" fill="none" stroke="#c25a73" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M18 49 C23 50 22 54 26 55" fill="none" stroke="#c25a73" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M28 52 C32 53 30 58 34 58" fill="none" stroke="#c25a73" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M30 60 C30 65 32 68 34 70" fill="none" stroke="#c25a73" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- ARROW brain -> panel -->
+  <line x1="40" y1="47" x2="50" y2="47" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="50,43.5 56,47 50,50.5" fill="#555"/>
+
+  <!-- BO PANEL axes -->
+  <line x1="60" y1="26" x2="60" y2="80" stroke="#555" stroke-width="1"/>
+  <line x1="60" y1="80" x2="90" y2="80" stroke="#555" stroke-width="1"/>
+  <line x1="67" y1="80" x2="67" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="75" y1="80" x2="75" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="83" y1="80" x2="83" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="58" y1="68" x2="60" y2="68" stroke="#555" stroke-width="1"/>
+  <line x1="58" y1="50" x2="60" y2="50" stroke="#555" stroke-width="1"/>
+  <line x1="58" y1="34" x2="60" y2="34" stroke="#555" stroke-width="1"/>
+
+  <!-- confidence band -->
+  <path d="M61 60 C66 50 70 40 75 35 C80 40 85 47 89 44
+           L89 56 C85 64 80 56 75 51 C70 56 66 64 61 70 Z"
+        fill="url(#band21)" stroke="none"/>
+
+  <!-- GP mean curve -->
+  <path d="M61 65 C66 53 70 43 75 39 C80 44 85 52 89 50"
+        fill="none" stroke="#1f77b4" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- red samples -->
+  <circle cx="64" cy="60" r="1.8" fill="#d62728"/>
+  <circle cx="70" cy="48" r="1.8" fill="#d62728"/>
+  <circle cx="80" cy="46" r="1.8" fill="#d62728"/>
+  <circle cx="87" cy="51" r="1.8" fill="#d62728"/>
+
+  <!-- optimum star at peak -->
+  <polygon points="75,33 76.1,36.4 79.7,36.4 76.8,38.6 77.9,42 75,39.8 72.1,42 73.2,38.6 70.3,36.4 73.9,36.4"
+           fill="#ff7f0e" stroke="#b35900" stroke-width="0.5" stroke-linejoin="round"/>
+
+  <!-- per-participant dial -->
+  <circle cx="46" cy="76" r="8" fill="#f3f4f6" stroke="#9467bd" stroke-width="1.4"/>
+  <line x1="46" y1="76" x2="51" y2="72" stroke="#9467bd" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="46" cy="76" r="1.4" fill="#9467bd"/>
+  <line x1="46" y1="69" x2="46" y2="70.6" stroke="#9467bd" stroke-width="0.9"/>
+  <line x1="53" y1="76" x2="51.4" y2="76" stroke="#9467bd" stroke-width="0.9"/>
+  <line x1="39" y1="76" x2="40.6" y2="76" stroke="#9467bd" stroke-width="0.9"/>
+</svg>

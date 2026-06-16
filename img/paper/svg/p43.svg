@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="band43" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f77b4" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#1f77b4" stop-opacity="0.10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- axes -->
+  <line x1="18" y1="20" x2="18" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="82" x2="86" y2="82" stroke="#555" stroke-width="1"/>
+  <!-- y ticks -->
+  <line x1="15.5" y1="32" x2="18" y2="32" stroke="#555" stroke-width="1"/>
+  <line x1="15.5" y1="47" x2="18" y2="47" stroke="#555" stroke-width="1"/>
+  <line x1="15.5" y1="62" x2="18" y2="62" stroke="#555" stroke-width="1"/>
+  <!-- x ticks -->
+  <line x1="34" y1="82" x2="34" y2="84.5" stroke="#555" stroke-width="1"/>
+  <line x1="50" y1="82" x2="50" y2="84.5" stroke="#555" stroke-width="1"/>
+  <line x1="66" y1="82" x2="66" y2="84.5" stroke="#555" stroke-width="1"/>
+  <line x1="80" y1="82" x2="80" y2="84.5" stroke="#555" stroke-width="1"/>
+
+  <!-- confidence band (wide on left, tightening on right) -->
+  <path d="M20 38 C32 28, 46 60, 60 50 C70 43, 78 40, 84 41
+           L84 47 C78 46, 70 49, 60 56 C46 66, 32 34, 20 50 Z"
+        fill="url(#band43)" stroke="none"/>
+
+  <!-- GP mean regression line -->
+  <path d="M20 44 C32 31, 46 60, 60 53 C70 46, 78 43, 84 44"
+        fill="none" stroke="#1f77b4" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- scattered streaming data (gray) -->
+  <circle cx="24" cy="40" r="1.8" fill="#888"/>
+  <circle cx="30" cy="36" r="1.8" fill="#888"/>
+  <circle cx="36" cy="48" r="1.8" fill="#888"/>
+  <circle cx="40" cy="55" r="1.8" fill="#888"/>
+  <circle cx="45" cy="58" r="1.8" fill="#888"/>
+  <circle cx="50" cy="55" r="1.8" fill="#888"/>
+  <circle cx="55" cy="56" r="1.8" fill="#888"/>
+  <circle cx="62" cy="51" r="1.8" fill="#888"/>
+  <circle cx="68" cy="47" r="1.8" fill="#888"/>
+
+  <!-- newly added highlighted points (red) -->
+  <circle cx="76" cy="44" r="2.4" fill="#d62728" stroke="#ffffff" stroke-width="0.8"/>
+  <circle cx="82" cy="43" r="2.4" fill="#d62728" stroke="#ffffff" stroke-width="0.8"/>
+
+  <!-- stream arrow indicating new arrivals -->
+  <line x1="71" y1="26" x2="80" y2="33" stroke="#d62728" stroke-width="1.4"/>
+  <polygon points="80,33 75.6,31.4 78,28.6" fill="#d62728"/>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="band07" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f77b4" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#1f77b4" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- axes -->
+  <line x1="20" y1="20" x2="20" y2="80" stroke="#555" stroke-width="1"/>
+  <line x1="20" y1="80" x2="86" y2="80" stroke="#555" stroke-width="1"/>
+  <!-- x ticks -->
+  <line x1="33" y1="80" x2="33" y2="82.5" stroke="#555" stroke-width="1"/>
+  <line x1="46" y1="80" x2="46" y2="82.5" stroke="#555" stroke-width="1"/>
+  <line x1="59" y1="80" x2="59" y2="82.5" stroke="#555" stroke-width="1"/>
+  <line x1="72" y1="80" x2="72" y2="82.5" stroke="#555" stroke-width="1"/>
+  <line x1="85" y1="80" x2="85" y2="82.5" stroke="#555" stroke-width="1"/>
+  <!-- y ticks -->
+  <line x1="17.5" y1="68" x2="20" y2="68" stroke="#555" stroke-width="1"/>
+  <line x1="17.5" y1="54" x2="20" y2="54" stroke="#555" stroke-width="1"/>
+  <line x1="17.5" y1="40" x2="20" y2="40" stroke="#555" stroke-width="1"/>
+  <line x1="17.5" y1="26" x2="20" y2="26" stroke="#555" stroke-width="1"/>
+
+  <!-- variance band around top (blue) curve -->
+  <path d="M20,72 C32,58 44,44 58,36 C68,30 78,28 85,27 L85,33 C78,34 68,36 58,42 C44,50 32,63 20,76 Z" fill="url(#band07)"/>
+
+  <!-- top blue curve (best, noisy) -->
+  <path d="M20,74 C28,66 32,60 38,53 C42,48 45,52 50,46 C55,40 60,40 66,35 C72,31 79,31 85,30" fill="none" stroke="#1f77b4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- red curve -->
+  <path d="M20,76 C29,70 33,67 39,60 C44,55 47,58 52,53 C58,47 63,49 69,44 C75,40 80,40 85,39" fill="none" stroke="#d62728" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- green curve -->
+  <path d="M20,78 C30,73 34,71 40,66 C45,62 49,64 54,60 C60,55 64,57 70,53 C76,49 81,49 85,48" fill="none" stroke="#2ca02c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- orange curve -->
+  <path d="M20,79 C31,76 35,75 41,71 C47,67 50,69 56,66 C62,62 66,64 72,61 C77,58 81,58 85,57" fill="none" stroke="#ff7f0e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- purple curve -->
+  <path d="M20,79.5 C32,78 36,77.5 43,75 C49,72 53,73 59,70 C65,67 69,68 74,66 C79,64 82,64 85,63" fill="none" stroke="#9467bd" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- early-point markers -->
+  <circle cx="24" cy="71" r="1.7" fill="#1f77b4"/>
+  <circle cx="25" cy="73" r="1.7" fill="#d62728"/>
+  <circle cx="26" cy="75" r="1.7" fill="#2ca02c"/>
+  <circle cx="27" cy="77" r="1.6" fill="#ff7f0e"/>
+
+  <!-- meta-knowledge transfer arrows between early points -->
+  <line x1="25" y1="73" x2="24" y2="71.6" stroke="#444" stroke-width="0.8"/>
+  <polygon points="24,71.6 24.7,72.5 23.2,72.6" fill="#444"/>
+  <line x1="26" y1="75" x2="25" y2="73.6" stroke="#444" stroke-width="0.8"/>
+  <polygon points="25,73.6 25.7,74.5 24.2,74.6" fill="#444"/>
+  <line x1="27" y1="77" x2="26" y2="75.6" stroke="#444" stroke-width="0.8"/>
+  <polygon points="26,75.6 26.7,76.5 25.2,76.6" fill="#444"/>
+
+  <!-- plateau end markers -->
+  <circle cx="85" cy="30" r="1.6" fill="#1f77b4"/>
+  <circle cx="85" cy="39" r="1.4" fill="#d62728"/>
+</svg>

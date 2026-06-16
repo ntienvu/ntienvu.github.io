@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="brainG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffc4d6"/>
+      <stop offset="1" stop-color="#e87a9a"/>
+    </linearGradient>
+    <linearGradient id="skinG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f6e6d8"/>
+      <stop offset="1" stop-color="#ecd4bf"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Head: side profile facing left -->
+  <path d="M70 22 C56 14 36 16 28 30 C22 40 21 46 18 52 C16 56 18 59 22 60 C23 64 22 68 26 70 C30 73 30 78 34 80 C44 86 60 86 70 80 C80 73 84 60 84 46 C84 34 80 28 70 22 Z"
+        fill="url(#skinG)" stroke="#caa988" stroke-width="1.5"/>
+  <path d="M18 52 C16 56 18 59 22 60 L25 60 C24 56 23 54 24 52 Z" fill="#f6e6d8" stroke="#caa988" stroke-width="1"/>
+
+  <!-- Brain -->
+  <path d="M64 30 C52 25 38 28 33 38 C30 44 31 49 35 53 C32 58 36 63 42 63 C50 66 62 64 68 57 C74 50 74 38 64 30 Z"
+        fill="url(#brainG)" stroke="#c25c7c" stroke-width="1.4"/>
+  <path d="M40 36 C45 40 43 46 48 49" fill="none" stroke="#c25c7c" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M52 33 C56 38 53 44 58 48" fill="none" stroke="#c25c7c" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M37 47 C42 49 44 54 50 55" fill="none" stroke="#c25c7c" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M60 36 C64 41 62 47 65 51" fill="none" stroke="#c25c7c" stroke-width="1.1" stroke-linecap="round"/>
+
+  <!-- Electrode pads -->
+  <rect x="42" y="18" width="13" height="6" rx="3" fill="#1f77b4" stroke="#155080" stroke-width="1"/>
+  <rect x="68" y="34" width="6" height="13" rx="3" fill="#d62728" stroke="#8f1b1b" stroke-width="1"/>
+
+  <!-- Lead wires -->
+  <path d="M48 18 C46 12 60 10 64 13" fill="none" stroke="#555" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M74 40 C82 38 84 30 80 24" fill="none" stroke="#555" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- Stimulation concentric arcs into cortex -->
+  <path d="M44 26 C47 29 51 29 54 26" fill="none" stroke="#ff7f0e" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M42 29 C47 33 51 33 56 29" fill="none" stroke="#ff7f0e" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
+  <path d="M40 32 C47 37 51 37 58 32" fill="none" stroke="#ff7f0e" stroke-width="1.2" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Current arrow into cortex -->
+  <line x1="49" y1="27" x2="49" y2="34" stroke="#2ca02c" stroke-width="1.6"/>
+  <path d="M49 36 L46.5 31 L51.5 31 Z" fill="#2ca02c"/>
+
+  <!-- Personalized parameter dial -->
+  <circle cx="28" cy="76" r="8" fill="#f3f5f8" stroke="#555" stroke-width="1.2"/>
+  <line x1="28" y1="76" x2="32.5" y2="71.5" stroke="#9467bd" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="28" cy="76" r="1.6" fill="#9467bd"/>
+  <line x1="28" y1="69.5" x2="28" y2="71" stroke="#555" stroke-width="1"/>
+  <line x1="34.5" y1="76" x2="33" y2="76" stroke="#555" stroke-width="1"/>
+  <line x1="21.5" y1="76" x2="23" y2="76" stroke="#555" stroke-width="1"/>
+
+  <!-- +/- current marks -->
+  <line x1="64" y1="74" x2="70" y2="74" stroke="#d62728" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="67" y1="71" x2="67" y2="77" stroke="#d62728" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="64" y1="82" x2="70" y2="82" stroke="#1f77b4" stroke-width="1.6" stroke-linecap="round"/>
+</svg>

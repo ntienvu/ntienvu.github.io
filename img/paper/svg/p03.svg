@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- Input user-item interaction matrix (left) -->
+  <rect x="11" y="38" width="16" height="16" fill="#ffffff" stroke="#888" stroke-width="0.8"/>
+  <line x1="15" y1="38" x2="15" y2="54" stroke="#bbb" stroke-width="0.5"/>
+  <line x1="19" y1="38" x2="19" y2="54" stroke="#bbb" stroke-width="0.5"/>
+  <line x1="23" y1="38" x2="23" y2="54" stroke="#bbb" stroke-width="0.5"/>
+  <line x1="11" y1="42" x2="27" y2="42" stroke="#bbb" stroke-width="0.5"/>
+  <line x1="11" y1="46" x2="27" y2="46" stroke="#bbb" stroke-width="0.5"/>
+  <line x1="11" y1="50" x2="27" y2="50" stroke="#bbb" stroke-width="0.5"/>
+  <!-- watched cells (blue) -->
+  <rect x="11" y="38" width="4" height="4" fill="#1f77b4"/>
+  <rect x="19" y="42" width="4" height="4" fill="#1f77b4"/>
+  <rect x="11" y="50" width="4" height="4" fill="#1f77b4"/>
+  <rect x="23" y="46" width="4" height="4" fill="#1f77b4"/>
+  <rect x="15" y="46" width="4" height="4" fill="#1f77b4"/>
+
+  <!-- arrow input -> encoder -->
+  <line x1="28" y1="46" x2="33" y2="46" stroke="#555" stroke-width="1.2"/>
+  <polygon points="33,44 36,46 33,48" fill="#555"/>
+
+  <!-- Encoder (narrowing trapezoid) -->
+  <polygon points="37,34 47,40 47,52 37,58" fill="#aec7e8" stroke="#1f77b4" stroke-width="1"/>
+
+  <!-- arrow encoder -> latent -->
+  <line x1="48" y1="46" x2="51" y2="46" stroke="#555" stroke-width="1.2"/>
+  <polygon points="51,44 53.5,46 51,48" fill="#555"/>
+
+  <!-- Latent layer (vertical stack of circles) -->
+  <circle cx="56" cy="39" r="2.1" fill="#9467bd" stroke="#5e3a78" stroke-width="0.6"/>
+  <circle cx="56" cy="44" r="2.1" fill="#9467bd" stroke="#5e3a78" stroke-width="0.6"/>
+  <circle cx="56" cy="49" r="2.1" fill="#9467bd" stroke="#5e3a78" stroke-width="0.6"/>
+  <circle cx="56" cy="54" r="2.1" fill="#9467bd" stroke="#5e3a78" stroke-width="0.6"/>
+
+  <!-- arrow latent -> decoder -->
+  <line x1="59" y1="46" x2="62" y2="46" stroke="#555" stroke-width="1.2"/>
+  <polygon points="62,44 64.5,46 62,48" fill="#555"/>
+
+  <!-- Decoder (widening trapezoid) -->
+  <polygon points="65,40 75,34 75,58 65,52" fill="#aec7e8" stroke="#1f77b4" stroke-width="1"/>
+
+  <!-- arrow decoder -> output -->
+  <line x1="76" y1="46" x2="80" y2="46" stroke="#555" stroke-width="1.2"/>
+  <polygon points="80,44 83,46 80,48" fill="#555"/>
+
+  <!-- Output reconstructed recommendation grid (right, lower) -->
+  <rect x="73" y="62" width="16" height="16" fill="#ffffff" stroke="#888" stroke-width="0.8"/>
+  <line x1="77" y1="62" x2="77" y2="78" stroke="#bbb" stroke-width="0.5"/>
+  <line x1="81" y1="62" x2="81" y2="78" stroke="#bbb" stroke-width="0.5"/>
+  <line x1="85" y1="62" x2="85" y2="78" stroke="#bbb" stroke-width="0.5"/>
+  <line x1="73" y1="66" x2="89" y2="66" stroke="#bbb" stroke-width="0.5"/>
+  <line x1="73" y1="70" x2="89" y2="70" stroke="#bbb" stroke-width="0.5"/>
+  <line x1="73" y1="74" x2="89" y2="74" stroke="#bbb" stroke-width="0.5"/>
+  <!-- known watched (faint blue) -->
+  <rect x="73" y="62" width="4" height="4" fill="#1f77b4" fill-opacity="0.45"/>
+  <rect x="81" y="66" width="4" height="4" fill="#1f77b4" fill-opacity="0.45"/>
+  <!-- predicted recommendations (orange) -->
+  <rect x="85" y="62" width="4" height="4" fill="#ff7f0e"/>
+  <rect x="77" y="70" width="4" height="4" fill="#ff7f0e"/>
+  <rect x="85" y="74" width="4" height="4" fill="#ff7f0e"/>
+  <rect x="73" y="74" width="4" height="4" fill="#ff7f0e"/>
+
+  <!-- collaborative learning round-trip link (green, dashed) -->
+  <path d="M81 60 C 81 24, 19 24, 19 36" stroke="#2ca02c" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+  <polygon points="17.5,36 19,39 20.5,36" fill="#2ca02c"/>
+</svg>

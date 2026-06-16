@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- edges: root -> level 1 -->
+  <path d="M50 25 L31 47" stroke="#9aa3ab" stroke-width="1.6" fill="none"/>
+  <path d="M50 25 L69 47" stroke="#9aa3ab" stroke-width="1.6" fill="none"/>
+  <!-- edges: level 1 -> level 2 -->
+  <path d="M28 58 L18 76" stroke="#9aa3ab" stroke-width="1.6" fill="none"/>
+  <path d="M34 58 L41 76" stroke="#9aa3ab" stroke-width="1.6" fill="none"/>
+  <path d="M66 58 L59 76" stroke="#9aa3ab" stroke-width="1.6" fill="none"/>
+  <path d="M72 58 L82 76" stroke="#9aa3ab" stroke-width="1.6" fill="none"/>
+
+  <!-- edge value badges (pills) -->
+  <rect x="36.5" y="33" width="9" height="5" rx="2.5" fill="#ff7f0e" stroke="#cc6209" stroke-width="0.6"/>
+  <rect x="54.5" y="33" width="9" height="5" rx="2.5" fill="#9467bd" stroke="#73509a" stroke-width="0.6"/>
+  <rect x="18.5" y="62" width="8" height="4.6" rx="2.3" fill="#17becf" stroke="#1397a5" stroke-width="0.6"/>
+  <rect x="34" y="62" width="8" height="4.6" rx="2.3" fill="#ff7f0e" stroke="#cc6209" stroke-width="0.6"/>
+  <rect x="58" y="62" width="8" height="4.6" rx="2.3" fill="#9467bd" stroke="#73509a" stroke-width="0.6"/>
+  <rect x="74" y="62" width="8" height="4.6" rx="2.3" fill="#17becf" stroke="#1397a5" stroke-width="0.6"/>
+
+  <!-- root node: continuous (round, blue) -->
+  <circle cx="50" cy="18" r="7" fill="#aec7e8" stroke="#1f77b4" stroke-width="1.8"/>
+  <circle cx="50" cy="18" r="2.6" fill="#1f77b4"/>
+
+  <!-- level 1 left: categorical (square, green) -->
+  <rect x="24" y="46" width="12" height="12" rx="2" fill="#a8d5a2" stroke="#2ca02c" stroke-width="1.8"/>
+  <line x1="27" y1="50" x2="33" y2="50" stroke="#2ca02c" stroke-width="1.2"/>
+  <line x1="27" y1="54" x2="33" y2="54" stroke="#2ca02c" stroke-width="1.2"/>
+
+  <!-- level 1 right: continuous (round, blue) -->
+  <circle cx="69" cy="52" r="6.5" fill="#aec7e8" stroke="#1f77b4" stroke-width="1.8"/>
+  <circle cx="69" cy="52" r="2.3" fill="#1f77b4"/>
+
+  <!-- level 2 leaf 1: continuous -->
+  <circle cx="17" cy="82" r="6" fill="#aec7e8" stroke="#1f77b4" stroke-width="1.6"/>
+  <circle cx="17" cy="82" r="2" fill="#1f77b4"/>
+
+  <!-- level 2 leaf 2: categorical -->
+  <rect x="36" y="76" width="11" height="11" rx="2" fill="#a8d5a2" stroke="#2ca02c" stroke-width="1.6"/>
+  <line x1="39" y1="80" x2="44" y2="80" stroke="#2ca02c" stroke-width="1.1"/>
+  <line x1="39" y1="83" x2="44" y2="83" stroke="#2ca02c" stroke-width="1.1"/>
+
+  <!-- level 2 leaf 3: categorical (BEST leaf, highlighted with star) -->
+  <rect x="53.5" y="75.5" width="12" height="12" rx="2" fill="#fff3cf" stroke="#d62728" stroke-width="2.2"/>
+  <path d="M59.5 77.2 L60.9 80.6 L64.6 80.8 L61.7 83.1 L62.7 86.7 L59.5 84.7 L56.3 86.7 L57.3 83.1 L54.4 80.8 L58.1 80.6 Z" fill="#ffbf00" stroke="#d6a300" stroke-width="0.5"/>
+
+  <!-- level 2 leaf 4: continuous -->
+  <circle cx="82" cy="82" r="6" fill="#aec7e8" stroke="#1f77b4" stroke-width="1.6"/>
+  <circle cx="82" cy="82" r="2" fill="#1f77b4"/>
+</svg>

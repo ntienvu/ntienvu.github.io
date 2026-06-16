@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <!-- time axis (midline) -->
+  <line x1="14" y1="55" x2="88" y2="55" stroke="#555" stroke-width="1"/>
+  <!-- ticks -->
+  <line x1="22" y1="55" x2="22" y2="58" stroke="#555" stroke-width="1"/>
+  <line x1="34" y1="55" x2="34" y2="58" stroke="#555" stroke-width="1"/>
+  <line x1="46" y1="55" x2="46" y2="58" stroke="#555" stroke-width="1"/>
+  <line x1="58" y1="55" x2="58" y2="58" stroke="#555" stroke-width="1"/>
+  <line x1="70" y1="55" x2="70" y2="58" stroke="#555" stroke-width="1"/>
+  <line x1="82" y1="55" x2="82" y2="58" stroke="#555" stroke-width="1"/>
+  <!-- overlap shaded region where false triggering occurs -->
+  <rect x="40" y="22" width="22" height="66" fill="#9467bd" fill-opacity="0.16"/>
+  <line x1="40" y1="22" x2="40" y2="88" stroke="#9467bd" stroke-width="0.8" stroke-dasharray="2 1.5" stroke-opacity="0.6"/>
+  <line x1="62" y1="22" x2="62" y2="88" stroke="#9467bd" stroke-width="0.8" stroke-dasharray="2 1.5" stroke-opacity="0.6"/>
+  <!-- blue waveform (event A) -->
+  <path d="M14,55 C18,40 22,38 26,55 C29,68 32,67 35,55 C39,30 44,32 48,55 C51,72 55,70 58,55 C62,46 66,45 70,55 C74,62 78,61 82,55 C84,52 86,53 88,55"
+        fill="none" stroke="#1f77b4" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- orange waveform (event B) -->
+  <path d="M14,55 C18,62 22,63 26,55 C30,48 33,49 36,55 C40,66 45,64 49,55 C52,34 56,36 60,55 C63,70 67,69 70,55 C74,42 78,43 82,55 C84,58 86,57 88,55"
+        fill="none" stroke="#ff7f0e" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+  <!-- class label dots -->
+  <circle cx="22" cy="20" r="3" fill="#1f77b4"/>
+  <circle cx="80" cy="20" r="3" fill="#ff7f0e"/>
+  <!-- confusion arrows between the two classes -->
+  <path d="M27,20 C42,12 60,12 74,19" fill="none" stroke="#d62728" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M27,20 C42,28 60,28 74,21" fill="none" stroke="#d62728" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.55"/>
+  <!-- arrowhead toward orange -->
+  <polygon points="74,16.5 80,20 73.5,23" fill="#d62728"/>
+  <!-- arrowhead toward blue -->
+  <polygon points="28,16.5 22,20 28.5,23.5" fill="#d62728" fill-opacity="0.6"/>
+  <!-- false-trigger marker inside overlap -->
+  <circle cx="51" cy="55" r="2" fill="#d62728"/>
+</svg>

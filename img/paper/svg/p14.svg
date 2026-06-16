@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <!-- axes -->
+  <line x1="18" y1="78" x2="86" y2="78" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="22" x2="18" y2="78" stroke="#555" stroke-width="1"/>
+  <!-- y ticks -->
+  <line x1="16" y1="70" x2="18" y2="70" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="56" x2="18" y2="56" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="42" x2="18" y2="42" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="28" x2="18" y2="28" stroke="#555" stroke-width="1"/>
+  <!-- x ticks -->
+  <line x1="30" y1="78" x2="30" y2="80" stroke="#555" stroke-width="1"/>
+  <line x1="50" y1="78" x2="50" y2="80" stroke="#555" stroke-width="1"/>
+  <line x1="70" y1="78" x2="70" y2="80" stroke="#555" stroke-width="1"/>
+  <!-- head bars (tall, blue) -->
+  <rect x="20.5" y="26" width="4.5" height="52" fill="#1f77b4"/>
+  <rect x="25.5" y="32" width="4.5" height="46" fill="#1f77b4"/>
+  <rect x="30.5" y="40" width="4.5" height="38" fill="#2f86c0"/>
+  <rect x="35.5" y="49" width="4.5" height="29" fill="#3f93ca"/>
+  <!-- mid bars -->
+  <rect x="40.5" y="57" width="4.5" height="21" fill="#5aa3d4"/>
+  <rect x="45.5" y="63" width="4.5" height="15" fill="#76b4de"/>
+  <!-- long tail bars (short, lighter blue) -->
+  <rect x="50.5" y="68" width="3" height="10" fill="#9ec9e8"/>
+  <rect x="54" y="70" width="3" height="8" fill="#a8d0eb"/>
+  <rect x="57.5" y="71" width="3" height="7" fill="#aed3ec"/>
+  <rect x="61" y="72" width="3" height="6" fill="#b6d8ee"/>
+  <rect x="64.5" y="73" width="3" height="5" fill="#bcdcf0"/>
+  <rect x="68" y="73.5" width="3" height="4.5" fill="#c2dff1"/>
+  <rect x="71.5" y="74" width="3" height="4" fill="#c8e2f3"/>
+  <rect x="75" y="74.5" width="3" height="3.5" fill="#cee5f4"/>
+  <rect x="78.5" y="75" width="3" height="3" fill="#d4e8f6"/>
+  <rect x="82" y="75.5" width="3" height="2.5" fill="#dbebf7"/>
+  <!-- contrastive-embedding inset -->
+  <rect x="58" y="26" width="27" height="22" rx="3" fill="#fbfdff" stroke="#cfd8e0" stroke-width="1"/>
+  <!-- cluster A dots (pulled together) -->
+  <circle cx="64" cy="33" r="1.8" fill="#d62728"/>
+  <circle cx="67.5" cy="35" r="1.8" fill="#d62728"/>
+  <circle cx="65.5" cy="37.5" r="1.8" fill="#d62728"/>
+  <line x1="64" y1="33" x2="65.5" y2="37.5" stroke="#888" stroke-width="0.9"/>
+  <!-- cluster B dots -->
+  <circle cx="78" cy="40" r="1.8" fill="#2ca02c"/>
+  <circle cx="80.5" cy="37" r="1.8" fill="#2ca02c"/>
+  <circle cx="77" cy="36.5" r="1.8" fill="#2ca02c"/>
+  <!-- push arrow (between clusters) -->
+  <line x1="69.5" y1="36.5" x2="74.5" y2="38" stroke="#ff7f0e" stroke-width="1.4"/>
+  <polygon points="75,38 71.8,37 72.3,39.3" fill="#ff7f0e"/>
+  <polygon points="69,36.3 72.2,37.3 71.7,35" fill="#ff7f0e"/>
+</svg>

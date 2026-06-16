@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17becf" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#17becf" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+
+  <!-- axes -->
+  <line x1="18" y1="20" x2="18" y2="60" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="60" x2="86" y2="60" stroke="#555" stroke-width="1"/>
+  <line x1="32" y1="60" x2="32" y2="62.5" stroke="#555" stroke-width="1"/>
+  <line x1="52" y1="60" x2="52" y2="62.5" stroke="#555" stroke-width="1"/>
+  <line x1="72" y1="60" x2="72" y2="62.5" stroke="#555" stroke-width="1"/>
+  <line x1="15.5" y1="48" x2="18" y2="48" stroke="#555" stroke-width="1"/>
+  <line x1="15.5" y1="34" x2="18" y2="34" stroke="#555" stroke-width="1"/>
+  <line x1="15.5" y1="22" x2="18" y2="22" stroke="#555" stroke-width="1"/>
+
+  <!-- teal uncertainty band bulging in the middle -->
+  <path d="M20 52 C30 50 38 46 50 27 C62 46 72 50 84 52 L84 56 C72 54 62 52 50 38 C38 52 30 54 20 56 Z" fill="url(#band)" stroke="#17becf" stroke-width="0.8" stroke-opacity="0.5"/>
+
+  <!-- acquisition curve a(x) -->
+  <path d="M20 50 C32 49 40 44 50 26 C60 44 70 49 84 50" fill="none" stroke="#17becf" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- faint sample stems -->
+  <line x1="28" y1="60" x2="28" y2="51" stroke="#9467bd" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="40" y1="60" x2="40" y2="46" stroke="#9467bd" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="60" y1="60" x2="60" y2="46" stroke="#9467bd" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="72" y1="60" x2="72" y2="51" stroke="#9467bd" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- horizontal observation line -->
+  <line x1="20" y1="70" x2="84" y2="70" stroke="#777" stroke-width="1"/>
+
+  <!-- red square observation markers -->
+  <rect x="26.5" y="68.5" width="3" height="3" fill="#d62728"/>
+  <rect x="38.5" y="68.5" width="3" height="3" fill="#d62728"/>
+  <rect x="70.5" y="68.5" width="3" height="3" fill="#d62728"/>
+  <rect x="80.5" y="68.5" width="3" height="3" fill="#d62728"/>
+
+  <!-- orange star perceived optima -->
+  <path d="M50 66.5 L51 69 L53.6 69.1 L51.5 70.7 L52.3 73.2 L50 71.7 L47.7 73.2 L48.5 70.7 L46.4 69.1 L49 69 Z" fill="#ff7f0e"/>
+  <path d="M60 66.5 L61 69 L63.6 69.1 L61.5 70.7 L62.3 73.2 L60 71.7 L57.7 73.2 L58.5 70.7 L56.4 69.1 L59 69 Z" fill="#ff7f0e" fill-opacity="0.85"/>
+
+  <!-- black parabola peak below with blue optimum dot -->
+  <path d="M30 88 C42 88 46 80 52 80 C58 80 62 88 74 88" fill="none" stroke="#111111" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="52" cy="80" r="2.4" fill="#1f77b4" stroke="#ffffff" stroke-width="0.8"/>
+</svg>

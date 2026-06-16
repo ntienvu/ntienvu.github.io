@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- axes -->
+  <line x1="20" y1="22" x2="20" y2="80" stroke="#555" stroke-width="1"/>
+  <line x1="20" y1="80" x2="86" y2="80" stroke="#555" stroke-width="1"/>
+  <!-- y ticks -->
+  <line x1="17.5" y1="32" x2="20" y2="32" stroke="#555" stroke-width="1"/>
+  <line x1="17.5" y1="51" x2="20" y2="51" stroke="#555" stroke-width="1"/>
+  <line x1="17.5" y1="70" x2="20" y2="70" stroke="#555" stroke-width="1"/>
+  <!-- x ticks -->
+  <line x1="36" y1="80" x2="36" y2="82.5" stroke="#555" stroke-width="1"/>
+  <line x1="53" y1="80" x2="53" y2="82.5" stroke="#555" stroke-width="1"/>
+  <line x1="70" y1="80" x2="70" y2="82.5" stroke="#555" stroke-width="1"/>
+
+  <!-- decision threshold line at p=0.5 -->
+  <line x1="20" y1="51" x2="86" y2="51" stroke="#9467bd" stroke-width="1.2" stroke-dasharray="3 2"/>
+
+  <!-- sigmoid curve (blue) -->
+  <path d="M20 76 C 36 75, 44 72, 50 51 C 56 30, 64 27, 86 26" fill="none" stroke="#1f77b4" stroke-width="3.2" stroke-linecap="round"/>
+
+  <!-- class 0 points: red, below-left -->
+  <circle cx="26" cy="74" r="2.2" fill="#d62728"/>
+  <circle cx="31" cy="76" r="2.2" fill="#d62728"/>
+  <circle cx="35" cy="72" r="2.2" fill="#d62728"/>
+  <circle cx="40" cy="75" r="2.2" fill="#d62728"/>
+  <circle cx="30" cy="70" r="2.2" fill="#d62728"/>
+
+  <!-- class 1 points: green, above-right -->
+  <circle cx="60" cy="30" r="2.2" fill="#2ca02c"/>
+  <circle cx="66" cy="28" r="2.2" fill="#2ca02c"/>
+  <circle cx="71" cy="31" r="2.2" fill="#2ca02c"/>
+  <circle cx="76" cy="27" r="2.2" fill="#2ca02c"/>
+  <circle cx="64" cy="34" r="2.2" fill="#2ca02c"/>
+
+  <!-- new class appears (label drift): orange point + arrow -->
+  <circle cx="80" cy="62" r="2.6" fill="#ff7f0e" stroke="#cc6600" stroke-width="0.6"/>
+  <line x1="73" y1="68" x2="78.5" y2="63.4" stroke="#ff7f0e" stroke-width="1.6"/>
+  <path d="M78.5 63.4 L74.6 63.7 L76.3 67.1 Z" fill="#ff7f0e"/>
+
+  <!-- streaming / one-pass arrow along the top -->
+  <line x1="24" y1="18" x2="60" y2="18" stroke="#17becf" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M60 18 L55.5 15.5 L55.5 20.5 Z" fill="#17becf"/>
+</svg>

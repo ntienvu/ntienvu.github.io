@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe8f7"/>
+      <stop offset="1" stop-color="#eaf6ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Query image thumbnail (left): mountain + sun -->
+  <rect x="12" y="20" width="20" height="17" rx="2" fill="url(#sky)" stroke="#1f77b4" stroke-width="1.6"/>
+  <circle cx="27.5" cy="25.5" r="2.6" fill="#ff7f0e"/>
+  <path d="M13 37 L19 28 L23 33 L27 26 L31 37 Z" fill="#2ca02c" stroke="#2e7d32" stroke-width="0.6"/>
+
+  <!-- arrow from query to memory bank -->
+  <line x1="33" y1="28.5" x2="40" y2="28.5" stroke="#555" stroke-width="1.4"/>
+  <path d="M40 26.6 L43 28.5 L40 30.4 Z" fill="#555"/>
+
+  <!-- Memory bank: grid of image tiles (middle) -->
+  <rect x="43.5" y="14" width="27" height="29" rx="2" fill="#f4f6f8" stroke="#888" stroke-width="1"/>
+  <rect x="45.5" y="16" width="6.5" height="6" rx="1" fill="#cfe0ef" stroke="#9aa7b3" stroke-width="0.5"/>
+  <rect x="53.5" y="16" width="6.5" height="6" rx="1" fill="#d62728" fill-opacity="0.55" stroke="#d62728" stroke-width="1"/>
+  <rect x="61.5" y="16" width="6.5" height="6" rx="1" fill="#e3d6ef" stroke="#9aa7b3" stroke-width="0.5"/>
+  <rect x="45.5" y="24" width="6.5" height="6" rx="1" fill="#d62728" fill-opacity="0.55" stroke="#d62728" stroke-width="1"/>
+  <rect x="53.5" y="24" width="6.5" height="6" rx="1" fill="#d9ead3" stroke="#9aa7b3" stroke-width="0.5"/>
+  <rect x="61.5" y="24" width="6.5" height="6" rx="1" fill="#cfe0ef" stroke="#9aa7b3" stroke-width="0.5"/>
+  <rect x="45.5" y="32" width="6.5" height="6" rx="1" fill="#f3dfc6" stroke="#9aa7b3" stroke-width="0.5"/>
+  <rect x="53.5" y="32" width="6.5" height="6" rx="1" fill="#cfe0ef" stroke="#9aa7b3" stroke-width="0.5"/>
+  <rect x="61.5" y="32" width="6.5" height="6" rx="1" fill="#d62728" fill-opacity="0.55" stroke="#d62728" stroke-width="1"/>
+
+  <!-- Magnifying glass over the bank -->
+  <circle cx="55" cy="27" r="9.5" fill="#17becf" fill-opacity="0.12" stroke="#17becf" stroke-width="2"/>
+  <line x1="61.8" y1="33.8" x2="68" y2="40" stroke="#17becf" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- arrow to prediction -->
+  <line x1="71" y1="28.5" x2="79" y2="28.5" stroke="#555" stroke-width="1.4"/>
+  <path d="M79 26.6 L82 28.5 L79 30.4 Z" fill="#555"/>
+
+  <!-- Class prediction bar (top right, predicted class highlighted) -->
+  <rect x="74" y="33" width="14" height="4" rx="1" fill="#9467bd" fill-opacity="0.9"/>
+  <rect x="74" y="38.5" width="9" height="4" rx="1" fill="#c8b6dd"/>
+
+  <!-- Long-tail distribution (bottom): axes + bars descending into tiny tail -->
+  <line x1="16" y1="82" x2="88" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="82" x2="16" y2="52" stroke="#555" stroke-width="1"/>
+  <line x1="14.5" y1="56" x2="16" y2="56" stroke="#555" stroke-width="0.8"/>
+  <line x1="14.5" y1="68" x2="16" y2="68" stroke="#555" stroke-width="0.8"/>
+
+  <rect x="20" y="55" width="6" height="27" fill="#1f77b4"/>
+  <rect x="28" y="62" width="6" height="20" fill="#1f77b4"/>
+  <rect x="36" y="69" width="6" height="13" fill="#1f77b4"/>
+  <rect x="44" y="74" width="6" height="8" fill="#ff7f0e"/>
+  <rect x="52" y="77" width="6" height="5" fill="#ff7f0e"/>
+  <rect x="60" y="79" width="5" height="3" fill="#d62728"/>
+  <rect x="67" y="80" width="5" height="2" fill="#d62728"/>
+  <rect x="74" y="80.5" width="5" height="1.5" fill="#d62728"/>
+  <rect x="81" y="81" width="5" height="1" fill="#d62728"/>
+
+  <!-- tail-trend curve over the bars -->
+  <path d="M23 55 C34 60 46 73 66 80 C73 81.5 80 81.8 86 82" fill="none" stroke="#2ca02c" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="0.1 3.2"/>
+</svg>

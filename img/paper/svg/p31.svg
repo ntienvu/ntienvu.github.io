@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- plot axes -->
+  <line x1="20" y1="14" x2="20" y2="66" stroke="#555" stroke-width="1"/>
+  <line x1="20" y1="66" x2="86" y2="66" stroke="#555" stroke-width="1"/>
+
+  <!-- y tick marks (5 category levels) -->
+  <line x1="18" y1="22" x2="20" y2="22" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="33" x2="20" y2="33" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="44" x2="20" y2="44" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="55" x2="20" y2="55" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="62" x2="20" y2="62" stroke="#555" stroke-width="1"/>
+
+  <!-- x tick marks -->
+  <line x1="36" y1="66" x2="36" y2="68" stroke="#555" stroke-width="1"/>
+  <line x1="53" y1="66" x2="53" y2="68" stroke="#555" stroke-width="1"/>
+  <line x1="70" y1="66" x2="70" y2="68" stroke="#555" stroke-width="1"/>
+  <line x1="84" y1="66" x2="84" y2="68" stroke="#555" stroke-width="1"/>
+
+  <!-- faint guide rows -->
+  <line x1="20" y1="22" x2="86" y2="22" stroke="#eef0f2" stroke-width="1"/>
+  <line x1="20" y1="33" x2="86" y2="33" stroke="#eef0f2" stroke-width="1"/>
+  <line x1="20" y1="44" x2="86" y2="44" stroke="#eef0f2" stroke-width="1"/>
+  <line x1="20" y1="55" x2="86" y2="55" stroke="#eef0f2" stroke-width="1"/>
+  <line x1="20" y1="62" x2="86" y2="62" stroke="#eef0f2" stroke-width="1"/>
+
+  <!-- dominant band (y=55): dense mix of red and blue -->
+  <circle cx="24" cy="55" r="1.7" fill="#d62728"/>
+  <circle cx="28" cy="55" r="1.7" fill="#1f77b4"/>
+  <circle cx="32" cy="55" r="1.7" fill="#d62728"/>
+  <circle cx="36" cy="55" r="1.7" fill="#1f77b4"/>
+  <circle cx="40" cy="55" r="1.7" fill="#d62728"/>
+  <circle cx="44" cy="55" r="1.7" fill="#1f77b4"/>
+  <circle cx="48" cy="55" r="1.7" fill="#d62728"/>
+  <circle cx="52" cy="55" r="1.7" fill="#1f77b4"/>
+  <circle cx="56" cy="55" r="1.7" fill="#d62728"/>
+  <circle cx="60" cy="55" r="1.7" fill="#1f77b4"/>
+  <circle cx="64" cy="55" r="1.7" fill="#d62728"/>
+  <circle cx="68" cy="55" r="1.7" fill="#1f77b4"/>
+  <circle cx="72" cy="55" r="1.7" fill="#d62728"/>
+  <circle cx="76" cy="55" r="1.7" fill="#1f77b4"/>
+  <circle cx="80" cy="55" r="1.7" fill="#d62728"/>
+
+  <!-- sparse points on other levels -->
+  <circle cx="30" cy="44" r="1.6" fill="#1f77b4"/>
+  <circle cx="50" cy="44" r="1.6" fill="#d62728"/>
+  <circle cx="72" cy="44" r="1.6" fill="#1f77b4"/>
+
+  <circle cx="38" cy="33" r="1.6" fill="#d62728"/>
+  <circle cx="66" cy="33" r="1.6" fill="#1f77b4"/>
+
+  <circle cx="46" cy="22" r="1.6" fill="#1f77b4"/>
+  <circle cx="78" cy="22" r="1.6" fill="#d62728"/>
+
+  <circle cx="34" cy="62" r="1.6" fill="#d62728"/>
+  <circle cx="58" cy="62" r="1.6" fill="#1f77b4"/>
+
+  <!-- continuous acquisition curve along the bottom -->
+  <line x1="20" y1="88" x2="86" y2="88" stroke="#555" stroke-width="1"/>
+  <path d="M20 84 C30 74 38 92 48 80 C58 70 66 90 76 78 C81 73 84 80 86 77"
+        fill="none" stroke="#2ca02c" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="48" cy="80" r="1.8" fill="#ff7f0e" stroke="#7a3d00" stroke-width="0.5"/>
+</svg>

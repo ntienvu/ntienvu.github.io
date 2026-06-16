@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- faint count-data histogram bars under the curves -->
+  <g fill="#9aa3ad" fill-opacity="0.28" stroke="#7d858e" stroke-width="0.4" stroke-opacity="0.4">
+    <rect x="18" y="70" width="4.5" height="8"/>
+    <rect x="23" y="62" width="4.5" height="16"/>
+    <rect x="28" y="56" width="4.5" height="22"/>
+    <rect x="33" y="61" width="4.5" height="17"/>
+    <rect x="38" y="66" width="4.5" height="12"/>
+    <rect x="43" y="60" width="4.5" height="18"/>
+    <rect x="48" y="54" width="4.5" height="24"/>
+    <rect x="53" y="63" width="4.5" height="15"/>
+    <rect x="58" y="67" width="4.5" height="11"/>
+    <rect x="63" y="61" width="4.5" height="17"/>
+    <rect x="68" y="65" width="4.5" height="13"/>
+    <rect x="73" y="71" width="4.5" height="7"/>
+  </g>
+
+  <!-- component 1: blue Gaussian -->
+  <path d="M14,78 C24,78 28,46 34,46 C40,46 44,78 54,78 Z" fill="#1f77b4" fill-opacity="0.22"/>
+  <path d="M14,78 C24,78 28,46 34,46 C40,46 44,78 54,78" fill="none" stroke="#1f77b4" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- component 2: orange Gaussian -->
+  <path d="M30,78 C42,78 46,38 52,38 C58,38 62,78 74,78 Z" fill="#ff7f0e" fill-opacity="0.22"/>
+  <path d="M30,78 C42,78 46,38 52,38 C58,38 62,78 74,78" fill="none" stroke="#ff7f0e" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- component 3: green Gaussian -->
+  <path d="M52,78 C62,78 66,52 70,52 C74,52 78,78 86,78 Z" fill="#2ca02c" fill-opacity="0.22"/>
+  <path d="M52,78 C62,78 66,52 70,52 C74,52 78,78 86,78" fill="none" stroke="#2ca02c" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- summed mixture envelope: bold black dashed -->
+  <path d="M14,78 C22,77 26,52 31,49 C35,47 36,52 39,53 C44,55 45,42 51,39 C57,37 60,52 65,53 C69,54 71,53 75,57 C80,61 82,77 86,78"
+        fill="none" stroke="#111111" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.5,3"/>
+
+  <!-- peak markers -->
+  <circle cx="34" cy="46" r="1.7" fill="#1f77b4" stroke="#ffffff" stroke-width="0.6"/>
+  <circle cx="52" cy="38" r="1.7" fill="#ff7f0e" stroke="#ffffff" stroke-width="0.6"/>
+  <circle cx="70" cy="52" r="1.7" fill="#2ca02c" stroke="#ffffff" stroke-width="0.6"/>
+
+  <!-- axes -->
+  <line x1="14" y1="78" x2="88" y2="78" stroke="#555555" stroke-width="1"/>
+  <line x1="14" y1="78" x2="14" y2="26" stroke="#555555" stroke-width="1"/>
+
+  <!-- x ticks -->
+  <g stroke="#555555" stroke-width="1">
+    <line x1="26" y1="78" x2="26" y2="80.5"/>
+    <line x1="38" y1="78" x2="38" y2="80.5"/>
+    <line x1="50" y1="78" x2="50" y2="80.5"/>
+    <line x1="62" y1="78" x2="62" y2="80.5"/>
+    <line x1="74" y1="78" x2="74" y2="80.5"/>
+    <line x1="86" y1="78" x2="86" y2="80.5"/>
+  </g>
+  <!-- y ticks -->
+  <g stroke="#555555" stroke-width="1">
+    <line x1="11.5" y1="68" x2="14" y2="68"/>
+    <line x1="11.5" y1="58" x2="14" y2="58"/>
+    <line x1="11.5" y1="48" x2="14" y2="48"/>
+    <line x1="11.5" y1="38" x2="14" y2="38"/>
+  </g>
+</svg>

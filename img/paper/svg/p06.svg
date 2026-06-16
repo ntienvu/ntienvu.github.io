@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f77b4" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#1f77b4" stop-opacity="0.10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- faint candidate variable gridlines -->
+  <g stroke="#d8dde2" stroke-width="0.8">
+    <line x1="22" y1="20" x2="22" y2="78"/>
+    <line x1="30" y1="20" x2="30" y2="78"/>
+    <line x1="38" y1="20" x2="38" y2="78"/>
+    <line x1="46" y1="20" x2="46" y2="78"/>
+    <line x1="54" y1="20" x2="54" y2="78"/>
+    <line x1="62" y1="20" x2="62" y2="78"/>
+    <line x1="70" y1="20" x2="70" y2="78"/>
+    <line x1="78" y1="20" x2="78" y2="78"/>
+  </g>
+
+  <!-- lasso-selected important variable bands (light yellow) -->
+  <rect x="28" y="20" width="6" height="58" fill="#ffe680" fill-opacity="0.55"/>
+  <rect x="50" y="20" width="6" height="58" fill="#ffe680" fill-opacity="0.55"/>
+  <rect x="72" y="20" width="6" height="58" fill="#ffe680" fill-opacity="0.55"/>
+
+  <!-- GP confidence band -->
+  <path d="M16 50 C26 38 32 60 40 44 C48 30 56 56 64 40 C72 28 80 48 86 38 L86 54 C80 46 72 60 64 54 C56 46 48 64 40 58 C32 52 26 70 16 64 Z" fill="url(#band)"/>
+
+  <!-- true objective faint dashed -->
+  <path d="M16 56 C26 46 32 62 40 50 C48 38 56 60 64 46 C72 36 80 52 86 44" fill="none" stroke="#888888" stroke-width="1.6" stroke-dasharray="3,2.4" stroke-linecap="round"/>
+
+  <!-- GP posterior mean -->
+  <path d="M16 53 C26 41 32 64 40 47 C48 33 56 58 64 43 C72 31 80 50 86 41" fill="none" stroke="#1f77b4" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- axes -->
+  <line x1="16" y1="20" x2="16" y2="80" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="80" x2="88" y2="80" stroke="#555" stroke-width="1"/>
+  <g stroke="#555" stroke-width="1">
+    <line x1="16" y1="34" x2="13.5" y2="34"/>
+    <line x1="16" y1="50" x2="13.5" y2="50"/>
+    <line x1="16" y1="66" x2="13.5" y2="66"/>
+    <line x1="31" y1="80" x2="31" y2="82.5"/>
+    <line x1="53" y1="80" x2="53" y2="82.5"/>
+    <line x1="75" y1="80" x2="75" y2="82.5"/>
+  </g>
+
+  <!-- red sample markers -->
+  <circle cx="24" cy="49" r="2" fill="#d62728"/>
+  <circle cx="40" cy="47" r="2" fill="#d62728"/>
+  <circle cx="50" cy="42" r="2" fill="#d62728"/>
+  <circle cx="64" cy="43" r="2" fill="#d62728"/>
+  <circle cx="78" cy="46" r="2" fill="#d62728"/>
+
+  <!-- star at current max -->
+  <path d="M53 27 L54.6 31.2 L59.1 31.5 L55.6 34.4 L56.8 38.8 L53 36.3 L49.2 38.8 L50.4 34.4 L46.9 31.5 L51.4 31.2 Z" fill="#ff7f0e" stroke="#b35900" stroke-width="0.5"/>
+</svg>

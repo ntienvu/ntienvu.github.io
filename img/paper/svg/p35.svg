@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- highlighted max-gap band -->
+  <rect x="50" y="22" width="12" height="54" fill="#d62728" fill-opacity="0.12"/>
+
+  <!-- axes -->
+  <line x1="18" y1="78" x2="86" y2="78" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="78" x2="18" y2="18" stroke="#555" stroke-width="1"/>
+  <!-- x ticks -->
+  <line x1="32" y1="78" x2="32" y2="80.5" stroke="#555" stroke-width="1"/>
+  <line x1="46" y1="78" x2="46" y2="80.5" stroke="#555" stroke-width="1"/>
+  <line x1="60" y1="78" x2="60" y2="80.5" stroke="#555" stroke-width="1"/>
+  <line x1="74" y1="78" x2="74" y2="80.5" stroke="#555" stroke-width="1"/>
+  <!-- y ticks -->
+  <line x1="18" y1="64" x2="15.5" y2="64" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="48" x2="15.5" y2="48" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="32" x2="15.5" y2="32" stroke="#555" stroke-width="1"/>
+
+  <!-- gold standard reference curve (black) -->
+  <path d="M18,62 C28,40 38,30 48,34 C58,38 66,52 74,46 C80,42 84,38 86,40"
+        fill="none" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- algorithm output curve (blue) -->
+  <path d="M18,66 C28,52 38,46 48,52 C58,58 66,70 74,60 C80,54 84,50 86,52"
+        fill="none" stroke="#1f77b4" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- max gap double-headed red arrow at x=56 -->
+  <line x1="56" y1="40" x2="56" y2="66" stroke="#d62728" stroke-width="2"/>
+  <polygon points="56,37 53,42 59,42" fill="#d62728"/>
+  <polygon points="56,69 53,64 59,64" fill="#d62728"/>
+
+  <!-- BO sample points probing the algorithm curve -->
+  <circle cx="40" cy="48" r="2.6" fill="#ff7f0e" stroke="#7a3d00" stroke-width="0.7"/>
+  <circle cx="56" cy="53" r="2.6" fill="#ff7f0e" stroke="#7a3d00" stroke-width="0.7"/>
+  <circle cx="70" cy="64" r="2.6" fill="#ff7f0e" stroke="#7a3d00" stroke-width="0.7"/>
+  <!-- corresponding probes on gold curve -->
+  <circle cx="40" cy="30.5" r="2.2" fill="#2ca02c" stroke="#0f4d0f" stroke-width="0.7"/>
+  <circle cx="56" cy="43" r="2.2" fill="#2ca02c" stroke="#0f4d0f" stroke-width="0.7"/>
+  <circle cx="70" cy="50" r="2.2" fill="#2ca02c" stroke="#0f4d0f" stroke-width="0.7"/>
+
+  <!-- star marking the discovered max-deviation location -->
+  <polygon points="56,30 57.4,33.2 60.8,33.4 58.1,35.6 59,39 56,37 53,39 53.9,35.6 51.2,33.4 54.6,33.2"
+           fill="#d62728" stroke="#7a0e0e" stroke-width="0.5"/>
+</svg>

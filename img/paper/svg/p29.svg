@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- axes -->
+  <line x1="18" y1="82" x2="86" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="82" x2="18" y2="16" stroke="#555" stroke-width="1"/>
+
+  <!-- episode axis ticks -->
+  <line x1="32" y1="82" x2="32" y2="84.5" stroke="#555" stroke-width="1"/>
+  <line x1="46" y1="82" x2="46" y2="84.5" stroke="#555" stroke-width="1"/>
+  <line x1="60" y1="82" x2="60" y2="84.5" stroke="#555" stroke-width="1"/>
+  <line x1="74" y1="82" x2="74" y2="84.5" stroke="#555" stroke-width="1"/>
+  <!-- reward axis ticks -->
+  <line x1="15.5" y1="68" x2="18" y2="68" stroke="#555" stroke-width="1"/>
+  <line x1="15.5" y1="50" x2="18" y2="50" stroke="#555" stroke-width="1"/>
+  <line x1="15.5" y1="32" x2="18" y2="32" stroke="#555" stroke-width="1"/>
+
+  <!-- sync points: vertical dashed lines -->
+  <line x1="39" y1="18" x2="39" y2="82" stroke="#999" stroke-width="0.8" stroke-dasharray="2,2"/>
+  <line x1="56" y1="18" x2="56" y2="82" stroke="#999" stroke-width="0.8" stroke-dasharray="2,2"/>
+  <line x1="73" y1="18" x2="73" y2="82" stroke="#999" stroke-width="0.8" stroke-dasharray="2,2"/>
+
+  <!-- population reward curves -->
+  <!-- orange track (lower) -->
+  <path d="M18,74 C26,72 32,71 39,69 C46,69 50,67 56,66 C62,65 67,64 73,63 C78,62 82,61 86,60" fill="none" stroke="#ff7f0e" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- purple track -->
+  <path d="M18,73 C26,70 32,67 39,64 C46,62 50,60 56,58 C62,57 67,56 73,55 C78,54 82,53 86,52" fill="none" stroke="#9467bd" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- green track -->
+  <path d="M18,72 C26,68 33,63 39,59 C46,56 51,53 56,51 C62,49 67,48 73,47 C78,46 82,45 86,44" fill="none" stroke="#2ca02c" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- blue track -->
+  <path d="M18,71 C26,65 33,58 39,53 C46,49 51,45 56,42 C62,40 67,38 73,37 C78,36 82,35 86,34" fill="none" stroke="#1f77b4" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- red best track (bold) -->
+  <path d="M18,70 C26,62 34,53 39,47 C46,42 51,37 56,33 C63,30 68,27 73,25 C78,23 82,22 86,21" fill="none" stroke="#d62728" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- exploit/explore copy arrows between tracks at sync points -->
+  <!-- sync 1 (x=39): copy up toward green -->
+  <line x1="39" y1="69" x2="39" y2="61" stroke="#444" stroke-width="1.2"/>
+  <polygon points="39,59 37,62.5 41,62.5" fill="#444"/>
+  <!-- sync 2 (x=56): copy up toward blue -->
+  <line x1="56" y1="58" x2="56" y2="46" stroke="#444" stroke-width="1.2"/>
+  <polygon points="56,44 54,47.5 58,47.5" fill="#444"/>
+  <!-- sync 3 (x=73): copy up toward red -->
+  <line x1="73" y1="47" x2="73" y2="29" stroke="#444" stroke-width="1.2"/>
+  <polygon points="73,27 71,30.5 75,30.5" fill="#444"/>
+
+  <!-- markers at endpoints -->
+  <circle cx="86" cy="60" r="1.6" fill="#ff7f0e"/>
+  <circle cx="86" cy="52" r="1.6" fill="#9467bd"/>
+  <circle cx="86" cy="44" r="1.6" fill="#2ca02c"/>
+  <circle cx="86" cy="34" r="1.6" fill="#1f77b4"/>
+  <!-- best track star -->
+  <polygon points="86,17.5 87,20 89.5,20 87.5,21.7 88.3,24.2 86,22.6 83.7,24.2 84.5,21.7 82.5,20 85,20" fill="#d62728"/>
+</svg>

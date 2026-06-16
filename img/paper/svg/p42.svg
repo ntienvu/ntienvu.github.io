@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="surf42" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#aec7e8"/>
+      <stop offset="1" stop-color="#1f77b4"/>
+    </linearGradient>
+    <linearGradient id="peakA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c6dbef"/>
+      <stop offset="1" stop-color="#4a90d9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 3D base plane (parallelogram) -->
+  <path d="M18 70 L74 70 L88 84 L32 84 Z" fill="#eef3f8" stroke="#9bb3cc" stroke-width="0.8"/>
+
+  <!-- back ridge of landscape -->
+  <path d="M18 70 C26 50 32 64 40 44 C46 30 52 52 58 36 C64 24 70 46 76 34 L78 44 L74 70 Z"
+        fill="url(#surf42)" stroke="#1f6aa5" stroke-width="1" opacity="0.95"/>
+
+  <!-- front sharp peaks layer -->
+  <path d="M22 74 C30 52 34 70 42 46 C48 30 54 58 60 40 C66 28 72 52 80 40 L82 50 L80 78 L24 78 Z"
+        fill="url(#peakA)" stroke="#1f6aa5" stroke-width="1" opacity="0.9"/>
+
+  <!-- wireframe contour lines following surface -->
+  <path d="M24 78 C32 56 36 72 44 50 C50 36 56 60 62 44 C68 32 74 54 81 44" fill="none" stroke="#dbe9f6" stroke-width="0.8"/>
+  <path d="M26 82 C34 62 38 76 46 56 C52 44 58 66 64 50 C70 40 76 60 82 52" fill="none" stroke="#cfe0f2" stroke-width="0.8"/>
+  <!-- longitudinal wires -->
+  <path d="M30 80 C32 64 34 58 36 50" fill="none" stroke="#e3eef9" stroke-width="0.7"/>
+  <path d="M48 80 C50 60 52 52 54 42" fill="none" stroke="#e3eef9" stroke-width="0.7"/>
+  <path d="M68 80 C70 62 72 56 74 38" fill="none" stroke="#e3eef9" stroke-width="0.7"/>
+
+  <!-- red star at global max (on tallest peak ~ x42 y46) -->
+  <path d="M42 41 L43.4 45 L47.6 45 L44.2 47.6 L45.5 51.6 L42 49.1 L38.5 51.6 L39.8 47.6 L36.4 45 L40.6 45 Z"
+        fill="#d62728" stroke="#a01b1b" stroke-width="0.5"/>
+
+  <!-- dashed circle marking small initial region (low-left) -->
+  <circle cx="30" cy="68" r="7" fill="#2ca02c" fill-opacity="0.12" stroke="#2ca02c" stroke-width="1.6" stroke-dasharray="3 2.2"/>
+  <circle cx="30" cy="68" r="1.6" fill="#2ca02c"/>
+
+  <!-- outward expansion arrow showing space expanding toward the peak -->
+  <path d="M37 65 C48 58 56 54 62 50" fill="none" stroke="#ff7f0e" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M62 50 L57.2 50.4 L60 54.6 Z" fill="#ff7f0e"/>
+
+  <!-- small secondary expansion arrow -->
+  <path d="M34 62 L40 56" fill="none" stroke="#ff7f0e" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M40 56 L36.6 56.3 L38.2 59.2 Z" fill="#ff7f0e"/>
+
+  <!-- axes -->
+  <path d="M18 84 L18 30" fill="none" stroke="#555" stroke-width="1"/>
+  <path d="M18 84 L82 84" fill="none" stroke="#555" stroke-width="1"/>
+  <path d="M16 40 L18 40 M16 52 L18 52 M16 64 L18 64" stroke="#555" stroke-width="1"/>
+  <path d="M34 84 L34 86 M50 84 L50 86 M66 84 L66 86" stroke="#555" stroke-width="1"/>
+</svg>

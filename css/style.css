@@ -217,13 +217,13 @@ h4 { font-size: 1.1rem; margin-top: 1.6rem; }
 .media .thumbnail,
 .media a.pull-left {
   display: block;
-  width: 150px;
+  width: 96px;
 }
 .media img {
-  width: 150px;
-  height: auto;
-  border-radius: 6px;
-  border: 1px solid var(--border);
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  border-radius: 14px;
 }
 .media-body { flex: 1; min-width: 0; }
 .media-body strong { color: var(--text); }
@@ -316,6 +316,5 @@ h4 { font-size: 1.1rem; margin-top: 1.6rem; }
   .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
   .profile { justify-content: center; text-align: center; }
   .social-row { justify-content: center; }
-  .media { flex-direction: column; }
-  .media .thumbnail, .media a.pull-left, .media img { width: 100%; max-width: 220px; }
+  .media { flex-direction: row; }
 }

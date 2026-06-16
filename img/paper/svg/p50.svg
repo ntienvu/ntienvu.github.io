@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- gridlines -->
+  <line x1="22" y1="34" x2="84" y2="34" stroke="#eef1f4" stroke-width="1"/>
+  <line x1="22" y1="50" x2="84" y2="50" stroke="#eef1f4" stroke-width="1"/>
+  <line x1="22" y1="66" x2="84" y2="66" stroke="#eef1f4" stroke-width="1"/>
+
+  <!-- axes -->
+  <line x1="22" y1="22" x2="22" y2="80" stroke="#555" stroke-width="1"/>
+  <line x1="22" y1="80" x2="84" y2="80" stroke="#555" stroke-width="1"/>
+  <!-- y ticks -->
+  <line x1="19.5" y1="34" x2="22" y2="34" stroke="#555" stroke-width="1"/>
+  <line x1="19.5" y1="50" x2="22" y2="50" stroke="#555" stroke-width="1"/>
+  <line x1="19.5" y1="66" x2="22" y2="66" stroke="#555" stroke-width="1"/>
+  <!-- x ticks -->
+  <line x1="38" y1="80" x2="38" y2="82.5" stroke="#555" stroke-width="1"/>
+  <line x1="54" y1="80" x2="54" y2="82.5" stroke="#555" stroke-width="1"/>
+  <line x1="70" y1="80" x2="70" y2="82.5" stroke="#555" stroke-width="1"/>
+
+  <!-- shaded gap between best (blue) and baseline (red) -->
+  <path d="M24,30 C34,46 46,58 62,62 C70,64 78,65 83,65 L83,72 C78,71 70,70 62,68 C46,65 34,60 24,52 Z" fill="#1f77b4" fill-opacity="0.16"/>
+
+  <!-- faint budget step line (budget growth) -->
+  <path d="M24,76 L34,76 L34,72 L44,72 L44,67 L56,67 L56,61 L70,61 L70,57 L83,57" fill="none" stroke="#999" stroke-width="1.2" stroke-dasharray="2,2" stroke-opacity="0.8"/>
+
+  <!-- baseline curve (red) - highest floor -->
+  <path d="M24,30 C34,52 46,63 60,66 C70,68 78,68.5 83,68.5" fill="none" stroke="#d62728" stroke-width="3" stroke-linecap="round"/>
+  <!-- middle curve (purple) -->
+  <path d="M24,28 C34,49 46,59 60,61 C70,62.5 78,63 83,63" fill="none" stroke="#9467bd" stroke-width="3" stroke-linecap="round"/>
+  <!-- best curve (blue) - lowest floor -->
+  <path d="M24,29 C34,46 46,56 60,59.5 C70,61 78,61.5 83,61.5" fill="none" stroke="#1f77b4" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- markers on blue (best) -->
+  <circle cx="38" cy="48.5" r="1.7" fill="#1f77b4"/>
+  <circle cx="54" cy="57.5" r="1.7" fill="#1f77b4"/>
+  <circle cx="70" cy="60.8" r="1.7" fill="#1f77b4"/>
+  <!-- markers on purple -->
+  <rect x="36.6" y="49.5" width="2.8" height="2.8" fill="#9467bd"/>
+  <rect x="52.6" y="59.3" width="2.8" height="2.8" fill="#9467bd"/>
+  <rect x="68.6" y="61.6" width="2.8" height="2.8" fill="#9467bd"/>
+  <!-- markers on red -->
+  <path d="M38,52.5 l1.7,2.9 h-3.4 Z" fill="#d62728"/>
+  <path d="M54,63.5 l1.7,2.9 h-3.4 Z" fill="#d62728"/>
+  <path d="M70,66.5 l1.7,2.9 h-3.4 Z" fill="#d62728"/>
+</svg>

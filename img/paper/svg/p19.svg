@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- faint parallel population tracks (horizontal lanes) -->
+  <line x1="16" y1="22" x2="84" y2="22" stroke="#9467bd" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="3 2"/>
+  <line x1="16" y1="27" x2="84" y2="27" stroke="#2ca02c" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="3 2"/>
+  <line x1="16" y1="32" x2="84" y2="32" stroke="#ff7f0e" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="3 2"/>
+
+  <!-- axes -->
+  <line x1="18" y1="20" x2="18" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="18" y1="82" x2="86" y2="82" stroke="#555" stroke-width="1"/>
+  <!-- x ticks -->
+  <line x1="32" y1="82" x2="32" y2="84.5" stroke="#555" stroke-width="1"/>
+  <line x1="46" y1="82" x2="46" y2="84.5" stroke="#555" stroke-width="1"/>
+  <line x1="60" y1="82" x2="60" y2="84.5" stroke="#555" stroke-width="1"/>
+  <line x1="74" y1="82" x2="74" y2="84.5" stroke="#555" stroke-width="1"/>
+  <!-- y ticks -->
+  <line x1="15.5" y1="68" x2="18" y2="68" stroke="#555" stroke-width="1"/>
+  <line x1="15.5" y1="54" x2="18" y2="54" stroke="#555" stroke-width="1"/>
+  <line x1="15.5" y1="40" x2="18" y2="40" stroke="#555" stroke-width="1"/>
+
+  <!-- GP confidence band -->
+  <path d="M18 58 C 28 44, 38 38, 48 46 C 58 54, 68 40, 84 34 L 84 50 C 68 56, 58 70, 48 62 C 38 54, 28 60, 18 72 Z"
+        fill="#1f77b4" fill-opacity="0.22"/>
+
+  <!-- GP posterior mean (blue) -->
+  <path d="M18 65 C 28 52, 38 49, 48 54 C 58 59, 68 50, 84 42"
+        fill="none" stroke="#1f77b4" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- acquisition max: next pick vertical dashed line -->
+  <line x1="74" y1="22" x2="74" y2="82" stroke="#d62728" stroke-width="1.4" stroke-dasharray="3 2.5" stroke-opacity="0.85"/>
+  <path d="M74 22 l -2.6 4.5 l 5.2 0 Z" fill="#d62728"/>
+
+  <!-- evaluated points (red) -->
+  <circle cx="26" cy="56" r="2.4" fill="#d62728" stroke="#ffffff" stroke-width="0.8"/>
+  <circle cx="40" cy="50" r="2.4" fill="#d62728" stroke="#ffffff" stroke-width="0.8"/>
+  <circle cx="48" cy="54" r="2.4" fill="#d62728" stroke="#ffffff" stroke-width="0.8"/>
+  <circle cx="60" cy="55" r="2.4" fill="#d62728" stroke="#ffffff" stroke-width="0.8"/>
+  <circle cx="69" cy="49" r="2.4" fill="#d62728" stroke="#ffffff" stroke-width="0.8"/>
+
+  <!-- next pick marker on mean at acquisition max -->
+  <circle cx="74" cy="46.5" r="2.6" fill="#ffffff" stroke="#d62728" stroke-width="1.6"/>
+</svg>

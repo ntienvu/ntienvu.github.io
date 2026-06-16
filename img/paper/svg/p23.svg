@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="lungL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbd7df"/>
+      <stop offset="1" stop-color="#f4a6b8"/>
+    </linearGradient>
+    <linearGradient id="lungR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbd7df"/>
+      <stop offset="1" stop-color="#f4a6b8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Trachea -->
+  <rect x="48" y="20" width="4" height="18" rx="2" fill="#e58aa0" stroke="#c96a82" stroke-width="0.8"/>
+  <!-- Bronchi branching -->
+  <path d="M50 36 C44 40 40 44 37 50" fill="none" stroke="#c96a82" stroke-width="2" stroke-linecap="round"/>
+  <path d="M50 36 C56 40 60 44 63 50" fill="none" stroke="#c96a82" stroke-width="2" stroke-linecap="round"/>
+  <path d="M40 46 C37 48 35 52 34 56" fill="none" stroke="#c96a82" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M60 46 C63 48 65 52 66 56" fill="none" stroke="#c96a82" stroke-width="1.3" stroke-linecap="round"/>
+
+  <!-- Left lung (viewer's right) -->
+  <path d="M53 38 C62 38 73 44 75 60 C77 74 70 84 60 83 C54 82 53 74 53 66 Z"
+        fill="url(#lungR)" stroke="#d97a90" stroke-width="1.3"/>
+  <!-- Right lung (viewer's left) with heterogeneity heatmap -->
+  <path d="M47 38 C38 38 27 44 25 60 C23 74 30 84 40 83 C46 82 47 74 47 66 Z"
+        fill="url(#lungL)" stroke="#d97a90" stroke-width="1.3"/>
+
+  <!-- Heatmap patches inside right lung (V/Q heterogeneity) -->
+  <path d="M30 50 C33 49 36 50 37 53 C36 57 33 58 30 56 Z" fill="#1f77b4" fill-opacity="0.55"/>
+  <path d="M38 52 C42 51 45 53 45 57 C44 61 40 61 38 58 Z" fill="#2ca02c" fill-opacity="0.5"/>
+  <path d="M28 60 C31 59 34 61 34 64 C33 68 29 68 27 65 Z" fill="#ff7f0e" fill-opacity="0.55"/>
+  <path d="M36 62 C40 61 44 63 44 67 C43 72 38 72 36 68 Z" fill="#d62728" fill-opacity="0.5"/>
+  <path d="M30 70 C33 69 37 71 37 74 C36 78 31 78 29 75 Z" fill="#9467bd" fill-opacity="0.5"/>
+
+  <!-- Tiny optimisation curve panel (bottom-left inset) -->
+  <rect x="13" y="74" width="24" height="14" rx="1.5" fill="#ffffff" stroke="#888" stroke-width="0.7"/>
+  <line x1="16" y1="86" x2="35" y2="86" stroke="#555" stroke-width="0.8"/>
+  <line x1="16" y1="86" x2="16" y2="75" stroke="#555" stroke-width="0.8"/>
+  <path d="M16 84 C20 82 23 78 26 79 C29 80 32 84 35 85" fill="none" stroke="#1f77b4" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="24.5" cy="78" r="1.6" fill="#d62728" stroke="#7a1414" stroke-width="0.5"/>
+
+  <!-- Optimisation curve panel (top-right inset) -->
+  <rect x="63" y="14" width="24" height="14" rx="1.5" fill="#ffffff" stroke="#888" stroke-width="0.7"/>
+  <line x1="66" y1="26" x2="85" y2="26" stroke="#555" stroke-width="0.8"/>
+  <line x1="66" y1="26" x2="66" y2="15" stroke="#555" stroke-width="0.8"/>
+  <path d="M66 24 C70 17 74 16 77 19 C80 22 82 25 85 25" fill="none" stroke="#9467bd" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="75.5" cy="17.3" r="1.6" fill="#d62728" stroke="#7a1414" stroke-width="0.5"/>
+</svg>

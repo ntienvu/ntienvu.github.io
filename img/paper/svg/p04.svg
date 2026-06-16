@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- Cloud body (left) -->
+  <path d="M22 50 a9 9 0 0 1 3 -16 a10 10 0 0 1 19 -3 a8 8 0 0 1 6 19 H24 a7 7 0 0 1 -2 -13 Z"
+        fill="#d6e7f5" stroke="#1f77b4" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Server stack inside cloud -->
+  <rect x="26" y="36" width="14" height="4" rx="1" fill="#ffffff" stroke="#1f77b4" stroke-width="1"/>
+  <rect x="26" y="41" width="14" height="4" rx="1" fill="#ffffff" stroke="#1f77b4" stroke-width="1"/>
+  <circle cx="29" cy="38" r="0.9" fill="#2ca02c"/>
+  <circle cx="29" cy="43" r="0.9" fill="#ff7f0e"/>
+
+  <!-- AI optimization curve beside cloud (acquisition/loss curve with optimum) -->
+  <path d="M44 31 q3 -7 6 -1 q3 6 5 -5" fill="none" stroke="#d62728" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="55" cy="25" r="1.4" fill="#d62728"/>
+
+  <!-- Signal waves emitting from cloud -->
+  <path d="M50 51 a5 5 0 0 1 5 5" fill="none" stroke="#17becf" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M50 48 a8 8 0 0 1 8 8" fill="none" stroke="#17becf" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- Flow arrow to the head -->
+  <line x1="49" y1="62" x2="63" y2="62" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="63,59 69,62 63,65" fill="#555"/>
+
+  <!-- Head profile (right) facing left -->
+  <path d="M88 80 C90 60 83 47 73 47 C65 47 61 53 61 61 C61 67 63 71 66 73
+           L66 80 Z"
+        fill="#f7d9d9" stroke="#d62728" stroke-width="2" stroke-linejoin="round"/>
+  <!-- nose hint -->
+  <path d="M61 61 q-3 2 -1 5 q1 2 3 1" fill="none" stroke="#d62728" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- Two symmetric electrode pads on forehead (bilateral DLPFC) -->
+  <rect x="68" y="50" width="6" height="4" rx="1.2" fill="#9467bd" stroke="#5e3a7a" stroke-width="1"/>
+  <rect x="77" y="51" width="6" height="4" rx="1.2" fill="#9467bd" stroke="#5e3a7a" stroke-width="1"/>
+
+  <!-- Current arcs emitting from pads -->
+  <path d="M71 50 q1 -4 3 -2" fill="none" stroke="#ff7f0e" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M69 49 q2 -6 5 -3" fill="none" stroke="#ff7f0e" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M80 51 q1 -4 3 -2" fill="none" stroke="#ff7f0e" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M78 50 q2 -6 5 -3" fill="none" stroke="#ff7f0e" stroke-width="1.3" stroke-linecap="round"/>
+</svg>

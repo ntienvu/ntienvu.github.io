@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- axes -->
+  <line x1="26" y1="20" x2="26" y2="78" stroke="#555" stroke-width="1"/>
+  <line x1="26" y1="78" x2="88" y2="78" stroke="#555" stroke-width="1"/>
+  <!-- x ticks -->
+  <line x1="38" y1="78" x2="38" y2="81" stroke="#555" stroke-width="1"/>
+  <line x1="50" y1="78" x2="50" y2="81" stroke="#555" stroke-width="1"/>
+  <line x1="62" y1="78" x2="62" y2="81" stroke="#555" stroke-width="1"/>
+  <line x1="74" y1="78" x2="74" y2="81" stroke="#555" stroke-width="1"/>
+  <line x1="86" y1="78" x2="86" y2="81" stroke="#555" stroke-width="1"/>
+  <!-- y ticks -->
+  <line x1="23" y1="68" x2="26" y2="68" stroke="#555" stroke-width="1"/>
+  <line x1="23" y1="54" x2="26" y2="54" stroke="#555" stroke-width="1"/>
+  <line x1="23" y1="40" x2="26" y2="40" stroke="#555" stroke-width="1"/>
+  <line x1="23" y1="26" x2="26" y2="26" stroke="#555" stroke-width="1"/>
+
+  <!-- variance band -->
+  <path d="M26,72 C36,64 44,50 54,40 C64,30 74,28 86,29 L86,37 C74,36 64,38 54,48 C44,57 36,70 26,77 Z" fill="#1f77b4" fill-opacity="0.22"/>
+
+  <!-- noisy reward curve (rising + plateau) -->
+  <path d="M26,75 C30,72 32,69 35,67 C37,65 38,68 40,64 C42,61 44,58 46,54 C48,51 49,53 51,49 C53,46 55,42 57,39 C60,35 62,37 65,34 C68,32 71,33 74,33 C78,33 82,32 86,33" fill="none" stroke="#1f77b4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- tuned-component squares feeding in via arrows -->
+  <rect x="11" y="30" width="7" height="7" rx="1" fill="#d62728"/>
+  <line x1="18" y1="34" x2="34" y2="55" stroke="#d62728" stroke-width="1.2"/>
+  <polygon points="34,55 30,53 32.5,57" fill="#d62728"/>
+
+  <rect x="11" y="46" width="7" height="7" rx="1" fill="#2ca02c"/>
+  <line x1="18" y1="50" x2="40" y2="62" stroke="#2ca02c" stroke-width="1.2"/>
+  <polygon points="40,62 36,61 38,65" fill="#2ca02c"/>
+
+  <rect x="11" y="62" width="7" height="7" rx="1" fill="#ff7f0e"/>
+  <line x1="18" y1="65" x2="32" y2="69" stroke="#ff7f0e" stroke-width="1.2"/>
+  <polygon points="32,69 28,67.5 29,71.5" fill="#ff7f0e"/>
+
+  <rect x="11" y="78" width="7" height="7" rx="1" fill="#9467bd"/>
+  <line x1="18" y1="80" x2="50" y2="50" stroke="#9467bd" stroke-width="1.2"/>
+  <polygon points="50,50 46,52 49,54" fill="#9467bd"/>
+
+  <!-- automation gear overlapping top-right corner -->
+  <g fill="#9aa3ab" stroke="#6b7480" stroke-width="0.8">
+    <rect x="77" y="13" width="3" height="4" rx="0.5"/>
+    <rect x="86.5" y="13" width="3" height="4" rx="0.5" transform="rotate(45 88 15)"/>
+    <rect x="91" y="20.5" width="3" height="4" rx="0.5" transform="rotate(90 92.5 22.5)"/>
+    <rect x="86.5" y="28" width="3" height="4" rx="0.5" transform="rotate(45 88 30)"/>
+    <rect x="77" y="28" width="3" height="4" rx="0.5"/>
+    <rect x="69" y="28" width="3" height="4" rx="0.5" transform="rotate(45 70.5 30)"/>
+    <rect x="64.5" y="20.5" width="3" height="4" rx="0.5" transform="rotate(90 66 22.5)"/>
+    <rect x="69" y="13" width="3" height="4" rx="0.5" transform="rotate(45 70.5 15)"/>
+    <circle cx="78.5" cy="22.5" r="9"/>
+  </g>
+  <circle cx="78.5" cy="22.5" r="3.5" fill="#ffffff" stroke="#6b7480" stroke-width="0.8"/>
+</svg>

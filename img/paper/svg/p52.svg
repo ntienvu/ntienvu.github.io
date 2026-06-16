@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+  <defs>
+    <marker id="ah" markerWidth="6" markerHeight="6" refX="4.6" refY="2.5" orient="auto">
+      <path d="M0,0 L5,2.5 L0,5 Z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- plate around the repeated group + observation level -->
+  <rect x="16" y="38" width="68" height="46" rx="6" fill="#f4f7fb" stroke="#9467bd" stroke-width="1.5" stroke-dasharray="3 2"/>
+
+  <!-- edges: global -> groups -->
+  <path d="M50,24 L33,45" stroke="#555" stroke-width="1.2" marker-end="url(#ah)"/>
+  <path d="M50,24 L50,45" stroke="#555" stroke-width="1.2" marker-end="url(#ah)"/>
+  <path d="M50,24 L67,45" stroke="#555" stroke-width="1.2" marker-end="url(#ah)"/>
+
+  <!-- edges: groups -> observations -->
+  <path d="M30,52 L25,69" stroke="#555" stroke-width="1.2" marker-end="url(#ah)"/>
+  <path d="M50,52 L50,69" stroke="#555" stroke-width="1.2" marker-end="url(#ah)"/>
+  <path d="M70,52 L75,69" stroke="#555" stroke-width="1.2" marker-end="url(#ah)"/>
+  <path d="M32,52 L46,69" stroke="#555" stroke-width="1.2" marker-end="url(#ah)"/>
+  <path d="M68,52 L54,69" stroke="#555" stroke-width="1.2" marker-end="url(#ah)"/>
+
+  <!-- Level 1: global hyper-node (latent, open) -->
+  <circle cx="50" cy="18" r="7" fill="#ffffff" stroke="#1f77b4" stroke-width="2.5"/>
+  <circle cx="50" cy="18" r="2" fill="#1f77b4"/>
+
+  <!-- Level 2: group nodes (latent, open) -->
+  <circle cx="29" cy="48" r="6" fill="#ffffff" stroke="#2ca02c" stroke-width="2.5"/>
+  <circle cx="50" cy="48" r="6" fill="#ffffff" stroke="#2ca02c" stroke-width="2.5"/>
+  <circle cx="71" cy="48" r="6" fill="#ffffff" stroke="#2ca02c" stroke-width="2.5"/>
+
+  <!-- Level 3: observation nodes (two shaded/observed, rest latent) -->
+  <circle cx="23" cy="75" r="6" fill="#d6e4f0" stroke="#1f77b4" stroke-width="2.5"/>
+  <circle cx="50" cy="75" r="6" fill="#ffffff" stroke="#ff7f0e" stroke-width="2.5"/>
+  <circle cx="77" cy="75" r="6" fill="#d6e4f0" stroke="#1f77b4" stroke-width="2.5"/>
+
+  <!-- observed shading dots -->
+  <circle cx="23" cy="75" r="1.6" fill="#1f77b4"/>
+  <circle cx="77" cy="75" r="1.6" fill="#1f77b4"/>
+</svg>
