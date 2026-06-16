@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vu Nguyen | Publications</title>
-  <meta name="description" content="Publications of Dr Vu Nguyen — Bayesian optimization, Gaussian processes, machine learning.">
+  <meta name="description" content="Publications of Dr Vu Nguyen — Bayesian optimization, large-scale recommendation, data valuation, and machine learning.">
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vu Nguyen | Publications">
+  <meta property="og:description" content="Publications of Dr Vu Nguyen — Bayesian optimization, large-scale recommendation, data valuation, and machine learning.">
+  <meta property="og:url" content="https://ntienvu.github.io/publications.html">
   <link rel="stylesheet" href="./css/style.css">
   <script>
     window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
@@ -35,9 +40,9 @@
     
 
   <div class="media">
-  <a class="pull-left thumbnail" href=" ">
+  <span class="pull-left thumbnail">
     <img src="./img/paper/svg/p01.svg" alt="">
-  </a>
+  </span>
   <div class="media-body">
  	H. Phan, B. Kim, A. Bydlon, Q. Tang, C. Kao, C. Wang, <strong>V. Nguyen</strong> <br>
 	    <strong>Acoustic Event Detection.</strong><br>
@@ -55,8 +60,7 @@
 </div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
-      </div><!-- /.modal --> 
-	  	  <a href=" " class="label label-info">Page</a>
+      </div><!-- /.modal -->
 
   </div>
 </div>
@@ -116,7 +120,21 @@ W. Liu, W. Quan, E. Gao, <strong>V. Nguyen</strong>, D. Sejdinovic, H. Bondell, 
 
 				<i>International Conference on Machine Learning</i> (<strong>ICML</strong>), 2026.<br></i>
 
-
+      <a data-toggle="modal" href="#abstractTimeLAVA" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractTimeLAVA" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">TimeLAVA: Learning-Agnostic Valuation for Time Series Data</h4>
+            </div>
+            <div class="modal-body">
+Data valuation, which measures the quality of individual samples, is essential for data curation and robust learning. For time series data prevalent in domains such as healthcare and finance, principled valuation methods are essential yet fundamentally lacking: existing approaches are either model-dependent or designed for i.i.d. data, and thus fail to capture temporal dependencies and non-stationary dynamics. To address this, we propose TimeLAVA, a learning-agnostic framework that values temporal segments by their marginal contribution to minimizing the distributional discrepancy between evaluated and reference data. At its core is a novel Selective Wavelet-based Wasserstein discrepancy, which combines multi-scale wavelet transforms with unbalanced optimal transport to remain robust under distributional shifts. Segment values are computed via sensitivity analysis without any model training, and then aggregated into point-wise scores. We provide theoretical guarantees, including bounded sensitivity to outlier contamination. Experiments across anomaly detection, data pruning, and label noise detection demonstrate that TimeLAVA produces significantly more informative value scores than existing methods.
+					</div>
+				</div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+	  <a href="https://icml.cc/virtual/2026/poster/62497" class="label label-info">Paper</a>
 	  <a href="https://github.com/lww28/TimeLAVA" class="label label-success">Code</a>
 
 
