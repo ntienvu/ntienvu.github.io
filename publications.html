@@ -108,6 +108,38 @@
 	
   <h3>2026</h3>
 
+  <!-- TODO(MUSS): thumbnail currently reuses p58.svg; swap in a dedicated SVG if you have one. -->
+  <div class="media">
+  <a class="pull-left thumbnail" href="https://arxiv.org/pdf/2503.11126">
+    <img src="./img/paper/svg/p58.svg" alt="">
+  </a>
+  <div class="media-body">
+
+A. Kan*, <strong>V. Nguyen</strong>* <br>
+	    <strong>MUSS: Multilevel Subset Selection for Relevance and Diversity</strong><br>
+
+				<i>Conference on Uncertainty in Artificial Intelligence</i> (<strong>UAI</strong>), 2026.<br></i>
+
+      <a data-toggle="modal" href="#abstractMUSS" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractMUSS" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">MUSS: Multilevel Subset Selection for Relevance and Diversity</h4>
+            </div>
+            <div class="modal-body">
+The problem of relevant and diverse subset selection has a wide range of applications, from recommender systems to retrieval-augmented generation (RAG). For example, in recommender systems, one is interested in selecting relevant items, while providing a diversified recommendation. Constrained subset selection problem is NP-hard, and popular approaches such as Maximum Marginal Relevance (MMR) are based on greedy selection. Many real-world applications involve large data, but the original MMR work did not consider distributed selection. This limitation was later addressed by a method called DGDS which allows for a distributed setting using random data partitioning. Here, we exploit structure in the data to further improve both scalability and performance on the target application. We propose MUSS, an efficient method that uses a multilevel approach to relevant and diverse selection. In a recommender system application, our method can not only improve the performance up to 4 percentage points in precision, but is also 20 to 80 times faster. Our method is also capable of outperforming baselines on RAG-based question answering accuracy. We present a novel theoretical approach for analyzing this type of problems, and show that our method achieves a constant factor approximation of the optimal objective. Moreover, our analysis also results in a &times;2 tighter bound for DGDS compared to the previously known bound.
+					</div>
+				</div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+	  <a href="https://arxiv.org/pdf/2503.11126" class="label label-info">Paper</a>
+	  <a href="https://github.com/amazon-science/muss" class="label label-success">Code</a>
+
+
+</div>
+</div>
 
   <div class="media">
   <a class="pull-left thumbnail" href="https://github.com/lww28/TimeLAVA">
@@ -2584,7 +2616,7 @@ A rarity score for each factor is computed, and ordered in decreasing order of r
   </main>
 
   <footer class="site-footer">
-    Last updated June 2026.<br>
+    Last updated September 2026.<br>
     &copy; Vu Nguyen.
   </footer>
 
