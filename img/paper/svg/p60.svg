@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="120" height="120" role="img">
+  <rect x="1" y="1" width="98" height="98" rx="14" fill="#ffffff" stroke="#e2e6ea" stroke-width="1.5"/>
+
+  <!-- axes: semantic space (x) vs. data utility (y) -->
+  <line x1="14" y1="16" x2="14" y2="82" stroke="#555" stroke-width="1"/>
+  <line x1="14" y1="82" x2="90" y2="82" stroke="#555" stroke-width="1"/>
+
+  <!-- GP posterior uncertainty band -->
+  <path d="M14 58 C22 44, 30 30, 40 28 C50 26, 56 42, 64 44 C72 46, 80 30, 90 22
+           L90 42 C80 50, 72 60, 64 58 C56 56, 50 46, 40 46 C30 46, 22 62, 14 72 Z"
+        fill="#1f9fb4" opacity="0.18"/>
+  <!-- GP mean utility curve -->
+  <path d="M14 65 C22 53, 30 38, 40 37 C50 36, 56 51, 64 51 C72 51, 80 40, 90 32"
+        fill="none" stroke="#1f9fb4" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- candidate pool (grey, unselected) -->
+  <circle cx="20" cy="70" r="1.7" fill="#c3ccd4"/>
+  <circle cx="27" cy="62" r="1.7" fill="#c3ccd4"/>
+  <circle cx="56" cy="55" r="1.7" fill="#c3ccd4"/>
+  <circle cx="63" cy="60" r="1.7" fill="#c3ccd4"/>
+  <circle cx="70" cy="54" r="1.7" fill="#c3ccd4"/>
+  <circle cx="33" cy="52" r="1.7" fill="#c3ccd4"/>
+
+  <!-- selected high-utility samples (orange) -->
+  <circle cx="38" cy="38" r="2.6" fill="#ff7f0e" stroke="#fff" stroke-width="0.8"/>
+  <circle cx="44" cy="36" r="2.6" fill="#ff7f0e" stroke="#fff" stroke-width="0.8"/>
+  <circle cx="84" cy="36" r="2.6" fill="#ff7f0e" stroke="#fff" stroke-width="0.8"/>
+  <circle cx="90" cy="32" r="2.6" fill="#d62728" stroke="#fff" stroke-width="0.8"/>
+
+  <!-- online update arrow (streaming batches) -->
+  <path d="M22 90 L78 90" stroke="#555" stroke-width="1" stroke-linecap="round"/>
+  <path d="M74 87 L79 90 L74 93" fill="none" stroke="#555" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
